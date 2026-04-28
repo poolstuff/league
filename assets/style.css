@@ -6,6 +6,7 @@ body {
     animation: body 1s linear;
 }
 
+
 @keyframes body {
     to {
         background-color: rgb(19, 48, 97);
@@ -59,8 +60,6 @@ body {
     backface-visibility: visible;
     top: calc(var(--size) * -.5);
     left: calc(var(--size) * -.5);
-    /* text-align: center;
-    justify-content: center; */
 }
 
 .side p {
@@ -70,6 +69,7 @@ body {
     letter-spacing: 33%;
     font-size: 1.7rem;
     cursor: pointer;
+    font-family: "Anton", sans-serif;
     text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }
 .top {
@@ -142,7 +142,6 @@ body {
     white-space: nowrap;
     margin-left: 10vw;
     font-family: "Anton", sans-serif;
-
     font-size: 3rem;
     font-style: normal;
     text-align: center;
@@ -152,4 +151,8 @@ body {
 
 #clicksBig {
     font-size: 7rem;
+}
+
+.positionImages {
+    height: 10vmin;
 }
