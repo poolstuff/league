@@ -14,6 +14,8 @@ h1 {
     text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }
 
+
+
 #wedSchedTable th:nth-child(1),
 #wedSchedTable td:nth-child(1),
 #wedSchedTable th:nth-child(2),
@@ -93,14 +95,22 @@ h1 {
     padding: .5rem;
 }
 
+#wedSchedTable th,
+#wedSchedTable td,
+#thuSchedTable th,
+#thuSchedTable td {
+    outline: 2px solid #79BAEC; 
+}
+
 th,
 td {
-    padding: .5rem;
+    padding: 1rem;
     letter-spacing: 25%;
     text-align: center;
     font-family: "Outfit", sans-serif;
     line-height: 1.5rem;
     font-weight: bold;
+    
 }
 
 td {
