@@ -4,41 +4,93 @@ body {
     background-color: #79BAEC;
 }
 
-th:nth-child(1),
-td:nth-child(1),
-th:nth-child(2),
-td:nth-child(2),
-th:nth-child(6),
-td:nth-child(6),
-th:nth-child(7),
-td:nth-child(7),
-th:nth-child(10),
-td:nth-child(10),
-th:nth-child(11),
-td:nth-child(11) {
+h1 {
+    margin: 1rem 0;
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
+}
+
+#wedSchedTable th:nth-child(1),
+#wedSchedTable td:nth-child(1),
+#wedSchedTable th:nth-child(2),
+#wedSchedTable td:nth-child(2),
+#wedSchedTable th:nth-child(6),
+#wedSchedTable td:nth-child(6),
+#wedSchedTable th:nth-child(7),
+#wedSchedTable td:nth-child(7),
+#wedSchedTable th:nth-child(10),
+#wedSchedTable td:nth-child(10),
+#wedSchedTable th:nth-child(11),
+#wedSchedTable td:nth-child(11) {
     background-color: lightgray;
 }
 
-/* Color Two: Column 3 */
-th:nth-child(3),
-td:nth-child(3) {
+#wedSchedTable th:nth-child(3),
+#wedSchedTable td:nth-child(3) {
     background-color: tomato;
 }
 
-/* Color Three: Columns 4, 5, 8, 9, 12, 13 */
-th:nth-child(4),
-td:nth-child(4),
-th:nth-child(5),
-td:nth-child(5),
-th:nth-child(8),
-td:nth-child(8),
-th:nth-child(9),
-td:nth-child(9),
-th:nth-child(12),
-td:nth-child(12),
-th:nth-child(13),
-td:nth-child(13) {
+#wedSchedTable th:nth-child(4),
+#wedSchedTable td:nth-child(4),
+#wedSchedTable th:nth-child(5),
+#wedSchedTable td:nth-child(5),
+#wedSchedTable th:nth-child(8),
+#wedSchedTable td:nth-child(8),
+#wedSchedTable th:nth-child(9),
+#wedSchedTable td:nth-child(9),
+#wedSchedTable th:nth-child(12),
+#wedSchedTable td:nth-child(12),
+#wedSchedTable th:nth-child(13),
+#wedSchedTable td:nth-child(13) {
     background-color: lightblue;
+}
+
+#thuSchedTable th:nth-child(1),
+#thuSchedTable td:nth-child(1),
+#thuSchedTable th:nth-child(2),
+#thuSchedTable td:nth-child(2),
+#thuSchedTable th:nth-child(5),
+#thuSchedTable td:nth-child(5),
+#thuSchedTable th:nth-child(6),
+#thuSchedTable td:nth-child(6),
+#thuSchedTable th:nth-child(9),
+#thuSchedTable td:nth-child(9),
+#thuSchedTable th:nth-child(10),
+#thuSchedTable td:nth-child(10),
+#thuSchedTable th:nth-child(13),
+#thuSchedTable td:nth-child(13),
+#thuSchedTable th:nth-child(14),
+#thuSchedTable td:nth-child(14) {
+    background-color: lightgray;
+}
+
+#thuSchedTable th:nth-child(3),
+#thuSchedTable td:nth-child(3),
+#thuSchedTable th:nth-child(4),
+#thuSchedTable td:nth-child(4),
+#thuSchedTable th:nth-child(7),
+#thuSchedTable td:nth-child(7),
+#thuSchedTable th:nth-child(8),
+#thuSchedTable td:nth-child(8),
+#thuSchedTable th:nth-child(11),
+#thuSchedTable td:nth-child(11),
+#thuSchedTable th:nth-child(12),
+#thuSchedTable td:nth-child(12),
+#thuSchedTable th:nth-child(15),
+#thuSchedTable td:nth-child(15),
+#thuSchedTable th:nth-child(16),
+#thuSchedTable td:nth-child(16) {
+    background-color: lightblue;
+}
+
+.upcomingTable {
+    background-color: lightgray;
+    margin: 2rem auto;
+    padding: .5rem;
 }
 
 th,
@@ -46,11 +98,14 @@ td {
     padding: .5rem;
     letter-spacing: 25%;
     text-align: center;
-    color: #000;
-    font-size: 1rem;
     font-family: "Outfit", sans-serif;
     line-height: 1.5rem;
     font-weight: bold;
+}
+
+td {
+    color: #000;
+    font-size: 1rem;
 }
 
 th {
@@ -60,6 +115,9 @@ th {
     padding: .75rem;
 }
 
-#wedUpcoming {
-    margin-top: 2rem;
+.col-fixed {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    overflow: visible;
 }

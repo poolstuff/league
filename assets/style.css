@@ -72,6 +72,7 @@ body {
     font-family: "Anton", sans-serif;
     text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }
+
 .top {
     background-color: #E8E8E8;
     transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
@@ -156,3 +157,19 @@ body {
 .positionImages {
     height: 10vmin;
 }
+
+.teamH2 {
+    font-size: 1.8rem;
+    margin: 1rem;
+    letter-spacing: 20%;
+}
+
+.card p {
+    line-height: 2rem;
+}
+
+.normalSpace {
+    word-spacing: normal;
+}
+
+

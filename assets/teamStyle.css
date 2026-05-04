@@ -38,7 +38,7 @@ p {
 
 th,
 td {
-    padding: .5rem;
+    padding: 1rem;
     letter-spacing: 25%;
     text-align: center;
     color: #000;
@@ -69,7 +69,7 @@ td:nth-child(2),
 th:nth-child(3),
 td:nth-child(3) {
     background-color: rgb(211, 211, 211, .7);
-    width: 25vw;
+    /* width: 25vw; */
 }
 
 #teamCards {
