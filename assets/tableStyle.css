@@ -91,7 +91,7 @@ h1 {
 
 .upcomingTable {
     background-color: lightgray;
-    margin: 2rem auto;
+    margin: 2rem;
     padding: .5rem;
 }
 
@@ -130,4 +130,45 @@ th {
     left: 0;
     z-index: 10;
     overflow: visible;
+}
+
+.siteLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.pageFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.siteLinksWrapper p {
+    text-align: center;
+}
+
+.siteLinks a {
+    letter-spacing: 25%;
+    text-align: center;    
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #000;
+}
+
+#linksH3 {
+    margin: 1rem 0;
+        font-family: "Anton", sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }

@@ -107,4 +107,17 @@ td:nth-child(3) {
 .marginTop {
     margin-top: 2rem;
 }
-/* background-color: #C4A775; */
+
+#linksSection {
+    display: flex;
+    justify-content: center;
+}
+.siteLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 211, 211, .7);
+    margin: 1rem;
+    padding: 1rem;
+    width: 50vw;
+    border-radius: 12px;
+}
