@@ -1,0 +1,174 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #79BAEC;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
+}
+
+
+
+#wedSchedTable th:nth-child(1),
+#wedSchedTable td:nth-child(1),
+#wedSchedTable th:nth-child(2),
+#wedSchedTable td:nth-child(2),
+#wedSchedTable th:nth-child(6),
+#wedSchedTable td:nth-child(6),
+#wedSchedTable th:nth-child(7),
+#wedSchedTable td:nth-child(7),
+#wedSchedTable th:nth-child(10),
+#wedSchedTable td:nth-child(10),
+#wedSchedTable th:nth-child(11),
+#wedSchedTable td:nth-child(11) {
+    background-color: lightgray;
+}
+
+#wedSchedTable th:nth-child(3),
+#wedSchedTable td:nth-child(3) {
+    background-color: tomato;
+}
+
+#wedSchedTable th:nth-child(4),
+#wedSchedTable td:nth-child(4),
+#wedSchedTable th:nth-child(5),
+#wedSchedTable td:nth-child(5),
+#wedSchedTable th:nth-child(8),
+#wedSchedTable td:nth-child(8),
+#wedSchedTable th:nth-child(9),
+#wedSchedTable td:nth-child(9),
+#wedSchedTable th:nth-child(12),
+#wedSchedTable td:nth-child(12),
+#wedSchedTable th:nth-child(13),
+#wedSchedTable td:nth-child(13) {
+    background-color: lightblue;
+}
+
+#thuSchedTable th:nth-child(1),
+#thuSchedTable td:nth-child(1),
+#thuSchedTable th:nth-child(2),
+#thuSchedTable td:nth-child(2),
+#thuSchedTable th:nth-child(5),
+#thuSchedTable td:nth-child(5),
+#thuSchedTable th:nth-child(6),
+#thuSchedTable td:nth-child(6),
+#thuSchedTable th:nth-child(9),
+#thuSchedTable td:nth-child(9),
+#thuSchedTable th:nth-child(10),
+#thuSchedTable td:nth-child(10),
+#thuSchedTable th:nth-child(13),
+#thuSchedTable td:nth-child(13),
+#thuSchedTable th:nth-child(14),
+#thuSchedTable td:nth-child(14) {
+    background-color: lightgray;
+}
+
+#thuSchedTable th:nth-child(3),
+#thuSchedTable td:nth-child(3),
+#thuSchedTable th:nth-child(4),
+#thuSchedTable td:nth-child(4),
+#thuSchedTable th:nth-child(7),
+#thuSchedTable td:nth-child(7),
+#thuSchedTable th:nth-child(8),
+#thuSchedTable td:nth-child(8),
+#thuSchedTable th:nth-child(11),
+#thuSchedTable td:nth-child(11),
+#thuSchedTable th:nth-child(12),
+#thuSchedTable td:nth-child(12),
+#thuSchedTable th:nth-child(15),
+#thuSchedTable td:nth-child(15),
+#thuSchedTable th:nth-child(16),
+#thuSchedTable td:nth-child(16) {
+    background-color: lightblue;
+}
+
+.upcomingTable {
+    background-color: lightgray;
+    margin: 2rem;
+    padding: .5rem;
+}
+
+#wedSchedTable th,
+#wedSchedTable td,
+#thuSchedTable th,
+#thuSchedTable td {
+    outline: 2px solid #79BAEC; 
+}
+
+th,
+td {
+    padding: .5rem;
+    letter-spacing: 25%;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5rem;
+    font-weight: bold;
+    
+}
+
+td {
+    color: #000;
+    font-size: 1rem;
+}
+
+th {
+    letter-spacing: 33%;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: .75rem;
+}
+
+.col-fixed {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    overflow: visible;
+}
+
+.siteLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.pageFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.siteLinksWrapper p {
+    text-align: center;
+}
+
+.siteLinks a {
+    letter-spacing: 25%;
+    text-align: center;    
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #000;
+}
+
+#linksH3 {
+    margin: 1rem 0;
+        font-family: "Anton", sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
+}
