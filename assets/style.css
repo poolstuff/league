@@ -160,16 +160,56 @@ body {
 
 .teamH2 {
     font-size: 1.8rem;
-    margin: 1rem;
+    margin: 1rem 1rem 0.5rem 1rem;
     letter-spacing: 20%;
 }
 
-.card p {
+.cardRoster p {
     line-height: 2rem;
+    margin: 0;
+    padding-bottom: 1rem;
 }
 
 .normalSpace {
     word-spacing: normal;
 }
+
+.teamStandingsTable th,
+.teamStandingsTable td,
+.table th,
+.table td {
+    padding: .75rem;
+}
+
+.teamCard {
+    display: flex;
+    flex-direction: column;
+    background: rgb(211, 211, 211, 0.7);
+    border-radius: 12px;
+    width: 45%;
+    margin: 1rem 0;
+}
+
+.cardBody {
+    display: flex;
+    flex-direction: row;
+}
+
+.teamImg {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+}
+
+.teamImg img {
+    height: 25vh;
+    padding: .5rem;
+}
+
+.cardRoster {
+    diplay: flex;
+    width: 40%;
+}
+
 
 
