@@ -159,7 +159,7 @@ body {
 }
 
 .teamH2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin: 1rem 1rem 0.5rem 1rem;
     letter-spacing: 20%;
 }
@@ -184,15 +184,36 @@ body {
 .teamCard {
     display: flex;
     flex-direction: column;
-    background: rgb(211, 211, 211, 0.7);
+    background: rgb(0, 46, 71, .7);
     border-radius: 12px;
     width: 45%;
     margin: 1rem 0;
 }
 
+@media screen and (max-width: 900px) {
+    .teamCard {
+        width: 75%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teamCard {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
 .cardBody {
     display: flex;
     flex-direction: row;
+}
+
+@media screen and (max-width: 500px) {
+    .cardBody {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .teamImg {
@@ -205,6 +226,7 @@ body {
     height: 25vh;
     padding: .5rem;
 }
+
 
 .cardRoster {
     diplay: flex;
