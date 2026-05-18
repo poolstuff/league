@@ -6,7 +6,6 @@ body {
     animation: body 1s linear;
 }
 
-
 @keyframes body {
     to {
         background-color: rgb(19, 48, 97);
@@ -158,10 +157,33 @@ body {
     height: 10vmin;
 }
 
+#wedTeamSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+
+.teamStandingsTable {
+    display: flex;
+    align-self: flex-start;
+}
+
 .teamH2 {
     font-size: 1.5rem;
-    margin: 1rem 1rem 0.5rem 1rem;
+    /* margin: 1rem 1rem 0.5rem 1rem; */
     letter-spacing: 20%;
+    position: absolute;
+    left: 0;
+    top: 45%;
+    margin: 0 0 0 1.5rem;
+    white-space: nowrap;
+    /* Prevents text wrapping */
+
+    /* 1. Set the pivot point to the middle of the left edge */
+    transform-origin: left center;
+
+    /* 2. Rotate and move it back to center it vertically */
+    transform: translateY(135%) rotate(-90deg);
 }
 
 .cardRoster p {
@@ -174,20 +196,126 @@ body {
     word-spacing: normal;
 }
 
+.teamStandingsTable {
+    margin-left: 2rem;
+}
+
+.tableContainer {
+    margin-left: 2rem;
+}
+
+.col-fixed {
+    position: sticky;
+    left: 0;
+    z-index: 2s;
+    overflow: visible;
+}
+
+.singlesTableWrap {
+    width: 100vw;
+    /* Limits wrapper to the screen/parent width */
+    max-width: 100%;
+    /* Extra protection for responsive layouts */
+    overflow-x: auto;
+}
+
+.singlesTable {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 800px;
+    /* Keeps table full-width if content is small */
+    border-collapse: collapse;
+}
+
+.singlesTable th,
+.singlesTable th:nth-child(2), 
+.singlesTable th:nth-child(3) {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: rgba(0, 83, 128);
+    outline: 2px solid #79BAEC;
+    }
+
+.singlesTable td:nth-child(1) {
+    background: rgba(0, 83, 128);
+    outline: 2px solid #79BAEC;
+    color: white;
+}
+
+.section100vw,
+.singlesTableWrap {
+    width: 100%;
+        max-width: 100vw;
+        height: 100vh;
+            /* Takes up 70% of the screen height */
+            overflow-y: auto;
+        /* Forces section to stay within view width */
+        box-sizing: border-box;
+}
+
 .teamStandingsTable th,
 .teamStandingsTable td,
 .table th,
 .table td {
     padding: .75rem;
+    text-align: center;
+    outline: 2px solid #79BAEC;    
+}
+
+
+.hideTh {
+    display: none;
+}
+
+@media screen and (max-width:400px) {
+    .hideTh {
+        display: block;
+    }
+
+    .showTh {
+        display: none;
+    }
+}
+
+.teamSection {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 1100px) {
+    .teamSection {
+        flex-direction: column;
+    }
+
+    card .teamCard {
+        width: 75vw;
+    }
+}
+
+.teamStandingsTable {
+    margin: 0 auto;
+}
+
+
+.topHalfRem {
+    margin-top: .5rem;
+}
+
+#teamCards {
+    display: flex;
+    flex-direction: row;
 }
 
 .teamCard {
     display: flex;
     flex-direction: column;
-    background: rgb(0, 46, 71, .7);
+    position: relative;
+    background: rgba(0, 83, 128, 0.7);
     border-radius: 12px;
-    width: 45%;
-    margin: 1rem 0;
+    width: 80%;
+    margin-bottom: 2rem;
+    box-shadow: 10px 5px;
 }
 
 @media screen and (max-width: 900px) {
@@ -204,12 +332,23 @@ body {
     }
 }
 
+.teamTdWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.teamNameTd {
+    padding-left: 1rem;
+}
+
 .cardBody {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 575px) {
     .cardBody {
         flex-direction: column;
         align-items: center;
@@ -224,14 +363,15 @@ body {
 
 .teamImg img {
     height: 25vh;
-    padding: .5rem;
+    padding: .5rem .5rem 1rem .5rem;
+    margin-left: 1rem;
 }
-
 
 .cardRoster {
     diplay: flex;
     width: 40%;
 }
+
 
 
 
