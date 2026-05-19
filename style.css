@@ -1,215 +1,185 @@
 body {
     padding: 0;
     margin: 0;
-    min-height: 500vh;
-    background-color: #79BAEC;
-    animation: body 1s linear;
+    background-color: #696969f;
+    background-image: url('./images/poolBg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    max-height: 100vh;
 }
 
-
-@keyframes body {
-    to {
-        background-color: rgb(19, 48, 97);
-    }
-}
-
-.progress {
-    height: 3px;
-    width: 0%;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    left: 0;
-    animation: progress 1s linear;
-}
-
-@keyframes progress {
-    to {
-        background-color: #C4A775;
-        width: 100%;
-    }
-}
-
-.cube-wrap {
-    --size: 45vmin;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    perspective: 100vmin;
-}
-
-.cube {
-    transform-style: preserve-3d;
-    transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
-    animation: cube 1s linear;
-}
-
-@keyframes cube {
-    to {
-        transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
-    }
-}
-
-.side {
-    position: absolute;
-    width: var(--size);
-    height: var(--size);
-    background-color: #eee;
-    backface-visibility: visible;
-    top: calc(var(--size) * -.5);
-    left: calc(var(--size) * -.5);
-}
-
-.side p {
-    text-decoration: none;
-    color: #FFF;
-    font-weight: bold;
-    letter-spacing: 33%;
-    font-size: 1.7rem;
-    cursor: pointer;
+h1,
+h2,
+h3 {
     font-family: "Anton", sans-serif;
-    text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
-}
-
-.top {
-    background-color: #E8E8E8;
-    transform: rotateX(90deg) translateZ(calc(var(--size) * .5));
-}
-
-.bottom {
-    background-color: #999;
-    transform: rotateX(90deg) translateZ(calc(var(--size) * -.5));
-}
-
-.left {
-    background-color: #ccc;
-    transform: rotateY(90deg) translateZ(calc(var(--size) * .5));
-}
-
-.right {
-    background-color: #ddd;
-    transform: rotateY(90deg) translateZ(calc(var(--size) * -.5));
-}
-
-.front {
-    background-color: #aaa;
-    transform: translateZ(calc(var(--size) * .5));
-}
-
-.back {
-    background-color: #bbb;
-    transform: translateZ(calc(var(--size) * -.5));
-}
-
-:root * {
-    animation-play-state: paused;
-    animation-delay: calc(var(--scroll) * -1s);
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-}
-
-#side1,
-#side2,
-#side6 {
-    transform: translate(0, 5rem);
-    text-align: center;
-    text-decoration: none;
-}
-
-#side3, 
-#side5 {
-    transform: scaleY(-1) translate(0px, -4rem);
-    text-align: center;
-}
-
-#side4 {
-    transform: scaleY(-1) translate(0px, -4rem);
-    text-align: center;
-}
-
-.noDecoration {
-    text-decoration: none;
-    color: #FFF;
-}
-
-#clicksH1 {
-    position: fixed;
-    left: 0;
-    top: 89%;
-    transform: translateY(-50%) rotate(-90deg);
-    transform-origin: left center;
-    white-space: nowrap;
-    margin-left: 10vw;
-    font-family: "Anton", sans-serif;
-    font-size: 3rem;
-    font-style: normal;
-    text-align: center;
     color: white;
     text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }
 
-#clicksBig {
-    font-size: 7rem;
-}
-
-.positionImages {
-    height: 10vmin;
-}
-
-.teamH2 {
-    font-size: 1.8rem;
-    margin: 1rem 1rem 0.5rem 1rem;
-    letter-spacing: 20%;
-}
-
-.cardRoster p {
-    line-height: 2rem;
-    margin: 0;
-    padding-bottom: 1rem;
-}
-
-.normalSpace {
-    word-spacing: normal;
-}
-
-.teamStandingsTable th,
-.teamStandingsTable td,
-.table th,
-.table td {
-    padding: .75rem;
-}
-
-.teamCard {
-    display: flex;
-    flex-direction: column;
-    background: rgb(211, 211, 211, 0.7);
-    border-radius: 12px;
-    width: 45%;
-    margin: 1rem 0;
-}
-
-.cardBody {
+#headerWrapper {
     display: flex;
     flex-direction: row;
-}
-
-.teamImg {
-    display: flex;
-    width: 40%;
+    margin-top: -1rem;
     justify-content: center;
 }
 
-.teamImg img {
-    height: 25vh;
-    padding: .5rem;
+#h1Div {
+    margin: 0;
+    padding: 0;
+    height: 0;
 }
 
-.cardRoster {
-    diplay: flex;
-    width: 40%;
+#heroH1 {
+    font-size: 600%;
+    margin-left: 3.33rem;
+    transform-origin: left center;
+    transform: translateY(250%) rotate(-90deg);
+    pointer-events: none;
+}
+
+#heroH2 {
+    font-size: 400%;
+    margin-top: .5rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+.noDecoration a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* INTERACTIVE LINKS BASE */
+#interactiveWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 17rem;
+}
+
+.interactive-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: 3rem;
+}
+
+.main-text {
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    margin: 0;
+}
+
+.hiddenLink {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+.hiddenLink:hover {
+    color: tomato;
+}
+
+/* Base State: Hidden completely from the document flow on mobile by default */
+.links-wrapper {
+    display: none;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 
 
+/* ========================================================================== 
+   1. DESKTOP ONLY REGION (Hover Upward Mechanics)
+   ========================================================================== */
+@media (min-width: 976px) {
+    .interactive-container:hover .links-wrapper {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #heroH1 {
+        font-size: 400%;
+    }
+
+    .links-wrapper {
+        display: flex;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding-bottom: 15px;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+}
+
+#upcomingH3 {
+    font-size: 2.5rem;
+}
+
+#upcomingWrapper li {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* ========================================================================== 
+   2. MOBILE ONLY REGION (Click Downward Mechanics Starts At Exactly 975px) 
+   ========================================================================== */
+@media screen and (max-width: 975px) {
+    #heroH1 {
+        font-size: 500%;
+        transform: translateY(260%) rotate(-90deg);
+    }
+
+    #heroH2 {
+        font-size: 250%;
+        margin-top: 0;
+    }
+
+    #interactiveWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+    }
+
+    .interactive-container {
+        margin: 1.5rem;
+    }
+
+    .links-wrapper {
+        position: static;
+        transform: none;
+        display: none;
+    }
+
+    /* Trigger state when JavaScript adds the class */
+    .links-wrapper.show-links {
+        display: flex;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #heroH1 {
+        display: none;
+    }
+
+    #interactiveWrapper {
+        margin-top: 2rem;
+    }
+}
