@@ -215,3 +215,20 @@ th {
         color: white;
         text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }
+
+@media screen and (max-width:450px) {
+    .h1Wrapper {
+        display: none;
+    }
+
+    #headerWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .leagueLogo {
+        height: auto;
+        width: 95vw;
+        margin: 0;
+    }
+}

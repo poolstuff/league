@@ -1,4 +1,4 @@
-body {
+/* /* body {
     padding: 0;
     margin: 0;
     background-color: #79BAEC;
@@ -206,6 +206,23 @@ body {
     }
 }
 
+@media screen and (max-width:450px) {
+    .h1Wrapper {
+        display: none;
+    }
+
+    #headerWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .leagueLogo {
+        height: auto;
+        width: 95vw;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width:400px) {
     .hideTh {
         display: block;
@@ -220,4 +237,3 @@ body {
     display: flex;
     flex-direction: row;
 }
-

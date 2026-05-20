@@ -215,6 +215,21 @@ td:nth-child(3) {
     }
 }
 
+@media screen and (max-width:450px) {
+    .h1Wrapper {
+        display: none;
+    }
+    #headerWrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .leagueLogo {
+        height: auto;
+        width: 95vw;
+        margin: 0;
+    }
+}
+
 @media screen and (max-width: 415px) {
     .teamImg img {
             height: 25vh;

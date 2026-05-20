@@ -176,8 +176,18 @@ h3 {
         margin-top: 2rem;
     }
 
+    .logoWrapper {
+        display: flex;
+        justify-content:center;
+    }
+
     .leagueLogo {
-        margin-left: 2rem;
+        margin: 0;
+        height: 33vh;
+    }
+
+    #marginTop1Rem {
+        margin-top: 3rem;
     }
 }
 
