@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #79BAEC;
+    background-color: #696969;
     background-image: url('./images/poolBg.jpg');
     background-size: cover;
     background-position: center;
@@ -25,37 +25,19 @@ h3 {
     justify-content: center;
 }
 
-#h1Div {
-    margin: 0;
-    padding: 0;
-    height: 0;
+.leagueLogo {
+    height: 33vh;
+    transform-origin: left;
+    transform: translateY(50%) rotate(-20deg);
+    margin-left: 3rem;
+    filter: drop-shadow(.2rem .2rem .3rem tomato);
 }
 
-#heroH1 {
-    font-size: 600%;
-    margin-left: 3.33rem;
-    transform-origin: left center;
-    transform: translateY(250%) rotate(-90deg);
-    pointer-events: none;
-}
-
-#heroH2 {
-    font-size: 400%;
-    margin-top: .5rem;
-    text-align: center;
-    text-decoration: none;
-}
-
-.noDecoration a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-/* INTERACTIVE LINKS BASE */
+/* INTERACTIVE LINKS*/
 #interactiveWrapper {
     display: flex;
     justify-content: center;
-    margin-top: 17rem;
+    margin-top: 12rem;
 }
 
 .interactive-container {
@@ -94,6 +76,31 @@ h3 {
     gap: 2rem;
 }
 
+#upcomingH3 {
+    font-size: 2.5rem;
+}
+
+#upcomingWrapper li {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-family: "Outfit", sans-serif;
+    line-height: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+
+
+#aboutWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+#upcomingH3 {
+    margin-left: 2rem;
+}
+
 
 
 /* ========================================================================== 
@@ -104,10 +111,6 @@ h3 {
         display: flex;
         opacity: 1;
         visibility: visible;
-    }
-
-    #heroH1 {
-        font-size: 400%;
     }
 
     .links-wrapper {
@@ -123,31 +126,11 @@ h3 {
     }
 }
 
-#upcomingH3 {
-    font-size: 2.5rem;
-}
 
-#upcomingWrapper li {
-    color: #FFF;
-    font-size: 1.5rem;
-    font-family: "Outfit", sans-serif;
-    line-height: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-}
 
-/* ========================================================================== 
-   2. MOBILE ONLY REGION (Click Downward Mechanics Starts At Exactly 975px) 
-   ========================================================================== */
 @media screen and (max-width: 975px) {
-    #heroH1 {
-        font-size: 500%;
-        transform: translateY(260%) rotate(-90deg);
-    }
-
-    #heroH2 {
-        font-size: 250%;
-        margin-top: 0;
+    .leagueLogo {
+        height: 7rem;
     }
 
     #interactiveWrapper {
@@ -167,19 +150,35 @@ h3 {
         display: none;
     }
 
-    /* Trigger state when JavaScript adds the class */
     .links-wrapper.show-links {
         display: flex;
         margin-top: 15px;
     }
 }
 
-@media screen and (max-width: 450px) {
-    #heroH1 {
-        display: none;
+@media screen and (max-width: 700px) {
+    #aboutWrapper {
+        flex-direction: column;
     }
 
+    #upcomingH3 {
+        margin-top: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    
+}
+
+@media screen and (max-width: 450px) {
     #interactiveWrapper {
         margin-top: 2rem;
     }
+
+    .leagueLogo {
+        margin-left: 2rem;
+    }
 }
+
+

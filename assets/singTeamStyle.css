@@ -49,10 +49,6 @@ body {
     word-spacing: normal;
 }
 
-.teamStandingsTable {
-    margin-left: 2rem;
-}
-
 .tableContainer {
     margin-left: 2rem;
 }
@@ -115,35 +111,6 @@ body {
     display: none;
 }
 
-@media screen and (max-width:400px) {
-    .hideTh {
-        display: block;
-    }
-
-    .showTh {
-        display: none;
-    }
-}
-
-.teamSection {
-    display: flex;
-    flex-direction: row;
-}
-
-@media screen and (max-width: 1100px) {
-    .teamSection {
-        flex-direction: column;
-    }
-
-    card .teamCard {
-        width: 75vw;
-    }
-}
-
-.teamStandingsTable {
-    margin: 0 auto;
-}
-
 
 .topHalfRem {
     margin-top: .5rem;
@@ -165,19 +132,9 @@ body {
     box-shadow: 10px 5px;
 }
 
-@media screen and (max-width: 900px) {
-    .teamCard {
-        width: 75%;
-        justify-content: center;
-    }
-}
 
-@media screen and (max-width: 600px) {
-    .teamCard {
-        width: 90%;
-        justify-content: center;
-    }
-}
+
+
 
 .teamTdWrapper {
     display: flex;
@@ -195,12 +152,7 @@ body {
     justify-content: space-evenly;
 }
 
-@media screen and (max-width: 575px) {
-    .cardBody {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 .teamImg {
     display: flex;
@@ -218,3 +170,54 @@ body {
     diplay: flex;
     width: 40%;
 }
+
+@media screen and (max-width: 1100px) {
+    .teamSection {
+        flex-direction: column;
+    }
+
+    card .teamCard {
+        width: 75vw;
+    }
+
+    .teamStandingsTable {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .teamCard {
+        width: 75%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .teamCard {
+        width: 90%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .cardBody {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .hideTh {
+        display: block;
+    }
+
+    .showTh {
+        display: none;
+    }
+}
+
+.teamSection {
+    display: flex;
+    flex-direction: row;
+}
+

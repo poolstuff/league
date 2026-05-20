@@ -14,21 +14,49 @@ h1 {
     text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }
 
+#headerWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.leagueLogo {
+    width: 30vw;
+    margin: .5rem 0 1rem .5rem;
+    filter: drop-shadow(.2rem .2rem .3rem tomato);
+}
+
+.h1Wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+
+.h1500 {
+    font-size: 500%;
+    letter-spacing: 20%;
+}
+
 /* **********NOT WORKING YET********* */
 .schedWrapper {
-            width: 100vw;
-            /* Limits wrapper to the screen/parent width */
-            max-width: 100%;
-            /* Extra protection for responsive layouts */
-            overflow-x: auto;
+    width: 100vw;
+    max-width: 100%;
+    height: 99vh;
+    max-height: 90%;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .schedTable {
     overflow-x: auto;
-        width: 100%;
-        max-width: 100vw;
-        /* Keeps table full-width if content is small */
-        border-collapse: collapse;
+    overflow-y: auto;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    border-collapse: collapse;
 }
 
 #wedSchedTable th:nth-child(1),
@@ -114,7 +142,7 @@ h1 {
 #wedSchedTable td,
 #thuSchedTable th,
 #thuSchedTable td {
-    outline: 2px solid #79BAEC; 
+    outline: 1px solid #79BAEC; 
 }
 
 th,
