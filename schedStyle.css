@@ -1,0 +1,318 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #79BAEC;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-family: "Anton", sans-serif;
+    font-size: 3rem;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
+}
+
+#headerWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+
+.leagueLogo {
+    width: 30vw;
+    margin: .5rem 0 1rem .5rem;
+    filter: drop-shadow(.2rem .2rem .3rem tomato);
+}
+
+.h1Wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+}
+
+.h1500 {
+    font-size: 500%;
+    letter-spacing: 20%;
+}
+
+/* **********NOT WORKING YET********* */
+.schedWrapper {
+    width: 100vw;
+    max-width: 100%;
+    height: 80vh;
+    max-height: 80%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.schedTable {
+    overflow-x: auto;
+    overflow-y: auto;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100vw;
+    border-collapse: collapse;
+}
+
+#wedSchedTable th:nth-child(1),
+#wedSchedTable td:nth-child(1),
+#wedSchedTable th:nth-child(2),
+#wedSchedTable td:nth-child(2),
+#wedSchedTable th:nth-child(6),
+#wedSchedTable td:nth-child(6),
+#wedSchedTable th:nth-child(7),
+#wedSchedTable td:nth-child(7),
+#wedSchedTable th:nth-child(10),
+#wedSchedTable td:nth-child(10),
+#wedSchedTable th:nth-child(11),
+#wedSchedTable td:nth-child(11) {
+    background-color: lightgray;
+}
+
+#wedSchedTable th:nth-child(3),
+#wedSchedTable td:nth-child(3) {
+    background-color: tomato;
+}
+
+#wedSchedTable th:nth-child(4),
+#wedSchedTable td:nth-child(4),
+#wedSchedTable th:nth-child(5),
+#wedSchedTable td:nth-child(5),
+#wedSchedTable th:nth-child(8),
+#wedSchedTable td:nth-child(8),
+#wedSchedTable th:nth-child(9),
+#wedSchedTable td:nth-child(9),
+#wedSchedTable th:nth-child(12),
+#wedSchedTable td:nth-child(12),
+#wedSchedTable th:nth-child(13),
+#wedSchedTable td:nth-child(13) {
+    background-color: lightblue;
+}
+
+#thuSchedTable th:nth-child(1),
+#thuSchedTable td:nth-child(1),
+#thuSchedTable th:nth-child(2),
+#thuSchedTable td:nth-child(2),
+#thuSchedTable th:nth-child(5),
+#thuSchedTable td:nth-child(5),
+#thuSchedTable th:nth-child(6),
+#thuSchedTable td:nth-child(6),
+#thuSchedTable th:nth-child(9),
+#thuSchedTable td:nth-child(9),
+#thuSchedTable th:nth-child(10),
+#thuSchedTable td:nth-child(10),
+#thuSchedTable th:nth-child(13),
+#thuSchedTable td:nth-child(13),
+#thuSchedTable th:nth-child(14),
+#thuSchedTable td:nth-child(14) {
+    background-color: lightgray;
+}
+
+#thuSchedTable th:nth-child(3),
+#thuSchedTable td:nth-child(3),
+#thuSchedTable th:nth-child(4),
+#thuSchedTable td:nth-child(4),
+#thuSchedTable th:nth-child(7),
+#thuSchedTable td:nth-child(7),
+#thuSchedTable th:nth-child(8),
+#thuSchedTable td:nth-child(8),
+#thuSchedTable th:nth-child(11),
+#thuSchedTable td:nth-child(11),
+#thuSchedTable th:nth-child(12),
+#thuSchedTable td:nth-child(12),
+#thuSchedTable th:nth-child(15),
+#thuSchedTable td:nth-child(15),
+#thuSchedTable th:nth-child(16),
+#thuSchedTable td:nth-child(16) {
+    background-color: lightblue;
+}
+
+.upcomingTable {
+    background-color: lightgray;
+    margin: 2rem;
+    padding: .5rem;
+}
+
+#wedSchedTable th,
+#wedSchedTable td,
+#thuSchedTable th,
+#thuSchedTable td {
+    outline: 1px solid #79BAEC; 
+}
+
+th,
+td {
+    padding: .5rem;
+    letter-spacing: 25%;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5rem;
+    font-weight: bold;
+    
+}
+
+td {
+    color: #000;
+    font-size: 1rem;
+}
+
+th {
+    letter-spacing: 33%;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: .75rem;
+}
+
+.col-fixed {
+    position: sticky;
+    left: 0;
+    z-index: 10;
+    overflow: visible;
+}
+
+.siteLinksWrapper {
+    display: flex;
+    flex-direction: column;
+    background: lightgray;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.pageFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.siteLinksWrapper p {
+    text-align: center;
+}
+
+.siteLinks a {
+    letter-spacing: 25%;
+    text-align: center;    
+    font-family: "Outfit", sans-serif;
+    line-height: 1.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-decoration: none;
+    color: #000;
+}
+
+#linksH3 {
+    margin: 1rem 0;
+        font-family: "Anton", sans-serif;
+        font-size: 2rem;
+        font-style: normal;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
+}
+
+/* TABLE ASSIGNMENT HOVER EFFECTS */
+.match-cell {
+    position: relative;
+    cursor: pointer;
+}
+
+/* ==========================================================================
+   1. The Floating Text Box (::after)
+   ========================================================================== */
+.match-cell::after {
+    content: attr(data-table);
+    position: absolute;
+    bottom: 135%;
+    /* Left room for the arrow */
+    left: 50%;
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* Animation Setup */
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 10px);
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out, visibility 0.25s;
+}
+
+/* ==========================================================================
+   2. The Pointing Arrow (::before)
+   ========================================================================== */
+.match-cell::before {
+    content: "";
+    position: absolute;
+    bottom: 135%;
+    /* Must match the bottom of the text box precisely */
+    left: 50%;
+    z-index: 10;
+
+    /* Creates a 6px downward triangle matching the dark background */
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+
+    /* Animation Setup (Matches the text box perfectly) */
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 16px);
+    /* Adjusted by 6px to sit perfectly under the box */
+    transition: opacity 0.25s ease-out, transform 0.25s ease-out, visibility 0.25s;
+}
+
+@media screen and (max-width:450px) {
+    .h1Wrapper {
+        display: none;
+    }
+
+    #headerWrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .leagueLogo {
+        height: auto;
+        width: 95vw;
+        margin: 0;
+    }
+}
+
+@media(min-width: 769px) {
+    .match-cell:hover::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50 %, 0);
+    }
+
+    .match-cell:hover::before {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50 %, 6px);
+        /* Settles directly under the text box */
+    }
+}
+
+@media (max-width: 768px) {
+    .match-cell.active::after {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 0);
+    }
+
+    .match-cell.active::before {
+        opacity: 1;
+        visibility: visible;
+        transform: translate(-50%, 6px);
+    }
+}
