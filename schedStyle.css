@@ -142,7 +142,7 @@ h1 {
 #wedSchedTable td,
 #thuSchedTable th,
 #thuSchedTable td {
-    outline: 1px solid #79BAEC; 
+    outline: 1px solid #79BAEC;
 }
 
 th,
@@ -153,7 +153,7 @@ td {
     font-family: "Outfit", sans-serif;
     line-height: 1.5rem;
     font-weight: bold;
-    
+
 }
 
 td {
@@ -166,6 +166,12 @@ th {
     color: #fff;
     font-size: 1.5rem;
     padding: .75rem;
+}
+
+.schedTable th {
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .col-fixed {
@@ -197,7 +203,7 @@ th {
 
 .siteLinks a {
     letter-spacing: 25%;
-    text-align: center;    
+    text-align: center;
     font-family: "Outfit", sans-serif;
     line-height: 1.5rem;
     font-weight: bold;
@@ -208,12 +214,12 @@ th {
 
 #linksH3 {
     margin: 1rem 0;
-        font-family: "Anton", sans-serif;
-        font-size: 2rem;
-        font-style: normal;
-        text-align: center;
-        color: white;
-        text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
+    font-family: "Anton", sans-serif;
+    font-size: 2rem;
+    font-style: normal;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 0 tomato, 0 1px tomato, 1px 0 tomato, 0 1px tomato, 5px 5px tomato, 4px 4px tomato, 3px 3px tomato, 3px 3px tomato, 2px 2px tomato, 2px 2px tomato, 2px 2px tomato, 1px 1px tomato;
 }
 
 /* TABLE ASSIGNMENT HOVER EFFECTS */
@@ -222,14 +228,10 @@ th {
     cursor: pointer;
 }
 
-/* ==========================================================================
-   1. The Floating Text Box (::after)
-   ========================================================================== */
 .match-cell::after {
     content: attr(data-table);
     position: absolute;
-    bottom: 135%;
-    /* Left room for the arrow */
+    top: calc(100% + 10px);
     left: 50%;
     background-color: #333;
     color: #fff;
@@ -237,38 +239,32 @@ th {
     border-radius: 4px;
     font-size: 14px;
     white-space: nowrap;
-    z-index: 10;
+    z-index: 9999;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 
-    /* Animation Setup */
     opacity: 0;
     visibility: hidden;
-    transform: translate(-50%, 10px);
+    transform: translate(-50%, -6px);
     transition: opacity 0.25s ease-out, transform 0.25s ease-out, visibility 0.25s;
+    pointer-events: none;
 }
 
-/* ==========================================================================
-   2. The Pointing Arrow (::before)
-   ========================================================================== */
 .match-cell::before {
     content: "";
     position: absolute;
-    bottom: 135%;
-    /* Must match the bottom of the text box precisely */
+    top: calc(100% + 4px);
     left: 50%;
-    z-index: 10;
+    z-index: 9999;
 
-    /* Creates a 6px downward triangle matching the dark background */
-    border-width: 6px 6px 0 6px;
+    border-width: 0 6px 6px 6px;
     border-style: solid;
-    border-color: #333 transparent transparent transparent;
+    border-color: transparent transparent #333 transparent;
 
-    /* Animation Setup (Matches the text box perfectly) */
     opacity: 0;
     visibility: hidden;
-    transform: translate(-50%, 16px);
-    /* Adjusted by 6px to sit perfectly under the box */
+    transform: translate(-50%, -6px);
     transition: opacity 0.25s ease-out, transform 0.25s ease-out, visibility 0.25s;
+    pointer-events: none;
 }
 
 @media screen and (max-width:450px) {
@@ -292,14 +288,13 @@ th {
     .match-cell:hover::after {
         opacity: 1;
         visibility: visible;
-        transform: translate(-50 %, 0);
+        transform: translate(-50%, 0);
     }
 
     .match-cell:hover::before {
         opacity: 1;
         visibility: visible;
-        transform: translate(-50 %, 6px);
-        /* Settles directly under the text box */
+        transform: translate(-50%, 0);
     }
 }
 
@@ -313,6 +308,6 @@ th {
     .match-cell.active::before {
         opacity: 1;
         visibility: visible;
-        transform: translate(-50%, 6px);
+        transform: translate(-50%, 0);
     }
 }
