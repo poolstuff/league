@@ -11,29 +11,33 @@ function initializeScheduleTooltips() {
 
     const cells = document.querySelectorAll(".match-cell");
 
-    // MOBILE TAP SUPPORT
+    // Mobile / touch support
     cells.forEach(cell => {
+
         cell.addEventListener("click", e => {
 
-            // Only mobile/tablet
-            if (window.innerWidth > 768) return;
+            // Skip desktops/laptops with hover support
+            if (window.matchMedia("(hover: hover)").matches) {
+                return;
+            }
 
             e.stopPropagation();
 
-            // Close all others
+            // Close all other open tooltips
             cells.forEach(c => {
                 if (c !== cell) {
                     c.classList.remove("active");
                 }
             });
 
-            // Toggle current
+            // Toggle current tooltip
             cell.classList.toggle("active");
         });
     });
 
-    // Click outside closes tooltip
+    // Clicking outside closes all tooltips
     document.addEventListener("click", () => {
+
         cells.forEach(cell => {
             cell.classList.remove("active");
         });
@@ -46,24 +50,31 @@ function initializeScheduleTooltips() {
 
 function initializeInteractiveLinks() {
 
-    const containers = document.querySelectorAll(".interactive-container");
+    const containers =
+        document.querySelectorAll(".interactive-container");
 
     containers.forEach(container => {
 
-        const mainText = container.querySelector(".main-text");
-        const linksWrapper = container.querySelector(".links-wrapper");
+        const mainText =
+            container.querySelector(".main-text");
+
+        const linksWrapper =
+            container.querySelector(".links-wrapper");
 
         if (!mainText || !linksWrapper) return;
 
         mainText.addEventListener("click", e => {
 
-            // Desktop already uses CSS hover
-            if (window.innerWidth > 975) return;
+            // Skip desktops/laptops with hover support
+            if (window.matchMedia("(hover: hover)").matches) {
+                return;
+            }
 
             e.stopPropagation();
 
-            // Close other open menus
+            // Close all other open menus
             containers.forEach(c => {
+
                 if (c !== container) {
 
                     const otherWrapper =
@@ -80,7 +91,7 @@ function initializeInteractiveLinks() {
         });
     });
 
-    // Click outside closes menus
+    // Clicking outside closes all menus
     document.addEventListener("click", () => {
 
         containers.forEach(container => {
