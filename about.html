@@ -3,50 +3,53 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/style.css" />
         <link rel="icon" href="./assets/images/08.png" />
+
+        <link rel="stylesheet" href="./assets/styles.css" />
         <title>Get-A-Cue Leagues</title>
     </head>
-    <body>
+    <body class="about-page">
+        <header>
+            <div id="aboutImgWrap">
+                <a href="./index.html">
+                    <img
+                        src="./assets/images/leagueLogo.png"
+                        class="leagueLogo index-about margin-left"
+                /></a>
+            </div>
+        </header>
         <section>
             <div id="aboutWrapper">
-                <div id="aboutImgWrap">
-                    <a href="./index.html">
-                        <img
-                            src="./assets/images/leagueLogo.png"
-                            class="leagueLogo"
-                    /></a>
-                </div>
                 <div id="aboutThisSite">
-                    <h3>About This Site</h3>
-                    <p>
-                        This site is designed to provide up-to-date information
-                        about our 8-ball leagues, managed by me, the league
-                        director. This site is not run or managed by Clicks
-                        Billiards. For more information on joining our leagues,
-                        please visit Clicks' site and fill out their league
-                        interset form:
-                        <a
-                            id="clicksLink"
-                            href="https://www.clicks.com/tucson-leagues"
-                            >CLICKS BILLIARDS</a
-                        ><br />
-                        You may also use the contact form below to reach me with
-                        any questions.
-                    </p>
+                    <h1>ABOUT THIS SITE</h1>
+                    <div class="aboutTextWrap">
+                        <p>
+                            This site is designed to provide up-to-date
+                            information about our 8-ball leagues, managed by me,
+                            the league director. This site is not run or managed
+                            by Clicks Billiards. For more information on joining
+                            our leagues, please visit Clicks' site and fill out
+                            their league interset form:
+                            <a
+                                id="clicksLink"
+                                href="https://www.clicks.com/tucson-leagues"
+                                >CLICKS BILLIARDS</a
+                            ><br />
+                            You may also use the site's
+                            <a id="contactLink" href="./contact.html"
+                                >CONTACT FORM</a
+                            >
+                            to reach me with any questions.
+                        </p>
+                    </div>
                 </div>
-                <div id="aboutTextWrap">
-                    <h3 id="upcomingH3">Upcoming Site Updates (hopefully)</h3>
+                <div id="upcomingTextWrap">
+                    <h1 id="upcomingH3">UPCOMING SITE UPDATES (hopefully)</h1>
                     <div id="upcomingWrapper">
                         <ul id="upcomingList">
                             <li>
-                                Parse data from Clicks' league file. This will
-                                allow me to automatically update all points and
-                                averages weekly.
-                            </li>
-                            <li>
-                                Update the ABOUT page to include a contact form
-                                for bug reporting and feature requests.
+                                Refactor to repair anticipated responsiveness
+                                issues after deployment.
                             </li>
                             <li>
                                 If interest is there, possibly make a message

@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="./assets/images/08.png" />
-        <link rel="stylesheet" href="./assets/schedStyle.css" />
+
+        <link rel="stylesheet" href="./assets/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -21,7 +22,7 @@
         <title>Thursday Schedule</title>
     </head>
 
-    <body>
+    <body class="thuSchedule-page">
         <header>
             <div id="headerWrapper">
                 <a href="./index.html">
@@ -37,396 +38,392 @@
         <section class="schedWrapper">
             <table id="thuSchedTable" class="schedTable">
                 <tr>
-                    <th class="col-fixed">DATE</th>
-                    <th>WEEK</th>
-                    <th class="match-cell" data-table="TABLES 2 & 3">
-                        HOME
+                    <th class="col-fixed tables-white" rowspan="2">DATE</th>
+                    <th class="tables-white" rowspan="2">WEEK</th>
+                    <th colspan="2" class="table-group tables-yellow">
+                        Tables 2 & 3
                     </th>
-                    <th class="match-cell" data-table="TABLES 2 & 3">
-                        AWAY
+                    <th colspan="2" class="table-group tables-blue">
+                        Tables 4 & 5
                     </th>
-                    <th class="match-cell" data-table="TABLES 4 & 5">
-                        HOME
+                    <th colspan="2" class="table-group tables-red">
+                        Tables 11 & 12
                     </th>
-                    <th class="match-cell" data-table="TABLES 4 & 5">
-                        AWAY
+                    <th colspan="2" class="table-group tables-purple">
+                        Tables 13 & 14
                     </th>
-                    <th class="match-cell" data-table="TABLES 11 & 12">
-                        HOME
+                    <th colspan="2" class="table-group tables-orange">
+                        Tables 6 & 9
                     </th>
-                    <th class="match-cell" data-table="TABLES 11 & 12">
-                        AWAY
-                    </th>
-                    <th class="match-cell" data-table="TABLES 13 & 14">
-                        HOME
-                    </th>
-                    <th class="match-cell" data-table="TABLES 13 & 14">
-                        AWAY
-                    </th>
-                    <th class="match-cell" data-table="TABLES 6 & 9">
-                        HOME
-                    </th>
-                    <th class="match-cell" data-table="TABLES 6 & 9">
-                        AWAY
-                    </th>
-                    <th class="match-cell" data-table="TABLES 9.5 & 15">
-                        HOME
-                    </th>
-                    <th class="match-cell" data-table="TABLES 9.5 & 15">
-                        AWAY
+                    <th colspan="2" class="table-group tables-green">
+                        Tables 9.5 & 15
                     </th>
                 </tr>
                 <tr>
-                    <td class="col-fixed">5/14/2026</td>
-                    <td>Week 1</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>WTF??</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Dead Strokes</td>
-                    <td>Cuttin' Corners</td>
-                    <td>The Boys</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Stranded Sharks</td>
-                    <td>Felt Junkies</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>The Incredibles</td>
+                    <th class="tables-yellow">HOME</th>
+                    <th class="tables-yellow">AWAY</th>
+                    <th class="tables-blue">HOME</th>
+                    <th class="tables-blue">AWAY</th>
+                    <th class="tables-red">HOME</th>
+                    <th class="tables-red">AWAY</th>
+                    <th class="tables-purple">HOME</th>
+                    <th class="tables-purple">AWAY</th>
+                    <th class="tables-orange">HOME</th>
+                    <th class="tables-orange">AWAY</th>
+                    <th class="tables-green">HOME</th>
+                    <th class="tables-green">AWAY</th>
                 </tr>
                 <tr>
-                    <td class="col-fixed">5/21/2026</td>
-                    <td>Week 2</td>
-                    <td>The Incredibles</td>
-                    <td>Stranded Sharks</td>
-                    <td>The Boys</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Dead Strokes</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Felt Junkies</td>
-                    <td>Cuttin' Corners</td>
-                    <td>WTF??</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Rack N' Ruin</td>
+                    <td class="col-fixed tables-white">5/14/2026</td>
+                    <td class="tables-white">Week 1</td>
+                    <td class="tables-yellow">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-yellow">WTF??</td>
+                    <td class="tables-blue">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-blue">Dead Strokes</td>
+                    <td class="tables-red">Cuttin' Corners</td>
+                    <td class="tables-red">The Boys</td>
+                    <td class="tables-purple">Rack N' Ruin</td>
+                    <td class="tables-purple">Stranded Sharks</td>
+                    <td class="tables-orange">Felt Junkies</td>
+                    <td class="tables-orange">Cold Blooded Gentlemen</td>
+                    <td class="tables-green">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-green">The Incredibles</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">5/28/2026</td>
-                    <td>Week 3</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Felt Junkies</td>
-                    <td>Stranded Sharks</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>The Incredibles</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>The Boys</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Dead Strokes</td>
-                    <td>WTF??</td>
+                    <td class="col-fixed tables-white">5/21/2026</td>
+                    <td class="tables-white">Week 2</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-yellow">Stranded Sharks</td>
+                    <td class="tables-blue">The Boys</td>
+                    <td class="tables-blue">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-red">Dead Strokes</td>
+                    <td class="tables-red">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-purple">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-purple">Felt Junkies</td>
+                    <td class="tables-orange">Cuttin' Corners</td>
+                    <td class="tables-orange">WTF??</td>
+                    <td class="tables-green">Cold Blooded Gentlemen</td>
+                    <td class="tables-green">Rack N' Ruin</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">6/04/2026</td>
-                    <td>Week 4</td>
-                    <td>Dead Strokes</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>The Boys</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>WTF??</td>
-                    <td>Cuttin' Corners</td>
-                    <td>The Incredibles</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Felt Junkies</td>
-                    <td>Stranded Sharks</td>
+                    <td class="col-fixed tables-white">5/28/2026</td>
+                    <td class="tables-white">Week 3</td>
+                    <td class="tables-yellow">Rack N' Ruin</td>
+                    <td class="tables-yellow">Felt Junkies</td>
+                    <td class="tables-blue">Stranded Sharks</td>
+                    <td class="tables-blue">Cuttin' Corners</td>
+                    <td class="tables-red">Cold Blooded Gentlemen</td>
+                    <td class="tables-red">The Incredibles</td>
+                    <td class="tables-purple">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-purple">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-orange">The Boys</td>
+                    <td class="tables-orange">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-green">Dead Strokes</td>
+                    <td class="tables-green">WTF??</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">6/11/2026</td>
-                    <td>Week 5</td>
-                    <td>The Boys</td>
-                    <td>The Incredibles</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Felt Junkies</td>
-                    <td>WTF??</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Dead Strokes</td>
-                    <td>Stranded Sharks</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Cuttin' Corners</td>
+                    <td class="col-fixed tables-white">6/04/2026</td>
+                    <td class="tables-white">Week 4</td>
+                    <td class="tables-yellow">Dead Strokes</td>
+                    <td class="tables-yellow">Cold Blooded Gentlemen</td>
+                    <td class="tables-blue">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-blue">The Boys</td>
+                    <td class="tables-red">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-red">WTF??</td>
+                    <td class="tables-purple">Cuttin' Corners</td>
+                    <td class="tables-purple">The Incredibles</td>
+                    <td class="tables-orange">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-orange">Rack N' Ruin</td>
+                    <td class="tables-green">Felt Junkies</td>
+                    <td class="tables-green">Stranded Sharks</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">6/18/2026</td>
-                    <td>Week 6</td>
-                    <td>Stranded Sharks</td>
-                    <td>Cuttin' Corners</td>
-                    <td>The Incredibles</td>
-                    <td>Felt Junkies</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>WTF??</td>
-                    <td>Dead Strokes</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>The Boys</td>
+                    <td class="col-fixed tables-white">6/11/2026</td>
+                    <td class="tables-white">Week 5</td>
+                    <td class="tables-yellow">The Boys</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-blue">Rack N' Ruin</td>
+                    <td class="tables-blue">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-red">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-red">Felt Junkies</td>
+                    <td class="tables-purple">WTF??</td>
+                    <td class="tables-purple">Cold Blooded Gentlemen</td>
+                    <td class="tables-orange">Dead Strokes</td>
+                    <td class="tables-orange">Stranded Sharks</td>
+                    <td class="tables-green">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-green">Cuttin' Corners</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">6/25/2026</td>
-                    <td>Week 7</td>
-                    <td>Felt Junkies</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>WTF??</td>
-                    <td>The Incredibles</td>
-                    <td>Stranded Sharks</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>The Boys</td>
-                    <td>Dead Strokes</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Cuttin' Corners</td>
+                    <td class="col-fixed tables-white">6/18/2026</td>
+                    <td class="tables-white">Week 6</td>
+                    <td class="tables-yellow">Stranded Sharks</td>
+                    <td class="tables-yellow">Cuttin' Corners</td>
+                    <td class="tables-blue">The Incredibles</td>
+                    <td class="tables-blue">Felt Junkies</td>
+                    <td class="tables-red">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-red">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-purple">Cold Blooded Gentlemen</td>
+                    <td class="tables-purple">WTF??</td>
+                    <td class="tables-orange">Dead Strokes</td>
+                    <td class="tables-orange">Rack N' Ruin</td>
+                    <td class="tables-green">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-green">The Boys</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">7/02/2026</td>
-                    <td>Week 8</td>
-                    <td>Cuttin' Corners</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Dead Strokes</td>
-                    <td>Felt Junkies</td>
-                    <td>Rack N' Ruin</td>
-                    <td>The Boys</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Stranded Sharks</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>WTF??</td>
-                    <td>The Incredibles</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
+                    <td class="col-fixed tables-white">6/25/2026</td>
+                    <td class="tables-white">Week 7</td>
+                    <td class="tables-yellow">Felt Junkies</td>
+                    <td class="tables-yellow">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-blue">WTF??</td>
+                    <td class="tables-blue">The Incredibles</td>
+                    <td class="tables-red">Stranded Sharks</td>
+                    <td class="tables-red">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-purple">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-purple">Cold Blooded Gentlemen</td>
+                    <td class="tables-orange">The Boys</td>
+                    <td class="tables-orange">Dead Strokes</td>
+                    <td class="tables-green">Rack N' Ruin</td>
+                    <td class="tables-green">Cuttin' Corners</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">7/09/2026</td>
-                    <td>Week 9</td>
-                    <td>Felt Junkies</td>
-                    <td>Rack N' Ruin</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>The Boys</td>
-                    <td>Cuttin' Corners</td>
-                    <td>WTF??</td>
-                    <td>Dead Strokes</td>
-                    <td>Stranded Sharks</td>
-                    <td>The Incredibles</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="col-fixed tables-white">7/02/2026</td>
+                    <td class="tables-white">Week 8</td>
+                    <td class="tables-yellow">Cuttin' Corners</td>
+                    <td class="tables-yellow">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-blue">Dead Strokes</td>
+                    <td class="tables-blue">Felt Junkies</td>
+                    <td class="tables-red">Rack N' Ruin</td>
+                    <td class="tables-red">The Boys</td>
+                    <td class="tables-purple">Cold Blooded Gentlemen</td>
+                    <td class="tables-purple">Stranded Sharks</td>
+                    <td class="tables-orange">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-orange">WTF??</td>
+                    <td class="tables-green">The Incredibles</td>
+                    <td class="tables-green">Is&nbsp;What It&nbsp;Is</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">7/16/2026</td>
-                    <td>Week 10</td>
-                    <td>The Incredibles</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Dead Strokes</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Stranded Sharks</td>
-                    <td>Rack N' Ruin</td>
-                    <td>WTF??</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>The Boys</td>
-                    <td>Felt Junkies</td>
+                    <td class="col-fixed tables-white">7/09/2026</td>
+                    <td class="tables-white">Week 9</td>
+                    <td class="tables-yellow">Felt Junkies</td>
+                    <td class="tables-yellow">Rack N' Ruin</td>
+                    <td class="tables-blue">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-blue">Cold Blooded Gentlemen</td>
+                    <td class="tables-red">The Boys</td>
+                    <td class="tables-red">Cuttin' Corners</td>
+                    <td class="tables-purple">WTF??</td>
+                    <td class="tables-purple">Dead Strokes</td>
+                    <td class="tables-orange">Stranded Sharks</td>
+                    <td class="tables-orange">The Incredibles</td>
+                    <td class="tables-green">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-green">Rax&nbsp;On Rax&nbsp;Off</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">7/23/2026</td>
-                    <td>Week 11</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Stranded Sharks</td>
-                    <td>Dead Strokes</td>
-                    <td>Felt Junkies</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>The Incredibles</td>
-                    <td>WTF??</td>
-                    <td>The Boys</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="col-fixed tables-white">7/16/2026</td>
+                    <td class="tables-white">Week 10</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-yellow">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-blue">Dead Strokes</td>
+                    <td class="tables-blue">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-red">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-red">Stranded Sharks</td>
+                    <td class="tables-purple">Rack N' Ruin</td>
+                    <td class="tables-purple">WTF??</td>
+                    <td class="tables-orange">Cuttin' Corners</td>
+                    <td class="tables-orange">Cold Blooded Gentlemen</td>
+                    <td class="tables-green">The Boys</td>
+                    <td class="tables-green">Felt Junkies</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">7/30/2026</td>
-                    <td>Week 12</td>
-                    <td>Dead Strokes</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>The Incredibles</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Stranded Sharks</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>The Boys</td>
-                    <td>WTF??</td>
-                    <td>Felt Junkies</td>
+                    <td class="col-fixed tables-white">7/23/2026</td>
+                    <td class="tables-white">Week 11</td>
+                    <td class="tables-yellow">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-yellow">Rack N' Ruin</td>
+                    <td class="tables-blue">Stranded Sharks</td>
+                    <td class="tables-blue">Dead Strokes</td>
+                    <td class="tables-red">Felt Junkies</td>
+                    <td class="tables-red">Cuttin' Corners</td>
+                    <td class="tables-purple">Cold Blooded Gentlemen</td>
+                    <td class="tables-purple">The Incredibles</td>
+                    <td class="tables-orange">WTF??</td>
+                    <td class="tables-orange">The Boys</td>
+                    <td class="tables-green">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-green">Rax&nbsp;On Rax&nbsp;Off</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">8/06/2026</td>
-                    <td>Week 13</td>
-                    <td>The Boys</td>
-                    <td>Stranded Sharks</td>
-                    <td>Felt Junkies</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>The Incredibles</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Rack N' Ruin</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Dead Strokes</td>
-                    <td>Cuttin' Corners</td>
-                    <td>WTF??</td>
+                    <td class="col-fixed tables-white">7/30/2026</td>
+                    <td class="tables-white">Week 12</td>
+                    <td class="tables-yellow">Dead Strokes</td>
+                    <td class="tables-yellow">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-blue">The Incredibles</td>
+                    <td class="tables-blue">Cuttin' Corners</td>
+                    <td class="tables-red">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-red">Cold Blooded Gentlemen</td>
+                    <td class="tables-purple">Stranded Sharks</td>
+                    <td class="tables-purple">Rack N' Ruin</td>
+                    <td class="tables-orange">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-orange">The Boys</td>
+                    <td class="tables-green">WTF??</td>
+                    <td class="tables-green">Felt Junkies</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">8/13/2026</td>
-                    <td>Week 14</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Stranded Sharks</td>
-                    <td>Felt Junkies</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>WTF??</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>The Boys</td>
-                    <td>Dead Strokes</td>
-                    <td>The Incredibles</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Rack N' Ruin</td>
+                    <td class="col-fixed tables-white">8/06/2026</td>
+                    <td class="tables-white">Week 13</td>
+                    <td class="tables-yellow">The Boys</td>
+                    <td class="tables-yellow">Stranded Sharks</td>
+                    <td class="tables-blue">Felt Junkies</td>
+                    <td class="tables-blue">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-red">The Incredibles</td>
+                    <td class="tables-red">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-purple">Rack N' Ruin</td>
+                    <td class="tables-purple">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-orange">Cold Blooded Gentlemen</td>
+                    <td class="tables-orange">Dead Strokes</td>
+                    <td class="tables-green">Cuttin' Corners</td>
+                    <td class="tables-green">WTF??</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">8/20/2026</td>
-                    <td>Week 15</td>
-                    <td>Rack N' Ruin</td>
-                    <td>The Incredibles</td>
-                    <td>WTF??</td>
-                    <td>Stranded Sharks</td>
-                    <td>Felt Junkies</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>The Boys</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Dead Strokes</td>
+                    <td class="col-fixed tables-white">8/13/2026</td>
+                    <td class="tables-white">Week 14</td>
+                    <td class="tables-yellow">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-yellow">Cuttin' Corners</td>
+                    <td class="tables-blue">Stranded Sharks</td>
+                    <td class="tables-blue">Felt Junkies</td>
+                    <td class="tables-red">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-red">WTF??</td>
+                    <td class="tables-purple">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-purple">The Boys</td>
+                    <td class="tables-orange">Dead Strokes</td>
+                    <td class="tables-orange">The Incredibles</td>
+                    <td class="tables-green">Cold Blooded Gentlemen</td>
+                    <td class="tables-green">Rack N' Ruin</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">8/27/2026</td>
-                    <td>Week 16</td>
-                    <td>The Incredibles</td>
-                    <td>The Boys</td>
-                    <td>Stranded Sharks</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Felt Junkies</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>WTF??</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Dead Strokes</td>
-                    <td>Cuttin' Corners</td>
+                    <td class="col-fixed tables-white">8/20/2026</td>
+                    <td class="tables-white">Week 15</td>
+                    <td class="tables-yellow">Rack N' Ruin</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-blue">WTF??</td>
+                    <td class="tables-blue">Stranded Sharks</td>
+                    <td class="tables-red">Felt Junkies</td>
+                    <td class="tables-red">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-purple">The Boys</td>
+                    <td class="tables-purple">Cold Blooded Gentlemen</td>
+                    <td class="tables-orange">Cuttin' Corners</td>
+                    <td class="tables-orange">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-green">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-green">Dead Strokes</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">9/03/2026</td>
-                    <td>Week 17</td>
-                    <td>Felt Junkies</td>
-                    <td>The Incredibles</td>
-                    <td>The Boys</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Stranded Sharks</td>
-                    <td>WTF??</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Dead Strokes</td>
+                    <td class="col-fixed tables-white">8/27/2026</td>
+                    <td class="tables-white">Week 16</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-yellow">The Boys</td>
+                    <td class="tables-blue">Stranded Sharks</td>
+                    <td class="tables-blue">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-red">Cold Blooded Gentlemen</td>
+                    <td class="tables-red">Felt Junkies</td>
+                    <td class="tables-purple">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-purple">WTF??</td>
+                    <td class="tables-orange">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-orange">Rack N' Ruin</td>
+                    <td class="tables-green">Dead Strokes</td>
+                    <td class="tables-green">Cuttin' Corners</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">9/10/2026</td>
-                    <td>Week 18</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Rack N' Ruin</td>
-                    <td>The Incredibles</td>
-                    <td>WTF??</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Stranded Sharks</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Felt Junkies</td>
-                    <td>Dead Strokes</td>
-                    <td>The Boys</td>
+                    <td class="col-fixed tables-white">9/03/2026</td>
+                    <td class="tables-white">Week 17</td>
+                    <td class="tables-yellow">Felt Junkies</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-blue">The Boys</td>
+                    <td class="tables-blue">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-red">Cuttin' Corners</td>
+                    <td class="tables-red">Stranded Sharks</td>
+                    <td class="tables-purple">WTF??</td>
+                    <td class="tables-purple">Cold Blooded Gentlemen</td>
+                    <td class="tables-orange">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-orange">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-green">Rack N' Ruin</td>
+                    <td class="tables-green">Dead Strokes</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">9/17/2026</td>
-                    <td>Week 19</td>
-                    <td>Stranded Sharks</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>The Boys</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>The Incredibles</td>
-                    <td>Felt Junkies</td>
-                    <td>Dead Strokes</td>
-                    <td>WTF??</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Cuttin' Corners</td>
+                    <td class="col-fixed tables-white">9/10/2026</td>
+                    <td class="tables-white">Week 18</td>
+                    <td class="tables-yellow">Cold Blooded Gentlemen</td>
+                    <td class="tables-yellow">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-blue">Cuttin' Corners</td>
+                    <td class="tables-blue">Rack N' Ruin</td>
+                    <td class="tables-red">The Incredibles</td>
+                    <td class="tables-red">WTF??</td>
+                    <td class="tables-purple">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-purple">Stranded Sharks</td>
+                    <td class="tables-orange">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-orange">Felt Junkies</td>
+                    <td class="tables-green">Dead Strokes</td>
+                    <td class="tables-green">The Boys</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">9/24/2026</td>
-                    <td>Week 20</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Felt Junkies</td>
-                    <td>The Incredibles</td>
-                    <td>Stranded Sharks</td>
-                    <td>Cuttin' Corners</td>
-                    <td>The Boys</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Dead Strokes</td>
-                    <td>WTF??</td>
+                    <td class="col-fixed tables-white">9/17/2026</td>
+                    <td class="tables-white">Week 19</td>
+                    <td class="tables-yellow">Stranded Sharks</td>
+                    <td class="tables-yellow">Cold Blooded Gentlemen</td>
+                    <td class="tables-blue">The Boys</td>
+                    <td class="tables-blue">Rack N' Ruin</td>
+                    <td class="tables-red">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-red">The Incredibles</td>
+                    <td class="tables-purple">Felt Junkies</td>
+                    <td class="tables-purple">Dead Strokes</td>
+                    <td class="tables-orange">WTF??</td>
+                    <td class="tables-orange">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-green">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-green">Cuttin' Corners</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">10/01/2026</td>
-                    <td>Week 21</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
-                    <td>The Incredibles</td>
-                    <td>Stranded Sharks</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Felt Junkies</td>
-                    <td>The Boys</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Dead Strokes</td>
-                    <td>WTF??</td>
-                    <td>Rack N' Ruin</td>
+                    <td class="col-fixed tables-white">9/24/2026</td>
+                    <td class="tables-white">Week 20</td>
+                    <td class="tables-yellow">Cold Blooded Gentlemen</td>
+                    <td class="tables-yellow">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-blue">Rack N' Ruin</td>
+                    <td class="tables-blue">Felt Junkies</td>
+                    <td class="tables-red">The Incredibles</td>
+                    <td class="tables-red">Stranded Sharks</td>
+                    <td class="tables-purple">Cuttin' Corners</td>
+                    <td class="tables-purple">The Boys</td>
+                    <td class="tables-orange">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-orange">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-green">Dead Strokes</td>
+                    <td class="tables-green">WTF??</td>
                 </tr>
                 <tr>
-                    <td class="col-fixed">10/08/2026</td>
-                    <td>Week 22</td>
-                    <td>The Incredibles</td>
-                    <td>Cold Blooded Gentlemen</td>
-                    <td>Cuttin' Corners</td>
-                    <td>Felt Junkies</td>
-                    <td>The Boys</td>
-                    <td>WTF??</td>
-                    <td>Rack N' Ruin</td>
-                    <td>Is&nbsp;What It&nbsp;Is</td>
-                    <td>Dead Strokes</td>
-                    <td>Stranded Sharks</td>
-                    <td>Rax&nbsp;On Rax&nbsp;Off</td>
-                    <td>A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="col-fixed tables-white">10/01/2026</td>
+                    <td class="tables-white">Week 21</td>
+                    <td class="tables-yellow">A&nbsp;Salute To&nbsp;Spam</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-blue">Stranded Sharks</td>
+                    <td class="tables-blue">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-red">Cold Blooded Gentlemen</td>
+                    <td class="tables-red">Cuttin' Corners</td>
+                    <td class="tables-purple">Felt Junkies</td>
+                    <td class="tables-purple">The Boys</td>
+                    <td class="tables-orange">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-orange">Dead Strokes</td>
+                    <td class="tables-green">WTF??</td>
+                    <td class="tables-green">Rack N' Ruin</td>
+                </tr>
+                <tr>
+                    <td class="col-fixed tables-white">10/08/2026</td>
+                    <td class="tables-white">Week 22</td>
+                    <td class="tables-yellow">The Incredibles</td>
+                    <td class="tables-yellow">Cold Blooded Gentlemen</td>
+                    <td class="tables-blue">Cuttin' Corners</td>
+                    <td class="tables-blue">Felt Junkies</td>
+                    <td class="tables-red">The Boys</td>
+                    <td class="tables-red">WTF??</td>
+                    <td class="tables-purple">Rack N' Ruin</td>
+                    <td class="tables-purple">Is&nbsp;What It&nbsp;Is</td>
+                    <td class="tables-orange">Dead Strokes</td>
+                    <td class="tables-orange">Stranded Sharks</td>
+                    <td class="tables-green">Rax&nbsp;On Rax&nbsp;Off</td>
+                    <td class="tables-green">A&nbsp;Salute To&nbsp;Spam</td>
                 </tr>
             </table>
         </section>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/images/08.png" />
+
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <title>Get-A-Cue Leagues</title>
+    </head>
+    <body class="about-page">
+        <header>
+            <div id="aboutImgWrap">
+                <a href="./index.html">
+                    <img
+                        src="./assets/images/leagueLogo.png"
+                        class="leagueLogo index-about margin-left"
+                /></a>
+            </div>
+        </header>
+
+        <section>
+            <h1 id="contactInfoH1">CONTACT</h1>
+            <div id="contactInfoWrapper">
+                <div id="contactInfoText">
+                    <p>
+                        For website feature requests, bug reporting, or general
+                        inquiries, feel free to use this contact form to reach
+                        me directly. Inquiries about Get-A-Cue Leagues from
+                        non-players are welcome, but make sure you fill out the
+                        league interest form found on Clicks' website:
+                        <a
+                            href="https://www.clicks.com/tucson-leagues"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Clicks Billiards Tucson</a
+                        >.
+                    </p>
+                </div>
+                <div id="formWrapper">
+                    <form
+                        class="contact-form"
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                    >
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="db86e3f0-63e0-45e0-80c8-85b31fb69494"
+                        />
+
+                        <div class="form-row">
+                            <label>
+                                <span>Name *</span>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    required
+                                    placeholder="Name *"
+                                />
+                            </label>
+
+                            <label>
+                                <span>Email *</span>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required
+                                    placeholder="Email *"
+                                />
+                            </label>
+                        </div>
+
+                        <div class="form-row">
+                            <label>
+                                <span>Phone</span>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Phone"
+                                />
+                            </label>
+
+                            <label>
+                                <span>Subject</span>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                />
+                            </label>
+                        </div>
+
+                        <label>
+                            <span>Message *</span>
+                            <textarea
+                                name="message"
+                                required
+                                placeholder="Message *"
+                            ></textarea>
+                        </label>
+
+                        <button class="button button-dark" type="submit">
+                            SEND MESSAGE <span aria-hidden="true">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <script src="./assets/script.js"></script>
+    </body>
+</html>

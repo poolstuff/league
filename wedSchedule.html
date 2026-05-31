@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="./assets/images/08.png" />
-        <link rel="stylesheet" href="./assets/schedStyle.css" />
+        
+        <link rel="stylesheet" href="./assets/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -21,7 +22,7 @@
         <title>Wednesday Schedule</title>
     </head> 
 
-    <body>
+    <body class="wedSchedule-page">
         <header>
             <div id="headerWrapper">
                 <a href="./index.html">
@@ -34,10 +35,48 @@
                 </div>
             </div>
         </header>
+        <section>
+            <div id="colorCodeWrapper">
+                <div id="coolorKeyH3Wrap">
+                    <h3 class="colorKeyTitle">TABLE COLOR CODE</h3>
+                </div>
+                <div id="keyWrapper">
+                    <div id="keyRow1">
+                        <div class="codeDotTextWrapper">
+                            <span class="codeDot" id="yellowDot"></span>
+                            <span class="codeText">Tables 2 & 3</span>
+                        </div>
+                        <div class="codeDotTextWrapper">
+                            <span class="codeDot" id="blueDot"></span>
+                            <span class="codeText">Tables 4 & 5</span>
+                        </div>
+                        <div class="codeDotTextWrapper">
+                            <span class="codeDot" id="redDot"></span>
+                            <span class="codeText">Tables 11 & 12</span>
+                        </div>
+                    </div>
+                    <div id="keyRow2">
+                        <div class="codeDotTextWrapper">
+                            <span class="codeDot" id="purpleDot"></span>
+                            <span class="codeText">Tables 13 & 14</span>
+                        </div>
+                        <div class="codeDotTextWrapper">
+                            <span class="codeDot" id="orangeDot"></span>
+                            <span class="codeText">Tables 6 & 9</span>
+                        </div>
+                        <div class="codeDotTextWrapper">
+                            <span class="codeDot" id="greenDot"></span>
+                            <span class="codeText">Tables 9.5 & 15</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="schedWrapper">
             <table id="wedSchedTable" class="schedTable">
                 <tr>
-                    <th class="col-fixed">DATE</th>
+                    <th>DATE</th>
                     <th>WEEK</th>
                     <th>BYE</th>
                     <th>HOME</th>
@@ -327,7 +366,7 @@
                     <td>Week 19</td>
                     <td>Haboobs</td>
                     <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 5 & 5">Crazy Train</td>
+                    <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
                     <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Tablee</td>
                     <td class="match-cell" data-table="TABLES 11 & 12">The Boys</td>
                     <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
@@ -400,61 +439,6 @@
                     <td>New season starts</td>
                 </tr>
             </table>
-        
-            <div class="siteLinksWrapper" style="display: none">
-                <h3 id="linksH3">Site Links:</h3>
-                <p class="siteLinks">
-                    <a
-                        href="wedTeam.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        WEDNESDAY TEAM STANDINGS
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="wedSingles.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        WEDNESDAY SINGLES STANDINGS
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="thuSchedule.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        THURSDAY SCHEDULE
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="thuTeam.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        THURSDAY TEAM STANDINGS
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="thuSingles.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        THURSDAY SINGLES STANDINGS
-                    </a>
-                </p>
-            </div>
         </section>
-        <script defer src="assets/script.js"></script>
-    </body>
+<script src="./assets/script.js"></script>    </body>
 </html>

@@ -5,7 +5,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="./assets/images/08.png" />
-        <link rel="stylesheet" href="./assets/singTeamStyle.css" />
+
+        <link rel="stylesheet" href="./assets/styles.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
@@ -18,11 +19,10 @@
             href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./assets/teamStyle.css" />
         <title>Wed. Team Standings</title>
     </head>
 
-    <body>
+    <body class="team-page">
         <header>
             <div id="headerWrapper">
                 <a href="./index.html">
@@ -36,198 +36,12 @@
             </div>
         </header>
         <section class="teamSection">
-            <div class="tableContainer">
-                <table id="wedTeamStandings" class="teamStandingsTable">
-                    <tr>
-                        <th>TEAM</th>
-                        <th>
-                            <span class="showTh">POINTS</span
-                            ><span class="hideTh">PTS</span>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/01.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team1st"
-                                        >Spam Fo Lunch</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>419.7</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/02.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team2nd"
-                                        >Haboobs</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>406.2</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/03.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team3rd"
-                                        >The Boys</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>388</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/03.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team4th"
-                                        >Crazy Train</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>388</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/05.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team5th"
-                                        >FFFFF<sup>10</sup></span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>388</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/07.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team7th"
-                                        >Vladimir Poolin</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>384</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/08.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team8th"
-                                        >Rack Pack</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>381</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/09.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team9th"
-                                        >The Dougernauts</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>380.4</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/10.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team10th"
-                                        >Pirates of the Table</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>380</td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="teamTdWrapper">
-                                <div class="teamImgTd">
-                                    <img
-                                        src="./assets/images/11.png"
-                                        class="positionImages"
-                                    />
-                                </div>
-                                <div class="teamNameTd">
-                                    <span class="wedTeamNameTd" id="team11th"
-                                        >PKT Change</span
-                                    >
-                                </div>
-                            </div>
-                        </td>
-                        <td>372</td>
-                    </tr>
-                </table>
-            </div>
-
+            <div
+                class="tableContainer section100vw"
+                id="wedTeamTableContainer"
+            ></div>
+        </section>
+        <section>
             <div id="teamCards">
                 <card class="teamCard" id="piratesCard">
                     <div class="cardHeader">
@@ -530,5 +344,6 @@
                 </p>
             </div>
         </section>
+        <script src="./assets/script.js"></script>
     </body>
 </html>
