@@ -72,7 +72,7 @@ Feature requests from users will be prioritized when it makes sense and I'm able
 
 ## CHANGE LOG
 
-[DATE] This was a large update and is also the first site update to include a README file. Updated site stylistically and the programmatic features are working as desired
+2026.05.31 **V2.0** This was a large update and is also the first site update to include a README file. Updated site stylistically and the programmatic features are working as desired. 
 
 ## QUESTIONS and CONTACT
 
