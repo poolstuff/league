@@ -316,3 +316,43 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const menuTriggers = document.querySelectorAll(".main-text");
+
+    menuTriggers.forEach((trigger) => {
+        trigger.addEventListener("click", (e) => {
+            e.stopPropagation();
+
+            const currentMenu =
+                trigger.parentElement.parentElement.querySelector(".links-wrapper");
+
+            document.querySelectorAll(".links-wrapper").forEach((menu) => {
+                if (menu !== currentMenu) {
+                    menu.classList.remove("show-links");
+                }
+            });
+
+            currentMenu.classList.toggle("show-links");
+        });
+    });
+
+    document.addEventListener("click", () => {
+        document.querySelectorAll(".links-wrapper").forEach((menu) => {
+            menu.classList.remove("show-links");
+        });
+    });
+
+    document.querySelectorAll(".links-wrapper").forEach((menu) => {
+        menu.addEventListener("click", (e) => {
+            e.stopPropagation();
+        });
+    });
+
+    document.querySelectorAll(".hiddenLink").forEach((link) => {
+        link.addEventListener("click", () => {
+            document.querySelectorAll(".links-wrapper").forEach((menu) => {
+                menu.classList.remove("show-links");
+            });
+        });
+    });
+});
