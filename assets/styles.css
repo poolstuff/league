@@ -376,12 +376,20 @@ td img {
     max-width: 100%;
     height: 80vh;
     margin-bottom: 0;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     overflow-x: auto;
     overflow-y: auto;
+    scrollbar-gutter: stable;
 }
 
-.schedTable,
+.schedTable {
+    width: max-content;
+    min-width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 0;
+    border-collapse: collapse;
+}
+
 .singlesTable {
     width: 100%;
     max-width: 100vw;
@@ -836,6 +844,17 @@ Sticky header cells use opaque matching gradients so scrolled text does not show
     word-break: normal;
 }
 
+/* Match Thursday's generated TEAM column width to Wednesday's generated TEAM column. */
+#thuTeamStandings th:first-child,
+#thuTeamStandings td:first-child {
+    width: 10rem;
+    min-width: 10rem;
+    max-width: 10rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
 /* Totals and averages stay readable and unwrapped. */
 .teamStandingsTable th:nth-child(2),
 .teamStandingsTable td:nth-child(2),
@@ -1199,7 +1218,6 @@ card.teamCard:hover .teamImg img,
 html,
 body {
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 .section100vw {
@@ -1207,6 +1225,54 @@ body {
     max-width: 100vw;
     overflow-x: auto;
     display: block;
+}
+
+
+/* =========================================================
+   CUSTOM TOMATO SCROLLBARS FOR TABLE WRAPPERS
+========================================================= */
+.schedWrapper,
+.singlesTableWrap,
+.tableContainer,
+#wedTeamTableContainer,
+#thuTeamTableContainer {
+    scrollbar-width: thin;
+    scrollbar-color: var(--tomato) rgba(0, 0, 0, 0.75);
+}
+
+.schedWrapper::-webkit-scrollbar,
+.singlesTableWrap::-webkit-scrollbar,
+.tableContainer::-webkit-scrollbar,
+#wedTeamTableContainer::-webkit-scrollbar,
+#thuTeamTableContainer::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+
+.schedWrapper::-webkit-scrollbar-track,
+.singlesTableWrap::-webkit-scrollbar-track,
+.tableContainer::-webkit-scrollbar-track,
+#wedTeamTableContainer::-webkit-scrollbar-track,
+#thuTeamTableContainer::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.schedWrapper::-webkit-scrollbar-thumb,
+.singlesTableWrap::-webkit-scrollbar-thumb,
+.tableContainer::-webkit-scrollbar-thumb,
+#wedTeamTableContainer::-webkit-scrollbar-thumb,
+#thuTeamTableContainer::-webkit-scrollbar-thumb {
+    background: var(--tomato);
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    border-radius: 999px;
+}
+
+.schedWrapper::-webkit-scrollbar-thumb:hover,
+.singlesTableWrap::-webkit-scrollbar-thumb:hover,
+.tableContainer::-webkit-scrollbar-thumb:hover,
+#wedTeamTableContainer::-webkit-scrollbar-thumb:hover,
+#thuTeamTableContainer::-webkit-scrollbar-thumb:hover {
+    background: #ff8a70;
 }
 
 
@@ -1416,7 +1482,7 @@ textarea {
     .h1Wrapper {
         display: none;
     }
-            
+
     #headerWrapper {
         justify-content: center;
     }
@@ -1430,9 +1496,9 @@ textarea {
         margin: 1rem 0 0 0;
     }
 
-        .teamH2 {
-            transform: translateY(420%) rotate(-90deg);
-        }
+    .teamH2 {
+        transform: translateY(420%) rotate(-90deg);
+    }
 
     .tableContainer {
         margin: 0;
@@ -1465,6 +1531,13 @@ textarea {
         max-width: 11rem;
     }
 
+    #thuTeamStandings th:first-child,
+    #thuTeamStandings td:first-child {
+        width: 8rem;
+        min-width: 8rem;
+        max-width: 8rem;
+    }
+
     .teamStandingsTable th:nth-child(2),
     .teamStandingsTable td:nth-child(2),
     .teamStandingsTable th:nth-child(3),
@@ -1479,6 +1552,7 @@ textarea {
 }
 
 @media (min-width: 769px) {
+
     .match-cell:hover::after,
     .match-cell:hover::before {
         opacity: 1;
@@ -1543,9 +1617,9 @@ textarea {
         font-size: 1.45rem;
     }
 
-        .teamH2 {
-            transform: translateY(800%) rotate(-90deg);
-        }
+    .teamH2 {
+        transform: translateY(800%) rotate(-90deg);
+    }
 
     .teamStandingsTable th,
     .teamStandingsTable td {
@@ -1557,6 +1631,13 @@ textarea {
     .teamStandingsTable td:nth-child(1) {
         min-width: 7rem;
         max-width: 9rem;
+    }
+
+    #thuTeamStandings th:first-child,
+    #thuTeamStandings td:first-child {
+        width: 7rem;
+        min-width: 7rem;
+        max-width: 7rem;
     }
 
     .teamStandingsTable th:nth-child(2),
@@ -1581,7 +1662,7 @@ textarea {
         margin: 0 auto;
     }
 
-    
+
 
     .cardRoster {
         width: 100%;
@@ -1641,6 +1722,7 @@ textarea {
     .showTh {
         display: none;
     }
+
     body.home-page .leagueLogo,
     body.about-page #aboutImgWrap .leagueLogo {
         height: 18vh;
