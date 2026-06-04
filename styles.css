@@ -302,7 +302,7 @@ body.about-page #aboutImgWrap .leagueLogo {
 
 #aboutThisSite p,
 #upcomingWrapper li,
-#clicksLink,
+.clicksLink,
 #contactLink {
     color: var(--white);
     font-family: var(--font-body);
@@ -313,7 +313,7 @@ body.about-page #aboutImgWrap .leagueLogo {
     text-decoration: none;
 }
 
-#clicksLink,
+.clicksLink,
 #contactLink {
     color: var(--tomato);
 }
