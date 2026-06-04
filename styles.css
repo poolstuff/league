@@ -304,13 +304,18 @@ body.about-page #aboutImgWrap .leagueLogo {
 #upcomingWrapper li,
 .clicksLink,
 #contactLink {
-    color: var(--white);
     font-family: var(--font-body);
     text-align: justify;
     font-size: 1.5rem;
     font-weight: bold;
     line-height: 2rem;
     text-decoration: none;
+}
+
+#aboutThisSite p,
+#upcomingWrapper li,
+#contactLink {
+    color: var(--white);
 }
 
 .clicksLink,
