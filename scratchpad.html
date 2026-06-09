@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="./assets/images/08.png" />
+
+        <link rel="stylesheet" href="./assets/styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>The Scratchpad</title>
+    </head>
+
+    <body class="scratchpad-page">
+        <header>
+            <div id="aboutImgWrap">
+                <a href="./index.html">
+                    <img
+                        src="./assets/images/leagueLogo.png"
+                        class="leagueLogo index-about margin-left"
+                    />
+                </a>
+            </div>
+            <h1 class="marginTopH1">The Scratchpad</h1>
+        </header>
+
+        <main>
+            <div class="board-grid">
+                <button
+                    class="board-card"
+                    type="button"
+                    data-modal-target="announcementsModal"
+                    data-board-category="announcements"
+                >
+                    <img src="./assets/images/announcements.png" alt="" />
+                    <span class="board-card-title">
+                        Announcements
+                        <span class="board-count" data-count-for="announcements"
+                            >0</span
+                        >
+                    </span>
+                    <span class="board-card-link">
+                        View Announcements Board
+                        <span aria-hidden="true">→</span>
+                    </span>
+                </button>
+
+                <button
+                    class="board-card"
+                    type="button"
+                    data-modal-target="generalModal"
+                    data-board-category="general"
+                >
+                    <img src="./assets/images/general.png" alt="" />
+                    <span class="board-card-title">
+                        General
+                        <span class="board-count" data-count-for="general"
+                            >0</span
+                        >
+                    </span>
+                    <span class="board-card-link">
+                        View General Board
+                        <span aria-hidden="true">→</span>
+                    </span>
+                </button>
+
+                <button
+                    class="board-card"
+                    type="button"
+                    data-modal-target="subsModal"
+                    data-board-category="subs"
+                >
+                    <img src="./assets/images/subs.png" alt="" />
+                    <span class="board-card-title">
+                        Subs
+                        <span class="board-count" data-count-for="subs">0</span>
+                    </span>
+                    <span class="board-card-link">
+                        View Subs Board
+                        <span aria-hidden="true">→</span>
+                    </span>
+                </button>
+
+                <button
+                    class="board-card"
+                    type="button"
+                    data-modal-target="rulesModal"
+                    data-board-category="rules"
+                >
+                    <img src="./assets/images/rules.png" alt="" />
+                    <span class="board-card-title">
+                        Rules
+                        <span class="board-count" data-count-for="rules"
+                            >0</span
+                        >
+                    </span>
+                    <span class="board-card-link">
+                        View Rules Board
+                        <span aria-hidden="true">→</span>
+                    </span>
+                </button>
+            </div>
+        </main>
+
+        <section
+            class="scratchpadAdminBar"
+            aria-label="Scratchpad admin controls"
+        >
+            <p id="authStatus" class="authStatus">
+                Signed out
+            </p>
+
+            <div class="authButtonGroup">
+                <button id="adminSignInButton" class="authButton" type="button">
+                    Admin Sign In
+                </button>
+
+                <button
+                    id="adminSignOutButton"
+                    class="authButton authButtonSecondary"
+                    type="button"
+                    hidden
+                >
+                    Sign Out
+                </button>
+            </div>
+        </section>
+
+        <!-- ==========================================
+                    ANNOUNCEMENTS MODAL
+        =========================================== -->
+        <div id="announcementsModal" class="modalOverlay" aria-hidden="true">
+            <div class="modalContent">
+                <button
+                    class="modalClose"
+                    type="button"
+                    data-modal-close
+                    aria-label="Close announcements modal"
+                >
+                    &times;
+                </button>
+
+                <h2>ANNOUNCEMENTS</h2>
+
+                <p class="boardDescription">
+                    League news, updates, schedule changes, and important
+                    information.
+                </p>
+                <div id="announcementsPosts" class="postsContainer"></div>
+
+                <form
+                    class="modalPostForm adminOnly"
+                    data-category="announcements"
+                    hidden
+                >
+                    <input
+                        type="text"
+                        class="modalPostName"
+                        placeholder="Your Name"
+                        required
+                    />
+
+                    <textarea
+                        class="modalPostMessage"
+                        placeholder="Write an announcement..."
+                        required
+                    ></textarea>
+
+                    <label class="pinLabel">
+                        <input type="checkbox" class="modalPostPinned" />
+                        Pin this announcement
+                    </label>
+
+                    <button type="submit">Post Announcement</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ==========================================
+                    GENERAL MODAL
+        =========================================== -->
+        <div id="generalModal" class="modalOverlay" aria-hidden="true">
+            <div class="modalContent">
+                <button
+                    class="modalClose"
+                    type="button"
+                    data-modal-close
+                    aria-label="Close general modal"
+                >
+                    &times;
+                </button>
+
+                <h2>GENERAL</h2>
+
+                <p class="boardDescription">
+                    General league talk, questions, updates, and conversation.
+                </p>
+                <div id="generalPosts" class="postsContainer"></div>
+
+                <form class="modalPostForm" data-category="general">
+                    <input
+                        type="text"
+                        class="modalPostName"
+                        placeholder="Your Name"
+                        required
+                    />
+
+                    <textarea
+                        class="modalPostMessage"
+                        placeholder="What's on your mind?"
+                        required
+                    ></textarea>
+
+                    <label class="pinLabel adminOnly" hidden>
+                        <input type="checkbox" class="modalPostPinned" />
+                        Pin this post
+                    </label>
+
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ==========================================
+                    SUBS MODAL
+        =========================================== -->
+        <div id="subsModal" class="modalOverlay" aria-hidden="true">
+            <div class="modalContent">
+                <button
+                    class="modalClose"
+                    type="button"
+                    data-modal-close
+                    aria-label="Close subs modal"
+                >
+                    &times;
+                </button>
+
+                <h2>SUBS</h2>
+
+                <p class="boardDescription">
+                    Looking for a sub, offering to sub, or trying to fill a
+                    roster spot.
+                </p>
+                <div id="subsPosts" class="postsContainer"></div>
+
+                <form class="modalPostForm subRequestForm" data-category="subs">
+                    <input
+                        type="text"
+                        class="modalPostName"
+                        placeholder="Your Name"
+                        required
+                    />
+
+                    <input
+                        type="text"
+                        class="subLeagueNight"
+                        placeholder="League Night, e.g. Wednesday or Thursday"
+                        required
+                    />
+
+                    <input type="date" class="subDateNeeded" required />
+
+                    <select class="subRequestType" required>
+                        <option value="" selected disabled hidden>
+                            - Select Sub Type -
+                        </option>
+                        <option value="lookingForSub">
+                            Looking FOR a sub
+                        </option>
+                        <option value="lookingToSub">
+                            Looking TO sub
+                        </option>
+                    </select>
+
+                    <input
+                        type="text"
+                        class="subContactInfo"
+                        placeholder="Contact Info"
+                        required
+                    />
+
+                    <textarea
+                        class="modalPostMessage subNotes"
+                        placeholder="Additional notes..."
+                    ></textarea>
+
+                    <button type="submit">Post Sub Request</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- ==========================================
+                    RULES MODAL
+        =========================================== -->
+        <div id="rulesModal" class="modalOverlay" aria-hidden="true">
+            <div class="modalContent">
+                <button
+                    class="modalClose"
+                    type="button"
+                    data-modal-close
+                    aria-label="Close rules modal"
+                >
+                    &times;
+                </button>
+
+                <h2>RULES</h2>
+
+                <p class="boardDescription">
+                    Rule questions, clarifications, and league format
+                    discussions.
+                </p>
+                <div id="rulesPosts" class="postsContainer"></div>
+                <form class="modalPostForm" data-category="rules">
+                    <input
+                        type="text"
+                        class="modalPostName"
+                        placeholder="Your Name"
+                        required
+                    />
+
+                    <textarea
+                        class="modalPostMessage"
+                        placeholder="Ask a rule question..."
+                        required
+                    ></textarea>
+
+                    <label class="pinLabel adminOnly" hidden>
+                        <input type="checkbox" class="modalPostPinned" />
+                        Pin this post
+                    </label>
+
+                    <button type="submit">Post</button>
+                </form>
+            </div>
+        </div>
+
+        <script type="module" src="./assets/scratchpad.js"></script>
+    </body>
+</html>
