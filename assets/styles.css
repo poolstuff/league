@@ -402,6 +402,25 @@ td img {
     scrollbar-gutter: stable;
 }
 
+
+/* =========================================================
+   SCHEDULE VIEWPORT WIDTH FIX
+   Keeps wide schedule tables scrolling inside .schedWrapper
+   instead of making the whole page wider than the viewport.
+========================================================= */
+
+body.wedSchedule-page,
+body.thuSchedule-page {
+    overflow-x: hidden;
+}
+
+body.wedSchedule-page .schedWrapper,
+body.thuSchedule-page .schedWrapper {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 .schedTable {
     width: max-content;
     min-width: 100%;
@@ -2244,7 +2263,7 @@ option[value="premium"] {
     .marginTopH1 {
         margin-top: 0;
     }
-    
+
     .h1Wrapper {
         display: none;
     }
