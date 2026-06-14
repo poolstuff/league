@@ -1,7 +1,7 @@
 {
   "team": [
     {
-      "team": "PIRATES OF THE TABLE",
+      "team": "PIRATES&nbsp;OF THE&nbsp;TABLE",
       "players": [
         {
           "player": "JASON",
@@ -151,7 +151,7 @@
       ]
     },
     {
-      "team": "SPAM FO LUNCH",
+      "team": "SPAM FO&nbsp;LUNCH",
       "players": [
         {
           "player": "PABLO",
@@ -605,7 +605,7 @@
       "players": []
     },
     {
-      "team": "PKTCHANGE 2.0",
+      "team": "PKT&nbsp;CHANGE 2.0",
       "players": [
         {
           "player": "PATRICK",
@@ -876,7 +876,7 @@
       ]
     },
     {
-      "team": "FFFFF TO THE 1OTH POWER",
+      "team": "FFFFF<sup>10</sup>",
       "players": [
         {
           "player": "RICHARD",
@@ -1719,7 +1719,7 @@
     },
     {
       "player": "PATRICK",
-      "team": "PKTCHANGE 2.0",
+      "team": "PKT&nbsp;CHANGE 2.0",
       "score": 341,
       "average": 42.63,
       "weeks": [
@@ -1899,7 +1899,7 @@
     },
     {
       "player": "ERIC",
-      "team": "SPAM FO LUNCH",
+      "team": "SPAM FO&nbsp;LUNCH",
       "score": 332,
       "average": 41.5,
       "weeks": [
@@ -1989,7 +1989,7 @@
     },
     {
       "player": "PABLO",
-      "team": "SPAM FO LUNCH",
+      "team": "SPAM FO&nbsp;LUNCH",
       "score": 328,
       "average": 41,
       "weeks": [
@@ -2049,7 +2049,7 @@
     },
     {
       "player": "JASON",
-      "team": "PIRATES OF THE TABLE",
+      "team": "PIRATES&nbsp;OF THE&nbsp;TABLE",
       "score": 323,
       "average": 40.38,
       "weeks": [
@@ -2079,7 +2079,7 @@
     },
     {
       "player": "LON",
-      "team": "SPAM FO LUNCH",
+      "team": "SPAM FO&nbsp;LUNCH",
       "score": 321,
       "average": 40.13,
       "weeks": [
@@ -2109,7 +2109,7 @@
     },
     {
       "player": "JUSTIN",
-      "team": "FFFFF TO THE 1OTH POWER",
+      "team": "FFFFF<sup>10</sup>",
       "score": 320,
       "average": 40,
       "weeks": [
@@ -2319,7 +2319,7 @@
     },
     {
       "player": "PJ",
-      "team": "PKTCHANGE 2.0",
+      "team": "",
       "score": 314,
       "average": 39.25,
       "weeks": [
@@ -2379,7 +2379,7 @@
     },
     {
       "player": "DENNIS",
-      "team": "FFFFF TO THE 1OTH POWER",
+      "team": "FFFFF<sup>10</sup>",
       "score": 313,
       "average": 39.13,
       "weeks": [
@@ -2559,7 +2559,7 @@
     },
     {
       "player": "SABRINA",
-      "team": "SPAM FO LUNCH",
+      "team": "SPAM FO&nbsp;LUNCH",
       "score": 303,
       "average": 37.88,
       "weeks": [
@@ -2649,7 +2649,7 @@
     },
     {
       "player": "VE",
-      "team": "FFFFF TO THE 1OTH POWER",
+      "team": "FFFFF<sup>10</sup>",
       "score": 296,
       "average": 37,
       "weeks": [
@@ -2679,7 +2679,7 @@
     },
     {
       "player": "RICHARD",
-      "team": "FFFFF TO THE 1OTH POWER",
+      "team": "FFFFF<sup>10</sup>",
       "score": 294,
       "average": 36.75,
       "weeks": [
@@ -2829,7 +2829,7 @@
     },
     {
       "player": "DON",
-      "team": "PIRATES OF THE TABLE",
+      "team": "PIRATES&nbsp;OF THE&nbsp;TABLE",
       "score": 289,
       "average": 36.13,
       "weeks": [
@@ -2889,7 +2889,7 @@
     },
     {
       "player": "CARA",
-      "team": "PKTCHANGE 2.0",
+      "team": "PKT&nbsp;CHANGE 2.0",
       "score": 285,
       "average": 35.63,
       "weeks": [
@@ -3009,7 +3009,7 @@
     },
     {
       "player": "BRANDY",
-      "team": "PKTCHANGE 2.0",
+      "team": "PKT&nbsp;CHANGE 2.0",
       "score": 274,
       "average": 34.25,
       "weeks": [
@@ -3069,7 +3069,7 @@
     },
     {
       "player": "NICK",
-      "team": "SPAM FO LUNCH",
+      "team": "SPAM FO&nbsp;LUNCH",
       "score": 259,
       "average": 32.38,
       "weeks": [
@@ -3099,7 +3099,7 @@
     },
     {
       "player": "SANDY",
-      "team": "FFFFF TO THE 1OTH POWER",
+      "team": "FFFFF<sup>10</sup>",
       "score": 255,
       "average": 31.88,
       "weeks": [
@@ -3129,7 +3129,7 @@
     },
     {
       "player": "WC",
-      "team": "PIRATES OF THE TABLE",
+      "team": "PIRATES&nbsp;OF THE&nbsp;TABLE",
       "score": 234,
       "average": 29.25,
       "weeks": [
@@ -3159,7 +3159,7 @@
     },
     {
       "player": "TRAYE",
-      "team": "PIRATES OF THE TABLE",
+      "team": "PIRATES&nbsp;OF THE&nbsp;TABLE",
       "score": 231,
       "average": 28.88,
       "weeks": [
@@ -3219,7 +3219,7 @@
     },
     {
       "player": "SAM",
-      "team": "PIRATES OF THE TABLE",
+      "team": "PIRATES&nbsp;OF THE&nbsp;TABLE",
       "score": 204,
       "average": 25.5,
       "weeks": [

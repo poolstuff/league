@@ -301,7 +301,7 @@
       ]
     },
     {
-      "team": "IS WHAT IT IS",
+      "team": "IS&nbsp;WHAT IT&nbsp;IS",
       "players": [
         {
           "player": "RONNIE",
@@ -1476,7 +1476,7 @@
       ]
     },
     {
-      "team": "RAX OFF RAX ON",
+      "team": "RAX&nbsp;ON RAX&nbsp;OFF",
       "players": [
         {
           "player": "DALE",
@@ -1626,7 +1626,7 @@
       ]
     },
     {
-      "team": "A SALUTE TO SPAM",
+      "team": "A&nbsp;SALUTE TO&nbsp;SPAM",
       "players": [
         {
           "player": "ERIC",
@@ -1779,7 +1779,7 @@
   "singles": [
     {
       "player": "JOSH",
-      "team": "RAX OFF RAX ON",
+      "team": "RAX&nbsp;ON RAX&nbsp;OFF",
       "score": 193,
       "average": 48.25,
       "weeks": [
@@ -1869,7 +1869,7 @@
     },
     {
       "player": "JIM",
-      "team": "A SALUTE TO SPAM",
+      "team": "A&nbsp;SALUTE TO&nbsp;SPAM",
       "score": 181,
       "average": 45.25,
       "weeks": [
@@ -1929,7 +1929,7 @@
     },
     {
       "player": "ODIN",
-      "team": "A SALUTE TO SPAM",
+      "team": "A&nbsp;SALUTE TO&nbsp;SPAM",
       "score": 175,
       "average": 43.75,
       "weeks": [
@@ -2289,7 +2289,7 @@
     },
     {
       "player": "ERIC",
-      "team": "A SALUTE TO SPAM",
+      "team": "A&nbsp;SALUTE TO&nbsp;SPAM",
       "score": 162,
       "average": 40.5,
       "weeks": [
@@ -2529,7 +2529,7 @@
     },
     {
       "player": "MIKE",
-      "team": "A SALUTE TO SPAM",
+      "team": "A&nbsp;SALUTE TO&nbsp;SPAM",
       "score": 155,
       "average": 38.75,
       "weeks": [
@@ -2739,7 +2739,7 @@
     },
     {
       "player": "HUGH",
-      "team": "IS WHAT IT IS",
+      "team": "IS&nbsp;WHAT IT&nbsp;IS",
       "score": 150,
       "average": 37.5,
       "weeks": [
@@ -2769,7 +2769,7 @@
     },
     {
       "player": "DALE",
-      "team": "RAX OFF RAX ON",
+      "team": "RAX&nbsp;ON RAX&nbsp;OFF",
       "score": 149,
       "average": 37.25,
       "weeks": [
@@ -2829,7 +2829,7 @@
     },
     {
       "player": "DOMINIC",
-      "team": "RAX OFF RAX ON",
+      "team": "RAX&nbsp;ON RAX&nbsp;OFF",
       "score": 148,
       "average": 37,
       "weeks": [
@@ -2859,7 +2859,7 @@
     },
     {
       "player": "MIKE",
-      "team": "IS WHAT IT IS",
+      "team": "IS&nbsp;WHAT IT&nbsp;IS",
       "score": 147,
       "average": 36.75,
       "weeks": [
@@ -2979,7 +2979,7 @@
     },
     {
       "player": "JOHNNY",
-      "team": "A SALUTE TO SPAM",
+      "team": "A&nbsp;SALUTE TO&nbsp;SPAM",
       "score": 145,
       "average": 36.25,
       "weeks": [
@@ -3159,7 +3159,7 @@
     },
     {
       "player": "RONNIE",
-      "team": "IS WHAT IT IS",
+      "team": "IS&nbsp;WHAT IT&nbsp;IS",
       "score": 134,
       "average": 33.5,
       "weeks": [
@@ -3219,7 +3219,7 @@
     },
     {
       "player": "CAMILLA",
-      "team": "RAX OFF RAX ON",
+      "team": "RAX&nbsp;ON RAX&nbsp;OFF",
       "score": 133,
       "average": 33.25,
       "weeks": [
@@ -3249,7 +3249,7 @@
     },
     {
       "player": "JUDITH",
-      "team": "RAX OFF RAX ON",
+      "team": "RAX&nbsp;ON RAX&nbsp;OFF",
       "score": 126,
       "average": 31.5,
       "weeks": [
@@ -3309,7 +3309,7 @@
     },
     {
       "player": "SHANA",
-      "team": "IS WHAT IT IS",
+      "team": "IS&nbsp;WHAT IT&nbsp;IS",
       "score": 121,
       "average": 30.25,
       "weeks": [
@@ -3519,7 +3519,7 @@
     },
     {
       "player": "BRYSENIA",
-      "team": "IS WHAT IT IS",
+      "team": "IS&nbsp;WHAT IT&nbsp;IS",
       "score": 96,
       "average": 24,
       "weeks": [
