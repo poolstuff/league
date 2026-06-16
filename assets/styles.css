@@ -198,7 +198,7 @@ p {
 
 .leagueLogo {
     height: 25vh;
-    margin: 1rem 1rem 1rem 2rem;
+    margin: 1rem 1rem 1rem 1rem;
     filter: drop-shadow(.2rem .2rem .3rem tomato);
 }
 
@@ -210,16 +210,6 @@ p {
 .logoWrapper {
     display: block;
 }
-
-/* body.home-page .leagueLogo,
-body.about-page #aboutImgWrap .leagueLogo {
-    width: auto;
-    height: 50vh;
-    transform-origin: left;
-    transform: translateY(50%) rotate(-20deg);
-    margin: 1rem 1rem 1rem 2rem;
-        filter: drop-shadow(.2rem .2rem .3rem tomato);
-} */
 
 .margin-left {
     margin-left: 3rem;
@@ -2480,6 +2470,11 @@ option[value="premium"] {
 }
 
 @media screen and (max-width: 450px) {
+    #wedLeagueLogo,
+    #thuLeagueLogo {
+        height: 17vh
+    }
+    
     .h1Wrapper {
         display: none;
     }
@@ -2491,7 +2486,7 @@ option[value="premium"] {
     body.home-page .leagueLogo,
     body.about-page #aboutImgWrap .leagueLogo {
         height: 22vh;
-        margin: 1rem 1rem 1rem 2rem;
+        margin: 1rem 1rem 1rem 1rem;
     }
 
     .logoWrapper {
@@ -2529,7 +2524,7 @@ option[value="premium"] {
 
     body.home-page .leagueLogo,
     body.about-page #aboutImgWrap .leagueLogo {
-        height: 18vh;
+        /* height: 18vh; */
         margin: 1rem 1rem 1rem 2rem;
     }
 }
