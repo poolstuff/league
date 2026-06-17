@@ -114,8 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
         const currentWeek = getCurrentWeekFromWeeks(teamStandings);
 
         if (weekStatusElement) {
-            weekStatusElement.textContent = `After ${currentWeek} Week${currentWeek === 1 ? "" : "s"
-                }`;
+            weekStatusElement.textContent = `After ${currentWeek} Week${
+                currentWeek === 1 ? "" : "s"
+            }`;
         }
 
         thead.innerHTML = `
@@ -124,9 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 <th>Total Points</th>
                 <th>Weekly Avg</th>
                 ${Array.from(
-            { length: currentWeek },
-            (_, i) => `<th>W${i + 1}</th>`
-        ).join("")}
+                    { length: currentWeek },
+                    (_, i) => `<th>W${i + 1}</th>`
+                ).join("")}
             </tr>
         `;
 
@@ -180,17 +181,16 @@ document.addEventListener("DOMContentLoaded", () => {
             .sort((a, b) => b.total - a.total);
     }
 
-
     function renderSinglesWeekHeader(headerId, currentWeek) {
         if (!headerId) return;
 
         const header = document.getElementById(headerId);
         if (!header) return;
 
-        header.textContent = `After ${currentWeek} Week${currentWeek === 1 ? "" : "s"
-            }`;
+        header.textContent = `After ${currentWeek} Week${
+            currentWeek === 1 ? "" : "s"
+        }`;
     }
-
 
     function renderSinglesTable(config, players) {
         const table = document.getElementById(config.tableId);
@@ -214,9 +214,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <th>Total Points</th>
             <th>Average</th>
             ${Array.from(
-            { length: currentWeek },
-            (_, i) => `<th>W${i + 1}</th>`
-        ).join("")}
+                { length: currentWeek },
+                (_, i) => `<th>W${i + 1}</th>`
+            ).join("")}
         </tr>
     `;
 
@@ -231,9 +231,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <td>${formatNumber(player.score)}</td>
             <td>${formatNumber(player.average)}</td>
             ${player.weeks
-                    .slice(0, currentWeek)
-                    .map((score) => `<td>${formatNumber(score)}</td>`)
-                    .join("")}
+                .slice(0, currentWeek)
+                .map((score) => `<td>${formatNumber(score)}</td>`)
+                .join("")}
         `;
 
             tbody.appendChild(tr);
@@ -356,3 +356,171 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".schedWrapper").forEach((wrapper) => {
+        const table = wrapper.querySelector(".schedTable");
+        if (!table) return;
+
+        const scrollbar = document.createElement("div");
+        scrollbar.className = "scheduleScrollbar";
+
+        const scrollbarInner = document.createElement("div");
+        scrollbarInner.className = "scheduleScrollbarInner";
+
+        scrollbar.appendChild(scrollbarInner);
+        wrapper.appendChild(scrollbar);
+
+        function syncScrollbarWidth() {
+            scrollbarInner.style.width = `${table.scrollWidth}px`;
+        }
+
+        syncScrollbarWidth();
+        window.addEventListener("resize", syncScrollbarWidth);
+
+        wrapper.addEventListener("scroll", () => {
+            scrollbar.scrollLeft = wrapper.scrollLeft;
+        });
+
+        scrollbar.addEventListener("scroll", () => {
+            wrapper.scrollLeft = scrollbar.scrollLeft;
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    const siteMenuBurger = document.getElementById("siteMenuBurger");
+    const siteNavPanel = document.getElementById("siteNavPanel");
+    const siteNavOverlay = document.getElementById("siteNavOverlay");
+    const closeSiteNav = document.getElementById("closeSiteNav");
+
+    if (!siteMenuBurger || !siteNavPanel || !siteNavOverlay || !closeSiteNav) return;
+
+    function openSiteNav() {
+        siteNavPanel.classList.add("open");
+        siteNavOverlay.classList.add("open");
+        document.body.classList.add("siteNavIsOpen");
+        siteNavPanel.setAttribute("aria-hidden", "false");
+    }
+
+    function closeSiteNavigation() {
+        siteNavPanel.classList.remove("open");
+        siteNavOverlay.classList.remove("open");
+        document.body.classList.remove("siteNavIsOpen");
+        siteNavPanel.setAttribute("aria-hidden", "true");
+    }
+
+    siteMenuBurger.addEventListener("click", openSiteNav);
+    siteNavOverlay.addEventListener("click", closeSiteNavigation);
+    closeSiteNav.addEventListener("click", closeSiteNavigation);
+
+    siteMenuBurger.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openSiteNav();
+        }
+    });
+
+    closeSiteNav.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            closeSiteNavigation();
+        }
+    });
+
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+            closeSiteNavigation();
+        }
+    });
+});
+
+let currentPlayerCount = 0;
+let currentPlayers = [];
+
+function showPlayerPage(playerCount) {
+    currentPlayerCount = Number(playerCount);
+    currentPlayers = getPlayerNames(currentPlayerCount);
+
+    renderScorerPage();
+}
+
+function getPlayerNames(playerCount) {
+    const players = [];
+
+    for (let i = 1; i <= playerCount; i++) {
+        const name = prompt(`What is player ${i}'s name?`) || `Player ${i}`;
+
+        players.push({
+            name: name,
+            score: 0
+        });
+    }
+
+    return players;
+}
+
+function renderScorerPage() {
+    document.querySelectorAll(".playerPage").forEach(page => {
+        page.style.display = "none";
+        page.innerHTML = "";
+    });
+
+    document.getElementById("scorerHeaderWrapper").style.display = "none";
+    document.getElementById("inputHeader").style.display = "none";
+
+    const selectedPage = document.getElementById(`page${currentPlayerCount}`);
+
+    selectedPage.innerHTML = `
+        <div class="scorerContainer">
+            <div class="scoreboard">
+                ${currentPlayers.map((player, index) => `
+                    <div class="playerCard player${index + 1}">
+                        <h3>${player.name}</h3>
+
+                        <p id="score${index}" class="score">
+                            ${player.score}
+                        </p>
+
+                        <div class="scoreButtons">
+                            <button onclick="changeScore(${index}, -1)">-</button>
+                            <button onclick="changeScore(${index}, 1)">+</button>
+                        </div>
+                    </div>
+                `).join("")}
+            </div>
+        </div>
+        <div class="scorerControls">
+            <button onclick="resetScores()">Reset Scores</button>
+            <button onclick="newNamesSameCount()">New Names</button>
+            <button onclick="backToStart()">Back</button>
+        </div>
+    `;
+
+    selectedPage.style.display = "block";
+}
+
+function changeScore(playerIndex, amount) {
+    currentPlayers[playerIndex].score += amount;
+
+    document.getElementById(`score${playerIndex}`).textContent =
+        currentPlayers[playerIndex].score;
+}
+
+function resetScores() {
+    currentPlayers.forEach(player => {
+        player.score = 0;
+    });
+
+    renderScorerPage();
+}
+
+function newNamesSameCount() {
+    currentPlayers = getPlayerNames(currentPlayerCount);
+
+    renderScorerPage();
+}
+
+function backToStart() {
+    location.reload();
+}
