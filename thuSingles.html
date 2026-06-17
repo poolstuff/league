@@ -24,18 +24,23 @@
 
     <body class="singles-page">
         <header>
-            <div id="headerWrapper">
-                <a href="./index.html">
-                    <img
-                        src="./assets/images/leagueLogoThu2.png"
-                        class="leagueLogo"
-                        id="thuLeagueLogo"
-                /></a>
-                <div class="h1Wrapper">
-                    <h1 class="h1500">SINGLES</h1>
-                </div>
+        <div id="headerWrapper">
+            <a href="./index.html" aria-label="Go to home page">
+                <img src="./assets/images/leagueLogoThu2.png" class="leagueLogo" id="thuLeagueLogo"
+                    alt="Get-A-Cue Leagues logo" />
+            </a>
+
+            <div class="h1Wrapper">
+                <h1 class="h1500">SINGLES</h1>
             </div>
-        </header>
+
+            <nav id="siteMenuBurger" class="siteMenuBurger" aria-label="Open site navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+        </div>
+    </header>
 
         <div id="thuSinglesWeekHeader" class="weekStatus"></div>
 
@@ -103,6 +108,42 @@
                 </p>
             </div>
         </section>
+<div id="siteNavOverlay" class="siteNavOverlay"></div>
+
+        <aside id="siteNavPanel" class="siteNavPanel" aria-hidden="true">
+            <div class="siteNavPanelHeader">
+                <div id="closeSiteNav" class="closeSiteNav" role="button" tabindex="0"
+                    aria-label="Close site navigation"></div>
+
+                <div class="siteNavBrand">
+                    <p class="siteNavKicker">Get-A-Cue</p>
+                    <h2>Navigation</h2>
+                </div>
+            </div>
+
+            <div class="siteNavScrollArea">
+                <nav class="siteNavLinks" aria-label="Site navigation">
+                    <a href="./index.html">Home</a>
+                    <a href="./scratchpad.html">The Scratchpad</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+
+                    <hr />
+
+                    <p class="siteNavSectionTitle">Wednesday</p>
+                    <a href="./wedSchedule.html">Schedule</a>
+                    <a href="./wedTeam.html">Teams</a>
+                    <a href="./wedSingles.html">Singles</a>
+
+                    <hr />
+
+                    <p class="siteNavSectionTitle">Thursday</p>
+                    <a href="./thuSchedule.html">Schedule</a>
+                    <a href="./thuTeam.html">Teams</a>
+                </nav>
+            </div>
+        </aside>
+        
         <script src="./assets/script.js"></script>
     </body>
 </html>

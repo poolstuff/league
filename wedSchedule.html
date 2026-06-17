@@ -1,441 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="./assets/images/08.png" />
-        
-        <link rel="stylesheet" href="./assets/styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-        <title>Wednesday Schedule</title>
-    </head> 
 
-    <body class="wedSchedule-page">
-        <header>
-            <div id="headerWrapper">
-                <a href="./index.html">
-                    <img
-                        src="./assets/images/leagueLogoWed2.png"
-                        class="leagueLogo"
-                        id="wedLeagueLogo"
-                /></a>
-                <div class="h1Wrapper">
-                    <h1 class="h1500">SCHEDULE</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/08.png" />
+
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <title>Wednesday Schedule</title>
+</head>
+
+<body class="wedSchedule-page">
+    <header>
+        <div id="headerWrapper">
+            <a href="./index.html" aria-label="Go to home page">
+                <img src="./assets/images/leagueLogoWed2.png" class="leagueLogo" id="wedLeagueLogo"
+                    alt="Get-A-Cue Leagues logo" />
+            </a>
+
+            <div class="h1Wrapper">
+                <h1 class="h1500">SCHEDULE</h1>
+            </div>
+
+            <nav id="siteMenuBurger" class="siteMenuBurger" aria-label="Open site navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <div id="colorCodeWrapper">
+            <div id="coolorKeyH3Wrap">
+                <h3 class="colorKeyTitle">TABLE COLOR CODE</h3>
+            </div>
+            <div id="keyWrapper">
+                <div class="codeDotTextWrapper">
+                    <span class="codeDot" id="yellowDot"></span>
+                    <span class="codeText">Tables 2 & 3</span>
+                </div>
+                <div class="codeDotTextWrapper">
+                    <span class="codeDot" id="blueDot"></span>
+                    <span class="codeText">Tables 4 & 5</span>
+                </div>
+                <div class="codeDotTextWrapper">
+                    <span class="codeDot" id="redDot"></span>
+                    <span class="codeText">Tables 11 & 12</span>
+                </div>
+                <div class="codeDotTextWrapper">
+                    <span class="codeDot" id="purpleDot"></span>
+                    <span class="codeText">Tables 13 & 14</span>
+                </div>
+                <div class="codeDotTextWrapper">
+                    <span class="codeDot" id="orangeDot"></span>
+                    <span class="codeText">Tables 6 & 9</span>
+                </div>
+                <div class="codeDotTextWrapper">
+                    <span class="codeDot" id="greenDot"></span>
+                    <span class="codeText">Tables 9.5 & 15</span>
                 </div>
             </div>
-        </header>
-        <section>
-            <div id="colorCodeWrapper">
-                <div id="coolorKeyH3Wrap">
-                    <h3 class="colorKeyTitle">TABLE COLOR CODE</h3>
-                </div>
-                <div id="keyWrapper">
-                        <div class="codeDotTextWrapper">
-                            <span class="codeDot" id="yellowDot"></span>
-                            <span class="codeText">Tables 2 & 3</span>
-                        </div>
-                        <div class="codeDotTextWrapper">
-                            <span class="codeDot" id="blueDot"></span>
-                            <span class="codeText">Tables 4 & 5</span>
-                        </div>
-                        <div class="codeDotTextWrapper">
-                            <span class="codeDot" id="redDot"></span>
-                            <span class="codeText">Tables 11 & 12</span>
-                        </div>
-                        <div class="codeDotTextWrapper">
-                            <span class="codeDot" id="purpleDot"></span>
-                            <span class="codeText">Tables 13 & 14</span>
-                        </div>
-                        <div class="codeDotTextWrapper">
-                            <span class="codeDot" id="orangeDot"></span>
-                            <span class="codeText">Tables 6 & 9</span>
-                        </div>
-                        <div class="codeDotTextWrapper">
-                            <span class="codeDot" id="greenDot"></span>
-                            <span class="codeText">Tables 9.5 & 15</span>
-                        </div>
-                    </div>
+        </div>
+    </section>
+
+    <section class="schedWrapper">
+        <table id="wedSchedTable" class="schedTable">
+            <tr>
+                <th>DATE</th>
+                <th>WEEK</th>
+                <th>BYE</th>
+                <th>HOME</th>
+                <th>AWAY</th>
+                <th>HOME</th>
+                <th>AWAY</th>
+                <th>HOME</th>
+                <th>AWAY</th>
+                <th>HOME</th>
+                <th>AWAY</th>
+                <th>HOME</th>
+                <th>AWAY</th>
+            </tr>
+            <tr>
+                <td class="col-fixed">4/15/2026</td>
+                <td>Week 1</td>
+                <td>Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">The Boys</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">4/22/2026</td>
+                <td>Week 2</td>
+                <td>Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">The Boys</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 4 & 5">PKT Change</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">4/29/2026</td>
+                <td>Week 3</td>
+                <td>The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">5/06/2026</td>
+                <td>Week 4</td>
+                <td>Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">5/13/2026</td>
+                <td>Week 5</td>
+                <td>Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Pirates&nbsp;of the&nbsp;Table</td>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-fixed">5/20/2026</td>
+                <td>Week 6</td>
+                <td>Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">5/27/2026</td>
+                <td>Week 7</td>
+                <td>FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Pirates&nbsp; of the& Table</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">6/03/2026</td>
+                <td>Week 8</td>
+                <td>Haboobs</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">6/10/2026</td>
+                <td>Week 9</td>
+                <td>PKT Change</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Crazy Train</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">6/17/2026</td>
+                <td>Week 10</td>
+                <td>The Boys</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">6/24/2026</td>
+                <td>Week 11</td>
+                <td>Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">The Boys</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">7/01/2026</td>
+                <td>Week 12</td>
+                <td>Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">7/08/2026</td>
+                <td>Week 13</td>
+                <td>Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
+            </tr>
+            <tr>
+                <td class="col-fixed">7/15/2026</td>
+                <td>Week 14</td>
+                <td>The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">7/22/2026</td>
+                <td>Week 15</td>
+                <td>Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Young Bloods</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">7/29/2026</td>
+                <td>Week 16</td>
+                <td>Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">The Boys</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">8/05/2026</td>
+                <td>Week 17</td>
+                <td>Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
+            </tr>
+            <tr>
+                <td class="col-fixed">8/12/2026</td>
+                <td>Week 18</td>
+                <td>FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">8/19/2026</td>
+                <td>Week 19</td>
+                <td>Haboobs</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">The Boys</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">8/26/2026</td>
+                <td>Week 20</td>
+                <td>PKT Change</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">The Boys</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">9/02/2026</td>
+                <td>Week 21</td>
+                <td>The Boys</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">The Dougernauts</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
+            </tr>
+            <tr>
+                <td class="col-fixed">9/09/2026</td>
+                <td>Week 22</td>
+                <td>Spam Fo&nbsp;Lunch</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">Young Bloods</td>
+                <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
+                <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
+                <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
+                <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
+                <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
+                <td class="match-cell" data-table="TABLES 4 & 5">The The Dougernauts</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="pageFooter">
+        <table class="upcomingTable">
+            <tr>
+                <th>DATE</th>
+                <th>UPCOMING EVENTS</th>
+            </tr>
+            <tr>
+                <td>9/16/2026</td>
+                <td>Pizza party and singles tournament</td>
+            </tr>
+            <tr>
+                <td>9/23/2026</td>
+                <td>New season starts</td>
+            </tr>
+        </table>
+    </section>
+    <div id="siteNavOverlay" class="siteNavOverlay"></div>
+
+    <aside id="siteNavPanel" class="siteNavPanel" aria-hidden="true">
+        <div class="siteNavPanelHeader">
+            <div id="closeSiteNav" class="closeSiteNav" role="button" tabindex="0" aria-label="Close site navigation">
             </div>
-        </section>
 
-        <section class="schedWrapper">
-            <table id="wedSchedTable" class="schedTable">
-                <tr>
-                    <th>DATE</th>
-                    <th>WEEK</th>
-                    <th>BYE</th>
-                    <th>HOME</th>
-                    <th>AWAY</th>
-                    <th>HOME</th>
-                    <th>AWAY</th>
-                    <th>HOME</th>
-                    <th>AWAY</th>
-                    <th>HOME</th>
-                    <th>AWAY</th>
-                    <th>HOME</th>
-                    <th>AWAY</th>
-                </tr>
-                <tr>
-                    <td class="col-fixed">4/15/2026</td>
-                    <td>Week 1</td>
-                    <td>Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">4/22/2026</td>
-                    <td>Week 2</td>
-                    <td>Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 4 & 5"  >PKT Change</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">4/29/2026</td>
-                    <td>Week 3</td>
-                    <td>The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">5/06/2026</td>
-                    <td>Week 4</td>
-                    <td>Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">5/13/2026</td>
-                    <td>Week 5</td>
-                    <td>Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Pirates&nbsp;of the&nbsp;Table</td>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">5/20/2026</td>
-                    <td>Week 6</td>
-                    <td>Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">5/27/2026</td>
-                    <td>Week 7</td>
-                    <td>FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Pirates&nbsp; of the& Table</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">6/03/2026</td>
-                    <td>Week 8</td>
-                    <td>Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">6/10/2026</td>
-                    <td>Week 9</td>
-                    <td>PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Crazy Train</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">6/17/2026</td>
-                    <td>Week 10</td>
-                    <td>The Boys</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">6/24/2026</td>
-                    <td>Week 11</td>
-                    <td>Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">7/01/2026</td>
-                    <td>Week 12</td>
-                    <td>Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">7/08/2026</td>
-                    <td>Week 13</td>
-                    <td>Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">7/15/2026</td>
-                    <td>Week 14</td>
-                    <td>The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">7/22/2026</td>
-                    <td>Week 15</td>
-                    <td>Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Young Bloods</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">7/29/2026</td>
-                    <td>Week 16</td>
-                    <td>Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">8/05/2026</td>
-                    <td>Week 17</td>
-                    <td>Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">FFFFF<sup>10</sup></td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">8/12/2026</td>
-                    <td>Week 18</td>
-                    <td>FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">8/19/2026</td>
-                    <td>Week 19</td>
-                    <td>Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">8/26/2026</td>
-                    <td>Week 20</td>
-                    <td>PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">9/02/2026</td>
-                    <td>Week 21</td>
-                    <td>The Boys</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">The Dougernauts</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Spam Fo&nbsp;Lunch</td>
-                </tr>
-                <tr>
-                    <td class="col-fixed">9/09/2026</td>
-                    <td>Week 22</td>
-                    <td>Spam Fo&nbsp;Lunch</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">Young Bloods</td>
-                    <td class="match-cell" data-table="TABLES 2 & 3">The Boys</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Vladimir Poolin</td>
-                    <td class="match-cell" data-table="TABLES 11 & 12">Pirates&nbsp;of the&nbsp;Table</td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">FFFFF<sup>10</sup></td>
-                    <td class="match-cell" data-table="TABLES 13 & 14">Haboobs</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">PKT Change</td>
-                    <td class="match-cell" data-table="TABLES 9.5 & 15">Rack Pack</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">Crazy Train</td>
-                    <td class="match-cell" data-table="TABLES 4 & 5">The The Dougernauts</td>
-                </tr>
-            </table>
-        </section>
+            <div class="siteNavBrand">
+                <p class="siteNavKicker">Get-A-Cue</p>
+                <h2>Navigation</h2>
+            </div>
+        </div>
 
-        <section class="pageFooter">
-            <table class="upcomingTable">
-                <tr>
-                    <th>DATE</th>
-                    <th>UPCOMING EVENTS</th>
-                </tr>
-                <tr>
-                    <td>9/16/2026</td>
-                    <td>Pizza party and singles tournament</td>
-                </tr>
-                <tr>
-                    <td>9/23/2026</td>
-                    <td>New season starts</td>
-                </tr>
-            </table>
-        </section>
-<script src="./assets/script.js"></script>    </body>
+        <div class="siteNavScrollArea">
+            <nav class="siteNavLinks" aria-label="Site navigation">
+                <a href="./index.html">Home</a>
+                <a href="./scratchpad.html">The Scratchpad</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+
+                <hr />
+
+                <p class="siteNavSectionTitle">Wednesday</p>
+                <a href="./wedTeam.html">Teams</a>
+                <a href="./wedSingles.html">Singles</a>
+
+                <hr />
+
+                <p class="siteNavSectionTitle">Thursday</p>
+                <a href="./thuSchedule.html">Schedule</a>
+                <a href="./thuTeam.html">Teams</a>
+                <a href="./thuSingles.html">Singles</a>
+            </nav>
+        </div>
+    </aside>
+    <script src="./assets/script.js"></script>
+</body>
+
 </html>

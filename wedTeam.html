@@ -1,350 +1,326 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="icon" href="./assets/images/08.png" />
 
-        <link rel="stylesheet" href="./assets/styles.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
-            rel="stylesheet"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap"
-            rel="stylesheet"
-        />
-        <title>Wed. Team Standings</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/images/08.png" />
 
-    <body class="team-page">
-        <header>
-            <div id="headerWrapper">
-                <a href="./index.html">
-                    <img
-                        src="./assets/images/leagueLogoWed2.png"
-                        class="leagueLogo"
-                        id="wedLeagueLogo"
-                /></a>
-                <div class="h1Wrapper">
-                    <h1 class="h1500">TEAMS</h1>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet" />
+    <title>Wed. Team Standings</title>
+</head>
+
+<body class="team-page">
+    <header>
+        <div id="headerWrapper">
+            <a href="./index.html" aria-label="Go to home page">
+                <img src="./assets/images/leagueLogoWed2.png" class="leagueLogo" id="wedLeagueLogo"
+                    alt="Get-A-Cue Leagues logo" />
+            </a>
+
+            <div class="h1Wrapper">
+                <h1 class="h1500">TEAMS</h1>
+            </div>
+
+            <nav id="siteMenuBurger" class="siteMenuBurger" aria-label="Open site navigation" tabindex="0">
+                <span></span>
+                <span></span>
+                <span></span>
+            </nav>
+        </div>
+    </header>
+    <section class="teamSection">
+        <div class="tableContainer section100vw" id="wedTeamTableContainer"></div>
+    </section>
+    <section>
+        <div id="teamCards">
+            <card class="teamCard" id="piratesCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 1</h2>
                 </div>
-            </div>
-        </header>
-        <section class="teamSection">
-            <div
-                class="tableContainer section100vw"
-                id="wedTeamTableContainer"
-            ></div>
-        </section>
-        <section>
-            <div id="teamCards">
-                <card class="teamCard" id="piratesCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 1</h2>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/piratesOfTheTable.png" id="piratesLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/piratesOfTheTable.png"
-                                id="piratesLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Jason<br />
-                                2. Traye<br />
-                                3. WC<br />
-                                4. Don<br />
-                                5. Sam<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Jason<br />
+                            2. Traye<br />
+                            3. WC<br />
+                            4. Don<br />
+                            5. Sam<br />
+                        </p>
                     </div>
-                </card>
+                </div>
+            </card>
 
-                <card class="teamCard" id="vladimirCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 2</h2>
+            <card class="teamCard" id="vladimirCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 2</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/vladimirPoolin.png" id="vladimirLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/vladimirPoolin.png"
-                                id="vladimirLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Leigh<br />
-                                2. Ian<br />
-                                3. Eli<br />
-                                4. Cole<br />
-                                5. James<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Leigh<br />
+                            2. Ian<br />
+                            3. Eli<br />
+                            4. Cole<br />
+                            5. James<br />
+                        </p>
                     </div>
-                </card>
+                </div>
+            </card>
 
-                <card class="teamCard" id="rackpackCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 3</h2>
+            <card class="teamCard" id="rackpackCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 3</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/rackPack.png" id="rackpackLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/rackPack.png"
-                                id="rackpackLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Brennen<br />
-                                2. Nick<br />
-                                3. Ian<br />
-                                4. Scott<br />
-                                5. Tim<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Brennen<br />
+                            2. Nick<br />
+                            3. Ian<br />
+                            4. Scott<br />
+                            5. Tim<br />
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="team4Card">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 4</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="team4Card">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 4</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/PKTChange.png" id="team4Logo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/PKTChange.png"
-                                id="team4Logo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Patrick<br />
-                                2. Brandy<br />
-                                3. P.J.<br />
-                                4. Cara<br />
-                                5. --<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Patrick<br />
+                            2. Brandy<br />
+                            3. P.J.<br />
+                            4. Cara<br />
+                            5. --<br />
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="haboobsCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 5</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="haboobsCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 5</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/haboobs.png" id="haboobsLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/haboobs.png"
-                                id="haboobsLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Mike<br />
-                                2. Dan<br />
-                                3. Mo<br />
-                                4. Vickie<br />
-                                5. Olga<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Mike<br />
+                            2. Dan<br />
+                            3. Mo<br />
+                            4. Vickie<br />
+                            5. Olga<br />
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="fffff10Card">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 6</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="fffff10Card">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 6</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/fffff10.png" id="fffff10Logo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/fffff10.png"
-                                id="fffff10Logo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Richard<br />
-                                2. Justin<br />
-                                3. Sandy<br />
-                                4. Dennis<br />
-                                5. Ve<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Richard<br />
+                            2. Justin<br />
+                            3. Sandy<br />
+                            4. Dennis<br />
+                            5. Ve<br />
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="youngBloodsCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 7</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="youngBloodsCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 7</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/youngBloods.png" id="youngBloodsLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/youngBloods.png"
-                                id="youngBloodsLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Gary<br />
-                                2. Rich<br />
-                                3. Vic<br />
-                                4. Jim<br />
-                                5. Pam<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Gary<br />
+                            2. Rich<br />
+                            3. Vic<br />
+                            4. Jim<br />
+                            5. Pam<br />
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="theBoysCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 8</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="theBoysCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 8</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/theBoys.png" id="theBoysLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/theBoys.png"
-                                id="theBoysLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. John A.<br />
-                                2. John B.<br />
-                                3. Bobby<br />
-                                4. Mike<br />
-                                5. Roger<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. John A.<br />
+                            2. John B.<br />
+                            3. Bobby<br />
+                            4. Mike<br />
+                            5. Roger<br />
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="dougernautsard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 9</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="dougernautsard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 9</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/dougernautsX.png" id="dougernautsLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/dougernautsX.png"
-                                id="dougernautsLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Michael<br />
-                                2. Kash<br />
-                                3. Jim<br />
-                                4. Sarah<br />
-                                5. Doug<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Michael<br />
+                            2. Kash<br />
+                            3. Jim<br />
+                            4. Sarah<br />
+                            5. Doug<br />
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="crazyTrainCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 10</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="crazyTrainCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 10</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/crazyTrain.png" id="crazyTrainLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/crazyTrain.png"
-                                id="crazyTrainLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Chris<br />
-                                2. Darric<br />
-                                3. Jordan<br />
-                                4. Sergei<br />
-                                5. Mike R.
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Chris<br />
+                            2. Darric<br />
+                            3. Jordan<br />
+                            4. Sergei<br />
+                            5. Mike R.
+                        </p>
                     </div>
-                </card>
-                <card class="teamCard" id="spamFoLunchCard">
-                    <div class="cardHeader">
-                        <h2 class="teamH2">Team 11</h2>
+                </div>
+            </card>
+            <card class="teamCard" id="spamFoLunchCard">
+                <div class="cardHeader">
+                    <h2 class="teamH2">Team 11</h2>
+                </div>
+                <div class="cardBody">
+                    <div class="teamImg">
+                        <img src="./assets/images/spamFoLunch.png" id="spamFoLunchLogo" />
                     </div>
-                    <div class="cardBody">
-                        <div class="teamImg">
-                            <img
-                                src="./assets/images/spamFoLunch.png"
-                                id="spamFoLunchLogo"
-                            />
-                        </div>
-                        <div class="cardRoster">
-                            <p>
-                                1. Pablo<br />
-                                2. Eric<br />
-                                3. Sabrina<br />
-                                4. Nick<br />
-                                5. Lon<br />
-                            </p>
-                        </div>
+                    <div class="cardRoster">
+                        <p>
+                            1. Pablo<br />
+                            2. Eric<br />
+                            3. Sabrina<br />
+                            4. Nick<br />
+                            5. Lon<br />
+                        </p>
                     </div>
-                </card>
+                </div>
+            </card>
+        </div>
+    </section>
+    <section id="linksSection" style="display: none;">
+        <div class="siteLinksWrapper">
+            <h3 id="linksH3">Site Links:</h3>
+            <p class="siteLinks">
+                <a href="wedSchedule.html" target="_blank" rel="noopener noreferrer" class="noDecoration">
+                    WEDNESDAY SCHEDULE
+                </a>
+            </p>
+            <p class="siteLinks">
+                <a href="wedSingles.html" target="_blank" rel="noopener noreferrer" class="noDecoration">
+                    WEDNESDAY SINGLES STANDINGS
+                </a>
+            </p>
+            <p class="siteLinks">
+                <a href="thuSchedule.html" target="_blank" rel="noopener noreferrer" class="noDecoration">
+                    THURSDAY SCHEDULE
+                </a>
+            </p>
+            <p class="siteLinks">
+                <a href="thuTeam.html" target="_blank" rel="noopener noreferrer" class="noDecoration">
+                    THURSDAY TEAM STANDINGS
+                </a>
+            </p>
+            <p class="siteLinks">
+                <a href="thuSingles.html" target="_blank" rel="noopener noreferrer" class="noDecoration">
+                    THURSDAY SINGLES STANDINGS
+                </a>
+            </p>
+        </div>
+    </section>
+    <div id="siteNavOverlay" class="siteNavOverlay"></div>
+
+    <aside id="siteNavPanel" class="siteNavPanel" aria-hidden="true">
+        <div class="siteNavPanelHeader">
+            <div id="closeSiteNav" class="closeSiteNav" role="button" tabindex="0" aria-label="Close site navigation">
             </div>
-        </section>
-        <section id="linksSection" style="display: none;">
-            <div class="siteLinksWrapper">
-                <h3 id="linksH3">Site Links:</h3>
-                <p class="siteLinks">
-                    <a
-                        href="wedSchedule.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        WEDNESDAY SCHEDULE
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="wedSingles.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        WEDNESDAY SINGLES STANDINGS
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="thuSchedule.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        THURSDAY SCHEDULE
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="thuTeam.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        THURSDAY TEAM STANDINGS
-                    </a>
-                </p>
-                <p class="siteLinks">
-                    <a
-                        href="thuSingles.html"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="noDecoration"
-                    >
-                        THURSDAY SINGLES STANDINGS
-                    </a>
-                </p>
+
+            <div class="siteNavBrand">
+                <p class="siteNavKicker">Get-A-Cue</p>
+                <h2>Navigation</h2>
             </div>
-        </section>
-        <script src="./assets/script.js"></script>
-    </body>
+        </div>
+
+        <div class="siteNavScrollArea">
+            <nav class="siteNavLinks" aria-label="Site navigation">
+                <a href="./index.html">Home</a>
+                <a href="./scratchpad.html">The Scratchpad</a>
+                <a href="./about.html">About</a>
+                <a href="./contact.html">Contact</a>
+
+                <hr />
+
+                <p class="siteNavSectionTitle">Wednesday</p>
+                <a href="./wedSchedule.html">Schedule</a>
+                <a href="./wedSingles.html">Singles</a>
+
+                <hr />
+
+                <p class="siteNavSectionTitle">Thursday</p>
+                <a href="./thuSchedule.html">Schedule</a>
+                <a href="./thuTeam.html">Teams</a>
+                <a href="./thuSingles.html">Singles</a>
+            </nav>
+        </div>
+    </aside>
+    <script src="./assets/script.js"></script>
+</body>
+
 </html>
