@@ -113,9 +113,9 @@ body.scorer-page {
     background-attachment: fixed;
 }
 
-img {
+/* img {
     max-width: 100%;
-}
+} */
 
 a {
     color: inherit;
@@ -527,16 +527,20 @@ body.siteNavIsOpen {
 ========================================================= */
 #memoriamWrapper {
     display: flex;
-    flex-direction: row;
-    margin-top: 8rem;
-    justify-content: center ;
+    flex-direction: column;
+    margin-top: 6rem;
+    align-items: center ;
 }
 
 #dan {
-    height: 400px;
-    width:auto;
-    margin-left: 1rem;
-}
+    width: 500px;
+    max-width: 100%;
+    height: auto !important;
+    min-width: 0;
+    min-height: 0;
+    object-fit: contain;
+    display: block;
+}   
 
 
 
