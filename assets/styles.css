@@ -525,11 +525,25 @@ body.siteNavIsOpen {
 /* =========================================================
    04. HOME PAGE - INTERACTIVE LEAGUE MENU
 ========================================================= */
+#memoriamWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8rem;
+    justify-content: center ;
+}
+
+#dan {
+    height: 400px;
+    width:auto;
+    margin-left: 1rem;
+}
+
+
 
 #interactiveWrapper {
     display: flex;
     justify-content: center;
-    margin-top: 12rem;
+    margin-top: 3rem;
 }
 
 .interactive-container {
