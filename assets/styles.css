@@ -532,6 +532,10 @@ body.siteNavIsOpen {
     align-items: center ;
 }
 
+.gofundme {
+    text-decoration: none;
+}
+
 #dan {
     width: 500px;
     max-width: 100%;
