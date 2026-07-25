@@ -777,8 +777,8 @@ body.thuSchedule-page .schedWrapper {
     z-index: 29;
 }
 
-.singlesTable th:nth-child(n + 5),
-.singlesTable td:nth-child(n + 5) {
+.singlesTable th:nth-child(n + 6),
+.singlesTable td:nth-child(n + 6) {
     min-width: 5rem;
 }
 
@@ -1153,6 +1153,43 @@ Sticky header cells use opaque matching gradients so scrolled text does not show
     vertical-align: middle;
 }
 
+.positionColumn {
+    width: 3.5rem;
+    min-width: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Team standings */
+
+.teamStandingsTable th.positionColumn,
+.teamStandingsTable td.positionColumn {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.teamStandingsTable th:nth-child(2),
+.teamStandingsTable td:nth-child(2) {
+    left: 3.5rem;
+}
+
+/* Singles standings */
+
+.singlesTable th.positionColumn,
+.singlesTable td.positionColumn {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.singlesTable th:nth-child(2),
+.singlesTable td:nth-child(2) {
+    left: 3.5rem;
+}
+
 .singlesStandingsSection {
     margin-bottom: 4rem;
 }
@@ -1178,14 +1215,14 @@ Sticky header cells use opaque matching gradients so scrolled text does not show
     background: rgba(0, 0, 0, 0.5);
 }
 
-.teamStandingsTable td:first-child {
+.teamStandingsTable td:nth-child(2) {
     position: sticky;
     left: 0;
     z-index: 10;
     background: rgba(0, 0, 0, 0.7) !important;
 }
 
-.teamStandingsTable th:first-child {
+.teamStandingsTable th:nth-child(2) {
     position: sticky;
     left: 0;
     z-index: 11;
@@ -1193,8 +1230,8 @@ Sticky header cells use opaque matching gradients so scrolled text does not show
 }
 
 /* Team names can wrap, but words stay intact. */
-.teamStandingsTable th:nth-child(1),
-.teamStandingsTable td:nth-child(1) {
+.teamStandingsTable th:nth-child(2),
+.teamStandingsTable td:nth-child(2) {
     min-width: 10rem;
     max-width: 14rem;
     white-space: normal;
@@ -1203,8 +1240,8 @@ Sticky header cells use opaque matching gradients so scrolled text does not show
 }
 
 /* Match Thursday's generated TEAM column width to Wednesday's generated TEAM column. */
-#thuTeamStandings th:first-child,
-#thuTeamStandings td:first-child {
+#thuTeamStandings th:nth-child(2),
+#thuTeamStandings td:nth-child(2) {
     width: 10rem;
     min-width: 10rem;
     max-width: 10rem;
@@ -1214,29 +1251,29 @@ Sticky header cells use opaque matching gradients so scrolled text does not show
 }
 
 /* Totals and averages stay readable and unwrapped. */
-.teamStandingsTable th:nth-child(2),
-.teamStandingsTable td:nth-child(2),
 .teamStandingsTable th:nth-child(3),
-.teamStandingsTable td:nth-child(3) {
+.teamStandingsTable td:nth-child(3),
+.teamStandingsTable th:nth-child(4),
+.teamStandingsTable td:nth-child(4) {
     min-width: 7rem;
     white-space: nowrap;
 }
 
 /* Weekly score columns stay compact. */
-.teamStandingsTable th:nth-child(n + 4),
-.teamStandingsTable td:nth-child(n + 4) {
+.teamStandingsTable th:nth-child(n + 5),
+.teamStandingsTable td:nth-child(n + 5) {
     min-width: 4rem;
     white-space: nowrap;
 }
 
-.teamStandingsTable th:first-child,
-.teamStandingsTable td:first-child {
+.teamStandingsTable th:nth-child(2),
+.teamStandingsTable td:nth-child(2) {
     position: sticky;
     left: 0;
     z-index: 0;
 }
 
-.teamStandingsTable th:first-child {
+.teamStandingsTable th:nth-child(2) {
     z-index: 3;
 }
 
@@ -1480,7 +1517,7 @@ card.teamCard:hover .teamImg img,
     z-index: 1;
 }
 
-.singlesTable td:nth-child(1) {
+.singlesTable td:nth-child(2) {
     color: var(--white);
 }
 
@@ -1490,7 +1527,7 @@ card.teamCard:hover .teamImg img,
     text-align: center;
 }
 
-.singlesTable th:first-child {
+.singlesTable th:nth-child(2) {
     position: sticky;
     top: 0;
     left: 0;
@@ -1499,7 +1536,7 @@ card.teamCard:hover .teamImg img,
 }
 
 /* Sticky PLAYER cells */
-.singlesTable td:first-child {
+.singlesTable td:nth-child(2) {
     position: sticky;
     left: 0;
     z-index: 10;
@@ -2626,28 +2663,28 @@ option[value="premium"] {
         font-size: 0.9rem;
     }
 
-    .teamStandingsTable th:nth-child(1),
-    .teamStandingsTable td:nth-child(1) {
+    .teamStandingsTable th:nth-child(2),
+    .teamStandingsTable td:nth-child(2) {
         min-width: 8rem;
         max-width: 11rem;
     }
 
-    #thuTeamStandings th:first-child,
-    #thuTeamStandings td:first-child {
+    #thuTeamStandings th:nth-child(2),
+    #thuTeamStandings td:nth-child(2) {
         width: 8rem;
         min-width: 8rem;
         max-width: 8rem;
     }
 
-    .teamStandingsTable th:nth-child(2),
-    .teamStandingsTable td:nth-child(2),
     .teamStandingsTable th:nth-child(3),
-    .teamStandingsTable td:nth-child(3) {
+    .teamStandingsTable td:nth-child(3),
+    .teamStandingsTable th:nth-child(4),
+    .teamStandingsTable td:nth-child(4) {
         min-width: 6rem;
     }
 
-    .teamStandingsTable th:nth-child(n + 4),
-    .teamStandingsTable td:nth-child(n + 4) {
+    .teamStandingsTable th:nth-child(n + 5),
+    .teamStandingsTable td:nth-child(n + 5) {
         min-width: 3.5rem;
     }
 
@@ -2734,28 +2771,28 @@ option[value="premium"] {
         font-size: 0.8rem;
     }
 
-    .teamStandingsTable th:nth-child(1),
-    .teamStandingsTable td:nth-child(1) {
+    .teamStandingsTable th:nth-child(2),
+    .teamStandingsTable td:nth-child(2) {
         min-width: 7rem;
         max-width: 9rem;
     }
 
-    #thuTeamStandings th:first-child,
-    #thuTeamStandings td:first-child {
+    #thuTeamStandings th:nth-child(2),
+    #thuTeamStandings td:nth-child(2) {
         width: 7rem;
         min-width: 7rem;
         max-width: 7rem;
     }
 
-    .teamStandingsTable th:nth-child(2),
-    .teamStandingsTable td:nth-child(2),
     .teamStandingsTable th:nth-child(3),
-    .teamStandingsTable td:nth-child(3) {
+    .teamStandingsTable td:nth-child(3),
+    .teamStandingsTable th:nth-child(4),
+    .teamStandingsTable td:nth-child(4) {
         min-width: 5.25rem;
     }
 
-    .teamStandingsTable th:nth-child(n + 4),
-    .teamStandingsTable td:nth-child(n + 4) {
+    .teamStandingsTable th:nth-child(n + 5),
+    .teamStandingsTable td:nth-child(n + 5) {
         min-width: 3rem;
     }
 
@@ -3476,4 +3513,15 @@ option[value="premium"] {
         right: auto;
         left: 0;
     }
+}
+/* =========================================================
+   POS COLUMN BACKGROUND OVERRIDE
+   Matches the adjacent sticky Team / Player columns.
+========================================================= */
+.teamStandingsTable thead tr th.positionColumn,
+.teamStandingsTable tbody tr td.positionColumn,
+.singlesTable thead tr th.positionColumn,
+.singlesTable tbody tr td.positionColumn {
+    background: rgba(0, 0, 0, 0.7) !important;
+    background-image: none !important;
 }
