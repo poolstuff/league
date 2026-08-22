@@ -104,55 +104,55 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderTeamTable(tableId, teams, weekStatusElement) {
-    const table = document.getElementById(tableId);
-    if (!table) return;
+        const table = document.getElementById(tableId);
+        if (!table) return;
 
-    const thead = table.querySelector("thead");
-    const tbody = table.querySelector("tbody");
+        const thead = table.querySelector("thead");
+        const tbody = table.querySelector("tbody");
 
-    const teamStandings = buildTeamStandings(teams);
-    const currentWeek = getCurrentWeekFromWeeks(teamStandings);
+        const teamStandings = buildTeamStandings(teams);
+        const currentWeek = getCurrentWeekFromWeeks(teamStandings);
 
-    if (weekStatusElement) {
-        weekStatusElement.textContent = `After ${currentWeek} Week${
-            currentWeek === 1 ? "" : "s"
-        }`;
-    }
+        if (weekStatusElement) {
+            weekStatusElement.textContent = `After ${currentWeek} Week${
+                currentWeek === 1 ? "" : "s"
+            }`;
+        }
 
-    thead.innerHTML = `
-        <tr>
-            <th class="positionColumn">Pos</th>
-            <th>Team</th>
-            <th>Total Points</th>
-            <th>Weekly Avg</th>
-            ${Array.from(
-                { length: currentWeek },
-                (_, i) => `<th>W${i + 1}</th>`
-            ).join("")}
-        </tr>
-    `;
-
-    tbody.innerHTML = "";
-
-    const rankedTeams = assignCompetitionPositions(teamStandings, "total");
-
-    rankedTeams.forEach((team) => {
-        const tr = document.createElement("tr");
-
-        tr.innerHTML = `
-            <td class="positionColumn">${team.position}</td>
-            <td>${cleanText(team.team)}</td>
-            <td>${formatNumber(team.total)}</td>
-            <td>${formatNumber(team.average)}</td>
-            ${team.weeks
-                .slice(0, currentWeek)
-                .map((score) => `<td>${formatNumber(score)}</td>`)
-                .join("")}
+        thead.innerHTML = `
+            <tr>
+                <th class="positionColumn">Pos</th>
+                <th>Team</th>
+                <th>Total Points</th>
+                <th>Weekly Avg</th>
+                ${Array.from(
+                    { length: currentWeek },
+                    (_, i) => `<th>W${i + 1}</th>`
+                ).join("")}
+            </tr>
         `;
 
-        tbody.appendChild(tr);
-    });
-}
+        tbody.innerHTML = "";
+
+        const rankedTeams = assignCompetitionPositions(teamStandings, "total");
+
+        rankedTeams.forEach((team) => {
+            const tr = document.createElement("tr");
+
+            tr.innerHTML = `
+                <td class="positionColumn">${team.position}</td>
+                <td>${cleanText(team.team)}</td>
+                <td>${formatNumber(team.total)}</td>
+                <td>${formatNumber(team.average)}</td>
+                ${team.weeks
+                    .slice(0, currentWeek)
+                    .map((score) => `<td>${formatNumber(score)}</td>`)
+                    .join("")}
+            `;
+
+            tbody.appendChild(tr);
+        });
+    }
 
     function buildTeamStandings(teams) {
         return teams
@@ -162,10 +162,14 @@ document.addEventListener("DOMContentLoaded", () => {
                 const weeks = [];
 
                 for (let i = 0; i < 22; i++) {
-                    const weeklyScore = players.reduce((sum, player) => {
+                    const playerScore = players.reduce((sum, player) => {
                         const score = Number(player.weeks?.[i] ?? 0);
                         return sum + (Number.isNaN(score) ? 0 : score);
                     }, 0);
+
+                    const handicap = Number(team.handicaps?.[i] ?? 0);
+                    const validHandicap = Number.isNaN(handicap) ? 0 : handicap;
+                    const weeklyScore = playerScore + validHandicap;
 
                     weeks.push(Number(weeklyScore.toFixed(2)));
                 }
@@ -197,81 +201,81 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function renderSinglesTable(config, players) {
-    const table = document.getElementById(config.tableId);
-    if (!table) return;
+        const table = document.getElementById(config.tableId);
+        if (!table) return;
 
-    const thead = table.querySelector("thead");
-    const tbody = table.querySelector("tbody");
+        const thead = table.querySelector("thead");
+        const tbody = table.querySelector("tbody");
 
-    const validPlayers = players
-        .filter(isValidSinglesPlayer)
-        .sort((a, b) => Number(b.score ?? 0) - Number(a.score ?? 0));
+        const validPlayers = players
+            .filter(isValidSinglesPlayer)
+            .sort((a, b) => Number(b.score ?? 0) - Number(a.score ?? 0));
 
-    const currentWeek = getCurrentWeekFromSingles(validPlayers);
+        const currentWeek = getCurrentWeekFromSingles(validPlayers);
 
-    renderSinglesWeekHeader(config.weekHeaderId, currentWeek);
+        renderSinglesWeekHeader(config.weekHeaderId, currentWeek);
 
-    thead.innerHTML = `
-        <tr>
-            <th class="positionColumn">Pos</th>
-            <th>Player</th>
-            <th>Team</th>
-            <th>Total Points</th>
-            <th>Average</th>
-            ${Array.from(
-                { length: currentWeek },
-                (_, i) => `<th>W${i + 1}</th>`
-            ).join("")}
-        </tr>
-    `;
-
-    tbody.innerHTML = "";
-
-    const rankedPlayers = assignCompetitionPositions(
-        validPlayers,
-        "score"
-    );
-
-    rankedPlayers.forEach((player) => {
-        const tr = document.createElement("tr");
-
-        tr.innerHTML = `
-            <td class="positionColumn">${player.position}</td>
-            <td>${cleanText(player.player)}</td>
-            <td>${cleanText(player.team)}</td>
-            <td>${formatNumber(player.score)}</td>
-            <td>${formatNumber(player.average)}</td>
-            ${player.weeks
-                .slice(0, currentWeek)
-                .map((score) => `<td>${formatNumber(score)}</td>`)
-                .join("")}
+        thead.innerHTML = `
+            <tr>
+                <th class="positionColumn">Pos</th>
+                <th>Player</th>
+                <th>Team</th>
+                <th>Total Points</th>
+                <th>Average</th>
+                ${Array.from(
+                    { length: currentWeek },
+                    (_, i) => `<th>W${i + 1}</th>`
+                ).join("")}
+            </tr>
         `;
 
-        tbody.appendChild(tr);
-    });
-}
+        tbody.innerHTML = "";
 
-function assignCompetitionPositions(rows, scoreKey) {
-    let previousScore = null;
-    let previousPosition = 0;
+        const rankedPlayers = assignCompetitionPositions(
+            validPlayers,
+            "score"
+        );
 
-    return rows.map((row, index) => {
-        const score = Number(row?.[scoreKey] ?? 0);
+        rankedPlayers.forEach((player) => {
+            const tr = document.createElement("tr");
 
-        const position =
-            index > 0 && score === previousScore
-                ? previousPosition
-                : index + 1;
+            tr.innerHTML = `
+                <td class="positionColumn">${player.position}</td>
+                <td>${cleanText(player.player)}</td>
+                <td>${cleanText(player.team)}</td>
+                <td>${formatNumber(player.score)}</td>
+                <td>${formatNumber(player.average)}</td>
+                ${player.weeks
+                    .slice(0, currentWeek)
+                    .map((score) => `<td>${formatNumber(score)}</td>`)
+                    .join("")}
+            `;
 
-        previousScore = score;
-        previousPosition = position;
+            tbody.appendChild(tr);
+        });
+    }
 
-        return {
-            ...row,
-            position,
-        };
-    });
-}
+    function assignCompetitionPositions(rows, scoreKey) {
+        let previousScore = null;
+        let previousPosition = 0;
+
+        return rows.map((row, index) => {
+            const score = Number(row?.[scoreKey] ?? 0);
+
+            const position =
+                index > 0 && score === previousScore
+                    ? previousPosition
+                    : index + 1;
+
+            previousScore = score;
+            previousPosition = position;
+
+            return {
+                ...row,
+                position,
+            };
+        });
+    }
 
     function getCurrentWeekFromWeeks(rows) {
         let currentWeek = 0;
