@@ -29,8 +29,8 @@
       "players": [
         {
           "player": "JASON",
-          "total": 841,
-          "average": 40.05,
+          "total": 874,
+          "average": 39.73,
           "weeks": [
             40,
             35,
@@ -53,13 +53,13 @@
             38,
             39,
             47,
-            0
+            33
           ]
         },
         {
           "player": "TRAYE",
-          "total": 646,
-          "average": 30.76,
+          "total": 674,
+          "average": 30.64,
           "weeks": [
             40,
             25,
@@ -82,13 +82,13 @@
             35,
             28,
             32,
-            0
+            28
           ]
         },
         {
           "player": "WC",
-          "total": 651,
-          "average": 31,
+          "total": 701,
+          "average": 31.86,
           "weeks": [
             40,
             28,
@@ -111,13 +111,13 @@
             24,
             31,
             27,
-            0
+            50
           ]
         },
         {
           "player": "DON",
-          "total": 755,
-          "average": 35.95,
+          "total": 793,
+          "average": 36.05,
           "weeks": [
             40,
             37,
@@ -140,13 +140,13 @@
             37,
             33,
             31,
-            0
+            38
           ]
         },
         {
           "player": "SAM",
-          "total": 514,
-          "average": 24.48,
+          "total": 532,
+          "average": 24.18,
           "weeks": [
             40,
             37,
@@ -169,7 +169,7 @@
             24,
             16,
             21,
-            0
+            18
           ]
         }
       ]
@@ -203,8 +203,8 @@
       "players": [
         {
           "player": "PABLO",
-          "total": 866,
-          "average": 41.24,
+          "total": 906,
+          "average": 41.18,
           "weeks": [
             37,
             46,
@@ -227,13 +227,13 @@
             46,
             34,
             46,
-            0
+            40
           ]
         },
         {
           "player": "ERIC",
-          "total": 877,
-          "average": 41.76,
+          "total": 917,
+          "average": 41.68,
           "weeks": [
             35,
             50,
@@ -256,13 +256,13 @@
             41,
             42,
             38,
-            0
+            40
           ]
         },
         {
           "player": "SABRINA",
-          "total": 838,
-          "average": 39.9,
+          "total": 878,
+          "average": 39.91,
           "weeks": [
             29,
             46,
@@ -285,13 +285,13 @@
             36,
             43,
             44,
-            0
+            40
           ]
         },
         {
           "player": "NICK",
-          "total": 771,
-          "average": 36.71,
+          "total": 811,
+          "average": 36.86,
           "weeks": [
             39,
             35,
@@ -314,13 +314,13 @@
             42,
             39,
             35,
-            0
+            40
           ]
         },
         {
           "player": "LON",
-          "total": 830,
-          "average": 39.52,
+          "total": 870,
+          "average": 39.55,
           "weeks": [
             37,
             45,
@@ -343,7 +343,7 @@
             38,
             34,
             38,
-            0
+            40
           ]
         }
       ]
@@ -372,13 +372,13 @@
         10.25,
         18.81,
         23.36,
-        0
+        4.11
       ],
       "players": [
         {
           "player": "LEIGH",
-          "total": 830,
-          "average": 39.52,
+          "total": 860,
+          "average": 39.09,
           "weeks": [
             46,
             40,
@@ -401,13 +401,13 @@
             46,
             41,
             40,
-            0
+            30
           ]
         },
         {
           "player": "IAN",
-          "total": 771,
-          "average": 36.71,
+          "total": 804,
+          "average": 36.55,
           "weeks": [
             38,
             40,
@@ -430,13 +430,13 @@
             46,
             38,
             28,
-            0
+            33
           ]
         },
         {
           "player": "ELI",
-          "total": 701,
-          "average": 33.38,
+          "total": 748,
+          "average": 34,
           "weeks": [
             27,
             40,
@@ -459,13 +459,13 @@
             41,
             32,
             13,
-            0
+            47
           ]
         },
         {
           "player": "ROWAN",
-          "total": 761,
-          "average": 36.24,
+          "total": 795,
+          "average": 36.14,
           "weeks": [
             43,
             40,
@@ -488,13 +488,13 @@
             41,
             50,
             20,
-            0
+            34
           ]
         },
         {
           "player": "JAMES",
-          "total": 659,
-          "average": 31.38,
+          "total": 696,
+          "average": 31.64,
           "weeks": [
             30,
             40,
@@ -517,7 +517,7 @@
             35,
             31,
             37,
-            0
+            37
           ]
         }
       ]
@@ -551,8 +551,8 @@
       "players": [
         {
           "player": "BRENNEN",
-          "total": 819,
-          "average": 39,
+          "total": 860,
+          "average": 39.09,
           "weeks": [
             46,
             40,
@@ -575,13 +575,13 @@
             32,
             43,
             34,
-            0
+            41
           ]
         },
         {
           "player": "NICK",
-          "total": 757,
-          "average": 36.05,
+          "total": 785,
+          "average": 35.68,
           "weeks": [
             42,
             30,
@@ -604,13 +604,13 @@
             25,
             37,
             38,
-            0
+            28
           ]
         },
         {
           "player": "IAN",
-          "total": 781,
-          "average": 37.19,
+          "total": 825,
+          "average": 37.5,
           "weeks": [
             41,
             33,
@@ -633,13 +633,13 @@
             29,
             37,
             25,
-            0
+            44
           ]
         },
         {
           "player": "D. ROSE",
-          "total": 704,
-          "average": 33.52,
+          "total": 736,
+          "average": 33.45,
           "weeks": [
             39,
             39,
@@ -662,13 +662,13 @@
             33,
             44,
             39,
-            0
+            32
           ]
         },
         {
           "player": "TIM",
-          "total": 757,
-          "average": 36.05,
+          "total": 807,
+          "average": 36.68,
           "weeks": [
             34,
             37,
@@ -691,7 +691,7 @@
             32,
             50,
             20,
-            0
+            50
           ]
         }
       ]
@@ -753,8 +753,8 @@
       "players": [
         {
           "player": "PATRICK",
-          "total": 919,
-          "average": 43.76,
+          "total": 969,
+          "average": 44.05,
           "weeks": [
             42,
             33,
@@ -777,13 +777,13 @@
             50,
             40,
             38,
-            0
+            50
           ]
         },
         {
           "player": "BRANDY",
-          "total": 699,
-          "average": 33.29,
+          "total": 730,
+          "average": 33.18,
           "weeks": [
             31,
             42,
@@ -806,13 +806,13 @@
             22,
             40,
             43,
-            0
+            31
           ]
         },
         {
           "player": "PJ",
-          "total": 820,
-          "average": 39.05,
+          "total": 844,
+          "average": 38.36,
           "weeks": [
             40,
             38,
@@ -835,13 +835,13 @@
             34,
             40,
             32,
-            0
+            24
           ]
         },
         {
           "player": "CARA",
-          "total": 759,
-          "average": 36.14,
+          "total": 780,
+          "average": 35.45,
           "weeks": [
             42,
             33,
@@ -864,13 +864,13 @@
             25,
             40,
             36,
-            0
+            21
           ]
         },
         {
           "player": "TOM",
-          "total": 828,
-          "average": 39.43,
+          "total": 871,
+          "average": 39.59,
           "weeks": [
             38,
             33,
@@ -893,7 +893,7 @@
             46,
             40,
             46,
-            0
+            43
           ]
         }
       ]
@@ -922,13 +922,13 @@
         0,
         2.32,
         9.13,
-        0
+        4.16
       ],
       "players": [
         {
           "player": "MIKE",
-          "total": 819,
-          "average": 39,
+          "total": 860,
+          "average": 39.09,
           "weeks": [
             46,
             46,
@@ -951,13 +951,13 @@
             40,
             33,
             34,
-            0
+            41
           ]
         },
         {
           "player": "OLGA",
-          "total": 762,
-          "average": 36.29,
+          "total": 802,
+          "average": 36.45,
           "weeks": [
             33,
             41,
@@ -980,13 +980,13 @@
             40,
             34,
             32,
-            0
+            40
           ]
         },
         {
           "player": "DAN",
-          "total": 879,
-          "average": 41.86,
+          "total": 925,
+          "average": 42.05,
           "weeks": [
             43,
             45,
@@ -1009,13 +1009,13 @@
             40,
             39,
             34,
-            0
+            46
           ]
         },
         {
           "player": "MIKE MO",
-          "total": 808,
-          "average": 38.48,
+          "total": 854,
+          "average": 38.82,
           "weeks": [
             35,
             42,
@@ -1038,13 +1038,13 @@
             40,
             41,
             47,
-            0
+            46
           ]
         },
         {
           "player": "VICKIE",
-          "total": 678,
-          "average": 32.29,
+          "total": 715,
+          "average": 32.5,
           "weeks": [
             37,
             31,
@@ -1067,13 +1067,13 @@
             40,
             30,
             21,
-            0
+            37
           ]
         }
       ]
     },
     {
-      "team": "FFFFF<sup>10</sup>",
+      "team": "FFFFF<sup>10</10>",
       "handicaps": [
         0,
         15.3,
@@ -1096,13 +1096,13 @@
         0,
         16.91,
         0,
-        0
+        2.96
       ],
       "players": [
         {
           "player": "RICHARD",
-          "total": 775,
-          "average": 36.9,
+          "total": 810,
+          "average": 36.82,
           "weeks": [
             34,
             43,
@@ -1125,13 +1125,13 @@
             40,
             41,
             47,
-            0
+            35
           ]
         },
         {
           "player": "JUSTIN",
-          "total": 865,
-          "average": 41.19,
+          "total": 902,
+          "average": 41,
           "weeks": [
             39,
             50,
@@ -1154,13 +1154,13 @@
             32,
             37,
             44,
-            0
+            37
           ]
         },
         {
           "player": "SANDY",
-          "total": 752,
-          "average": 35.81,
+          "total": 794,
+          "average": 36.09,
           "weeks": [
             22,
             23,
@@ -1183,13 +1183,13 @@
             29,
             24,
             50,
-            0
+            42
           ]
         },
         {
           "player": "DENNIS",
-          "total": 792,
-          "average": 37.71,
+          "total": 835,
+          "average": 37.95,
           "weeks": [
             43,
             41,
@@ -1212,13 +1212,13 @@
             36,
             32,
             43,
-            0
+            43
           ]
         },
         {
           "player": "VE",
-          "total": 772,
-          "average": 36.76,
+          "total": 818,
+          "average": 37.18,
           "weeks": [
             38,
             39,
@@ -1241,7 +1241,7 @@
             31,
             35,
             47,
-            0
+            46
           ]
         }
       ]
@@ -1270,13 +1270,13 @@
         0,
         0,
         0,
-        0
+        3.21
       ],
       "players": [
         {
           "player": "GARY",
-          "total": 888,
-          "average": 42.29,
+          "total": 935,
+          "average": 42.5,
           "weeks": [
             50,
             42,
@@ -1299,13 +1299,13 @@
             50,
             50,
             47,
-            0
+            47
           ]
         },
         {
           "player": "RICH",
-          "total": 807,
-          "average": 38.43,
+          "total": 844,
+          "average": 38.36,
           "weeks": [
             34,
             19,
@@ -1328,13 +1328,13 @@
             30,
             45,
             44,
-            0
+            37
           ]
         },
         {
           "player": "VIC",
-          "total": 832,
-          "average": 39.62,
+          "total": 866,
+          "average": 39.36,
           "weeks": [
             46,
             36,
@@ -1357,13 +1357,13 @@
             40,
             40,
             43,
-            0
+            34
           ]
         },
         {
           "player": "JIM",
-          "total": 845,
-          "average": 40.24,
+          "total": 885,
+          "average": 40.23,
           "weeks": [
             39,
             41,
@@ -1386,13 +1386,13 @@
             46,
             50,
             50,
-            0
+            40
           ]
         },
         {
           "player": "PAM",
-          "total": 873,
-          "average": 41.57,
+          "total": 902,
+          "average": 41,
           "weeks": [
             41,
             38,
@@ -1415,7 +1415,7 @@
             35,
             44,
             45,
-            0
+            29
           ]
         }
       ]
@@ -1449,8 +1449,8 @@
       "players": [
         {
           "player": "JOHN A",
-          "total": 864,
-          "average": 41.14,
+          "total": 908,
+          "average": 41.27,
           "weeks": [
             45,
             34,
@@ -1473,13 +1473,13 @@
             50,
             44,
             40,
-            0
+            44
           ]
         },
         {
           "player": "BOBBY",
-          "total": 782,
-          "average": 37.24,
+          "total": 818,
+          "average": 37.18,
           "weeks": [
             40,
             35,
@@ -1502,13 +1502,13 @@
             43,
             26,
             40,
-            0
+            36
           ]
         },
         {
           "player": "MIKE",
-          "total": 830,
-          "average": 39.52,
+          "total": 872,
+          "average": 39.64,
           "weeks": [
             37,
             47,
@@ -1531,13 +1531,13 @@
             42,
             41,
             40,
-            0
+            42
           ]
         },
         {
           "player": "ROGER",
-          "total": 788,
-          "average": 37.52,
+          "total": 818,
+          "average": 37.18,
           "weeks": [
             39,
             34,
@@ -1560,13 +1560,13 @@
             40,
             31,
             40,
-            0
+            30
           ]
         },
         {
           "player": "JOHN B.",
-          "total": 855,
-          "average": 40.71,
+          "total": 895,
+          "average": 40.68,
           "weeks": [
             44,
             33,
@@ -1589,7 +1589,7 @@
             45,
             41,
             40,
-            0
+            40
           ]
         }
       ]
@@ -1623,8 +1623,8 @@
       "players": [
         {
           "player": "MICHAEL",
-          "total": 903,
-          "average": 43,
+          "total": 947,
+          "average": 43.05,
           "weeks": [
             47,
             27,
@@ -1647,13 +1647,13 @@
             50,
             41,
             43,
-            0
+            44
           ]
         },
         {
           "player": "JIM",
-          "total": 872,
-          "average": 41.52,
+          "total": 916,
+          "average": 41.64,
           "weeks": [
             34,
             41,
@@ -1676,13 +1676,13 @@
             36,
             33,
             38,
-            0
+            44
           ]
         },
         {
           "player": "SARAH",
-          "total": 782,
-          "average": 37.24,
+          "total": 813,
+          "average": 36.95,
           "weeks": [
             29,
             29,
@@ -1705,13 +1705,13 @@
             39,
             32,
             36,
-            0
+            31
           ]
         },
         {
           "player": "KASH",
-          "total": 927,
-          "average": 44.14,
+          "total": 970,
+          "average": 44.09,
           "weeks": [
             34,
             34,
@@ -1734,13 +1734,13 @@
             50,
             43,
             50,
-            0
+            43
           ]
         },
         {
           "player": "JAKE",
-          "total": 836,
-          "average": 41.8,
+          "total": 879,
+          "average": 41.86,
           "weeks": [
             40,
             42,
@@ -1763,7 +1763,7 @@
             44,
             41,
             50,
-            0
+            43
           ]
         }
       ]
@@ -1797,8 +1797,8 @@
       "players": [
         {
           "player": "DARRIC",
-          "total": 824,
-          "average": 39.24,
+          "total": 857,
+          "average": 38.95,
           "weeks": [
             46,
             40,
@@ -1821,13 +1821,13 @@
             36,
             38,
             32,
-            0
+            33
           ]
         },
         {
           "player": "CHRIS",
-          "total": 943,
-          "average": 44.9,
+          "total": 990,
+          "average": 45,
           "weeks": [
             50,
             42,
@@ -1850,12 +1850,12 @@
             43,
             50,
             50,
-            0
+            47
           ]
         },
         {
           "player": "MIKE R.",
-          "total": 714,
+          "total": 748,
           "average": 34,
           "weeks": [
             28,
@@ -1879,13 +1879,13 @@
             33,
             37,
             36,
-            0
+            34
           ]
         },
         {
           "player": "SERGEI",
-          "total": 767,
-          "average": 36.52,
+          "total": 806,
+          "average": 36.64,
           "weeks": [
             40,
             41,
@@ -1908,13 +1908,13 @@
             26,
             43,
             34,
-            0
+            39
           ]
         },
         {
           "player": "JORDAN",
-          "total": 795,
-          "average": 37.86,
+          "total": 821,
+          "average": 37.32,
           "weeks": [
             41,
             25,
@@ -1937,7 +1937,7 @@
             31,
             40,
             33,
-            0
+            26
           ]
         }
       ]
@@ -1947,8 +1947,8 @@
     {
       "player": "CHRIS",
       "team": "CRAZY TRAIN",
-      "score": 943,
-      "average": 44.9,
+      "score": 990,
+      "average": 45,
       "weeks": [
         50,
         42,
@@ -1971,14 +1971,14 @@
         43,
         50,
         50,
-        0
+        47
       ]
     },
     {
       "player": "KASH",
       "team": "RISING FROM THE KASHES",
-      "score": 927,
-      "average": 44.14,
+      "score": 970,
+      "average": 44.09,
       "weeks": [
         34,
         34,
@@ -2001,14 +2001,14 @@
         50,
         43,
         50,
-        0
+        43
       ]
     },
     {
       "player": "PATRICK",
       "team": "PKTCHANGE 2.0",
-      "score": 919,
-      "average": 43.76,
+      "score": 969,
+      "average": 44.05,
       "weeks": [
         42,
         33,
@@ -2031,14 +2031,14 @@
         50,
         40,
         38,
-        0
+        50
       ]
     },
     {
       "player": "MICHAEL",
       "team": "RISING FROM THE KASHES",
-      "score": 903,
-      "average": 43,
+      "score": 947,
+      "average": 43.05,
       "weeks": [
         47,
         27,
@@ -2061,14 +2061,14 @@
         50,
         41,
         43,
-        0
+        44
       ]
     },
     {
       "player": "GARY",
       "team": "YOUNG BLOODS",
-      "score": 888,
-      "average": 42.29,
+      "score": 935,
+      "average": 42.5,
       "weeks": [
         50,
         42,
@@ -2091,14 +2091,14 @@
         50,
         50,
         47,
-        0
+        47
       ]
     },
     {
       "player": "DAN",
       "team": "HABOOBS",
-      "score": 879,
-      "average": 41.86,
+      "score": 925,
+      "average": 42.05,
       "weeks": [
         43,
         45,
@@ -2121,14 +2121,14 @@
         40,
         39,
         34,
-        0
+        46
       ]
     },
     {
       "player": "ERIC",
       "team": "SPAM FO LUNCH",
-      "score": 877,
-      "average": 41.76,
+      "score": 917,
+      "average": 41.68,
       "weeks": [
         35,
         50,
@@ -2151,44 +2151,14 @@
         41,
         42,
         38,
-        0
-      ]
-    },
-    {
-      "player": "PAM",
-      "team": "YOUNG BLOODS",
-      "score": 873,
-      "average": 41.57,
-      "weeks": [
-        41,
-        38,
-        45,
-        42,
-        44,
-        40,
-        38,
-        46,
-        39,
-        46,
-        50,
-        41,
-        33,
-        43,
-        36,
-        50,
-        40,
-        37,
-        35,
-        44,
-        45,
-        0
+        40
       ]
     },
     {
       "player": "JIM",
       "team": "RISING FROM THE KASHES",
-      "score": 872,
-      "average": 41.52,
+      "score": 916,
+      "average": 41.64,
       "weeks": [
         34,
         41,
@@ -2211,14 +2181,44 @@
         36,
         33,
         38,
-        0
+        44
+      ]
+    },
+    {
+      "player": "JOHN A",
+      "team": "THE BOYS",
+      "score": 908,
+      "average": 41.27,
+      "weeks": [
+        45,
+        34,
+        40,
+        47,
+        29,
+        37,
+        35,
+        50,
+        47,
+        40,
+        42,
+        26,
+        46,
+        37,
+        41,
+        37,
+        50,
+        47,
+        50,
+        44,
+        40,
+        44
       ]
     },
     {
       "player": "PABLO",
       "team": "SPAM FO LUNCH",
-      "score": 866,
-      "average": 41.24,
+      "score": 906,
+      "average": 41.18,
       "weeks": [
         37,
         46,
@@ -2241,14 +2241,14 @@
         46,
         34,
         46,
-        0
+        40
       ]
     },
     {
       "player": "JUSTIN",
-      "team": "FFFFF<sup>10</sup>",
-      "score": 865,
-      "average": 41.19,
+      "team": "FFFFF<sup>10</10>",
+      "score": 902,
+      "average": 41,
       "weeks": [
         39,
         50,
@@ -2271,44 +2271,44 @@
         32,
         37,
         44,
-        0
+        37
       ]
     },
     {
-      "player": "JOHN A",
-      "team": "THE BOYS",
-      "score": 864,
-      "average": 41.14,
+      "player": "PAM",
+      "team": "YOUNG BLOODS",
+      "score": 902,
+      "average": 41,
       "weeks": [
-        45,
-        34,
-        40,
-        47,
-        29,
-        37,
-        35,
-        50,
-        47,
-        40,
-        42,
-        26,
-        46,
-        37,
         41,
-        37,
-        50,
-        47,
-        50,
+        38,
+        45,
+        42,
         44,
         40,
-        0
+        38,
+        46,
+        39,
+        46,
+        50,
+        41,
+        33,
+        43,
+        36,
+        50,
+        40,
+        37,
+        35,
+        44,
+        45,
+        29
       ]
     },
     {
       "player": "JOHN B.",
       "team": "THE BOYS",
-      "score": 855,
-      "average": 40.71,
+      "score": 895,
+      "average": 40.68,
       "weeks": [
         44,
         33,
@@ -2331,14 +2331,14 @@
         45,
         41,
         40,
-        0
+        40
       ]
     },
     {
       "player": "JIM",
       "team": "YOUNG BLOODS",
-      "score": 845,
-      "average": 40.24,
+      "score": 885,
+      "average": 40.23,
       "weeks": [
         39,
         41,
@@ -2361,74 +2361,14 @@
         46,
         50,
         50,
-        0
-      ]
-    },
-    {
-      "player": "JASON",
-      "team": "PIRATES OF THE TABLE",
-      "score": 841,
-      "average": 40.05,
-      "weeks": [
-        40,
-        35,
-        44,
-        50,
-        41,
-        35,
-        32,
-        46,
-        37,
-        32,
-        46,
-        40,
-        35,
-        45,
-        38,
-        39,
-        38,
-        44,
-        38,
-        39,
-        47,
-        0
-      ]
-    },
-    {
-      "player": "SABRINA",
-      "team": "SPAM FO LUNCH",
-      "score": 838,
-      "average": 39.9,
-      "weeks": [
-        29,
-        46,
-        39,
-        29,
-        46,
-        40,
-        39,
-        35,
-        41,
-        35,
-        40,
-        39,
-        50,
-        36,
-        38,
-        46,
-        46,
-        41,
-        36,
-        43,
-        44,
-        0
+        40
       ]
     },
     {
       "player": "JAKE",
       "team": "RISING FROM THE KASHES",
-      "score": 836,
-      "average": 41.8,
+      "score": 879,
+      "average": 41.86,
       "weeks": [
         40,
         42,
@@ -2451,14 +2391,164 @@
         44,
         41,
         50,
-        0
+        43
+      ]
+    },
+    {
+      "player": "SABRINA",
+      "team": "SPAM FO LUNCH",
+      "score": 878,
+      "average": 39.91,
+      "weeks": [
+        29,
+        46,
+        39,
+        29,
+        46,
+        40,
+        39,
+        35,
+        41,
+        35,
+        40,
+        39,
+        50,
+        36,
+        38,
+        46,
+        46,
+        41,
+        36,
+        43,
+        44,
+        40
+      ]
+    },
+    {
+      "player": "JASON",
+      "team": "PIRATES OF THE TABLE",
+      "score": 874,
+      "average": 39.73,
+      "weeks": [
+        40,
+        35,
+        44,
+        50,
+        41,
+        35,
+        32,
+        46,
+        37,
+        32,
+        46,
+        40,
+        35,
+        45,
+        38,
+        39,
+        38,
+        44,
+        38,
+        39,
+        47,
+        33
+      ]
+    },
+    {
+      "player": "MIKE",
+      "team": "THE BOYS",
+      "score": 872,
+      "average": 39.64,
+      "weeks": [
+        37,
+        47,
+        41,
+        44,
+        37,
+        40,
+        40,
+        44,
+        44,
+        40,
+        37,
+        40,
+        50,
+        36,
+        35,
+        26,
+        42,
+        27,
+        42,
+        41,
+        40,
+        42
+      ]
+    },
+    {
+      "player": "TOM",
+      "team": "PKTCHANGE 2.0",
+      "score": 871,
+      "average": 39.59,
+      "weeks": [
+        38,
+        33,
+        36,
+        50,
+        37,
+        47,
+        27,
+        40,
+        40,
+        42,
+        47,
+        35,
+        32,
+        36,
+        41,
+        38,
+        36,
+        41,
+        46,
+        40,
+        46,
+        43
+      ]
+    },
+    {
+      "player": "LON",
+      "team": "SPAM FO LUNCH",
+      "score": 870,
+      "average": 39.55,
+      "weeks": [
+        37,
+        45,
+        41,
+        39,
+        39,
+        39,
+        37,
+        44,
+        46,
+        36,
+        40,
+        42,
+        45,
+        37,
+        43,
+        40,
+        38,
+        32,
+        38,
+        34,
+        38,
+        40
       ]
     },
     {
       "player": "VIC",
       "team": "YOUNG BLOODS",
-      "score": 832,
-      "average": 39.62,
+      "score": 866,
+      "average": 39.36,
       "weeks": [
         46,
         36,
@@ -2481,44 +2571,14 @@
         40,
         40,
         43,
-        0
-      ]
-    },
-    {
-      "player": "LON",
-      "team": "SPAM FO LUNCH",
-      "score": 830,
-      "average": 39.52,
-      "weeks": [
-        37,
-        45,
-        41,
-        39,
-        39,
-        39,
-        37,
-        44,
-        46,
-        36,
-        40,
-        42,
-        45,
-        37,
-        43,
-        40,
-        38,
-        32,
-        38,
-        34,
-        38,
-        0
+        34
       ]
     },
     {
       "player": "LEIGH",
       "team": "VLADIMIR POOLIN",
-      "score": 830,
-      "average": 39.52,
+      "score": 860,
+      "average": 39.09,
       "weeks": [
         46,
         40,
@@ -2541,134 +2601,14 @@
         46,
         41,
         40,
-        0
-      ]
-    },
-    {
-      "player": "MIKE",
-      "team": "THE BOYS",
-      "score": 830,
-      "average": 39.52,
-      "weeks": [
-        37,
-        47,
-        41,
-        44,
-        37,
-        40,
-        40,
-        44,
-        44,
-        40,
-        37,
-        40,
-        50,
-        36,
-        35,
-        26,
-        42,
-        27,
-        42,
-        41,
-        40,
-        0
-      ]
-    },
-    {
-      "player": "TOM",
-      "team": "PKTCHANGE 2.0",
-      "score": 828,
-      "average": 39.43,
-      "weeks": [
-        38,
-        33,
-        36,
-        50,
-        37,
-        47,
-        27,
-        40,
-        40,
-        42,
-        47,
-        35,
-        32,
-        36,
-        41,
-        38,
-        36,
-        41,
-        46,
-        40,
-        46,
-        0
-      ]
-    },
-    {
-      "player": "DARRIC",
-      "team": "CRAZY TRAIN",
-      "score": 824,
-      "average": 39.24,
-      "weeks": [
-        46,
-        40,
-        47,
-        40,
-        44,
-        42,
-        47,
-        31,
-        40,
-        26,
-        28,
-        30,
-        31,
-        45,
-        40,
-        47,
-        44,
-        50,
-        36,
-        38,
-        32,
-        0
-      ]
-    },
-    {
-      "player": "PJ",
-      "team": "PKTCHANGE 2.0",
-      "score": 820,
-      "average": 39.05,
-      "weeks": [
-        40,
-        38,
-        38,
-        38,
-        35,
-        37,
-        50,
-        38,
-        40,
-        33,
-        50,
-        39,
-        32,
-        47,
-        41,
-        39,
-        38,
-        41,
-        34,
-        40,
-        32,
-        0
+        30
       ]
     },
     {
       "player": "BRENNEN",
       "team": "RACK PACK",
-      "score": 819,
-      "average": 39,
+      "score": 860,
+      "average": 39.09,
       "weeks": [
         46,
         40,
@@ -2691,14 +2631,14 @@
         32,
         43,
         34,
-        0
+        41
       ]
     },
     {
       "player": "MIKE",
       "team": "HABOOBS",
-      "score": 819,
-      "average": 39,
+      "score": 860,
+      "average": 39.09,
       "weeks": [
         46,
         46,
@@ -2721,14 +2661,44 @@
         40,
         33,
         34,
-        0
+        41
+      ]
+    },
+    {
+      "player": "DARRIC",
+      "team": "CRAZY TRAIN",
+      "score": 857,
+      "average": 38.95,
+      "weeks": [
+        46,
+        40,
+        47,
+        40,
+        44,
+        42,
+        47,
+        31,
+        40,
+        26,
+        28,
+        30,
+        31,
+        45,
+        40,
+        47,
+        44,
+        50,
+        36,
+        38,
+        32,
+        33
       ]
     },
     {
       "player": "MIKE MO",
       "team": "HABOOBS",
-      "score": 808,
-      "average": 38.48,
+      "score": 854,
+      "average": 38.82,
       "weeks": [
         35,
         42,
@@ -2751,14 +2721,44 @@
         40,
         41,
         47,
-        0
+        46
+      ]
+    },
+    {
+      "player": "PJ",
+      "team": "PKTCHANGE 2.0",
+      "score": 844,
+      "average": 38.36,
+      "weeks": [
+        40,
+        38,
+        38,
+        38,
+        35,
+        37,
+        50,
+        38,
+        40,
+        33,
+        50,
+        39,
+        32,
+        47,
+        41,
+        39,
+        38,
+        41,
+        34,
+        40,
+        32,
+        24
       ]
     },
     {
       "player": "RICH",
       "team": "YOUNG BLOODS",
-      "score": 807,
-      "average": 38.43,
+      "score": 844,
+      "average": 38.36,
       "weeks": [
         34,
         19,
@@ -2781,44 +2781,14 @@
         30,
         45,
         44,
-        0
-      ]
-    },
-    {
-      "player": "JORDAN",
-      "team": "CRAZY TRAIN",
-      "score": 795,
-      "average": 37.86,
-      "weeks": [
-        41,
-        25,
-        50,
-        40,
-        46,
-        41,
-        43,
-        28,
-        47,
-        38,
-        32,
-        21,
-        29,
-        39,
-        40,
-        47,
-        37,
-        47,
-        31,
-        40,
-        33,
-        0
+        37
       ]
     },
     {
       "player": "DENNIS",
-      "team": "FFFFF<sup>10</sup>",
-      "score": 792,
-      "average": 37.71,
+      "team": "FFFFF<sup>10</10>",
+      "score": 835,
+      "average": 37.95,
       "weeks": [
         43,
         41,
@@ -2841,44 +2811,104 @@
         36,
         32,
         43,
-        0
+        43
       ]
     },
     {
-      "player": "ROGER",
-      "team": "THE BOYS",
-      "score": 788,
-      "average": 37.52,
+      "player": "IAN",
+      "team": "RACK PACK",
+      "score": 825,
+      "average": 37.5,
       "weeks": [
-        39,
-        34,
-        26,
-        42,
-        35,
-        42,
-        34,
-        34,
-        37,
-        40,
-        36,
+        41,
+        33,
+        45,
         41,
         40,
-        39,
+        33,
+        46,
         36,
-        45,
-        30,
+        38,
+        36,
+        34,
+        40,
+        40,
+        27,
         47,
         40,
+        38,
+        35,
+        29,
+        37,
+        25,
+        44
+      ]
+    },
+    {
+      "player": "JORDAN",
+      "team": "CRAZY TRAIN",
+      "score": 821,
+      "average": 37.32,
+      "weeks": [
+        41,
+        25,
+        50,
+        40,
+        46,
+        41,
+        43,
+        28,
+        47,
+        38,
+        32,
+        21,
+        29,
+        39,
+        40,
+        47,
+        37,
+        47,
         31,
         40,
-        0
+        33,
+        26
+      ]
+    },
+    {
+      "player": "VE",
+      "team": "FFFFF<sup>10</10>",
+      "score": 818,
+      "average": 37.18,
+      "weeks": [
+        38,
+        39,
+        38,
+        35,
+        39,
+        38,
+        40,
+        29,
+        37,
+        43,
+        38,
+        23,
+        40,
+        41,
+        39,
+        32,
+        30,
+        40,
+        31,
+        35,
+        47,
+        46
       ]
     },
     {
       "player": "BOBBY",
       "team": "THE BOYS",
-      "score": 782,
-      "average": 37.24,
+      "score": 818,
+      "average": 37.18,
       "weeks": [
         40,
         35,
@@ -2901,14 +2931,44 @@
         43,
         26,
         40,
-        0
+        36
+      ]
+    },
+    {
+      "player": "ROGER",
+      "team": "THE BOYS",
+      "score": 818,
+      "average": 37.18,
+      "weeks": [
+        39,
+        34,
+        26,
+        42,
+        35,
+        42,
+        34,
+        34,
+        37,
+        40,
+        36,
+        41,
+        40,
+        39,
+        36,
+        45,
+        30,
+        47,
+        40,
+        31,
+        40,
+        30
       ]
     },
     {
       "player": "SARAH",
       "team": "RISING FROM THE KASHES",
-      "score": 782,
-      "average": 37.24,
+      "score": 813,
+      "average": 36.95,
       "weeks": [
         29,
         29,
@@ -2931,104 +2991,14 @@
         39,
         32,
         36,
-        0
-      ]
-    },
-    {
-      "player": "IAN",
-      "team": "RACK PACK",
-      "score": 781,
-      "average": 37.19,
-      "weeks": [
-        41,
-        33,
-        45,
-        41,
-        40,
-        33,
-        46,
-        36,
-        38,
-        36,
-        34,
-        40,
-        40,
-        27,
-        47,
-        40,
-        38,
-        35,
-        29,
-        37,
-        25,
-        0
-      ]
-    },
-    {
-      "player": "RICHARD",
-      "team": "FFFFF<sup>10</sup>",
-      "score": 775,
-      "average": 36.9,
-      "weeks": [
-        34,
-        43,
-        37,
-        35,
-        35,
-        38,
-        40,
-        32,
-        25,
-        44,
-        39,
-        27,
-        32,
-        36,
-        44,
-        27,
-        39,
-        40,
-        40,
-        41,
-        47,
-        0
-      ]
-    },
-    {
-      "player": "VE",
-      "team": "FFFFF<sup>10</sup>",
-      "score": 772,
-      "average": 36.76,
-      "weeks": [
-        38,
-        39,
-        38,
-        35,
-        39,
-        38,
-        40,
-        29,
-        37,
-        43,
-        38,
-        23,
-        40,
-        41,
-        39,
-        32,
-        30,
-        40,
-        31,
-        35,
-        47,
-        0
+        31
       ]
     },
     {
       "player": "NICK",
       "team": "SPAM FO LUNCH",
-      "score": 771,
-      "average": 36.71,
+      "score": 811,
+      "average": 36.86,
       "weeks": [
         39,
         35,
@@ -3051,44 +3021,74 @@
         42,
         39,
         35,
-        0
+        40
       ]
     },
     {
-      "player": "IAN",
-      "team": "VLADIMIR POOLIN",
-      "score": 771,
-      "average": 36.71,
+      "player": "RICHARD",
+      "team": "FFFFF<sup>10</10>",
+      "score": 810,
+      "average": 36.82,
       "weeks": [
+        34,
+        43,
+        37,
+        35,
+        35,
         38,
         40,
-        26,
         32,
         25,
-        40,
-        33,
-        46,
+        44,
+        39,
+        27,
         32,
-        38,
+        36,
+        44,
+        27,
+        39,
+        40,
+        40,
+        41,
+        47,
+        35
+      ]
+    },
+    {
+      "player": "TIM",
+      "team": "RACK PACK",
+      "score": 807,
+      "average": 36.68,
+      "weeks": [
+        34,
         37,
+        34,
         42,
         40,
-        47,
-        40,
+        50,
+        34,
         38,
-        35,
+        36,
         30,
-        46,
-        38,
-        28,
-        0
+        35,
+        36,
+        32,
+        32,
+        36,
+        40,
+        39,
+        30,
+        32,
+        50,
+        20,
+        50
       ]
     },
     {
       "player": "SERGEI",
       "team": "CRAZY TRAIN",
-      "score": 767,
-      "average": 36.52,
+      "score": 806,
+      "average": 36.64,
       "weeks": [
         40,
         41,
@@ -3111,14 +3111,44 @@
         26,
         43,
         34,
-        0
+        39
+      ]
+    },
+    {
+      "player": "IAN",
+      "team": "VLADIMIR POOLIN",
+      "score": 804,
+      "average": 36.55,
+      "weeks": [
+        38,
+        40,
+        26,
+        32,
+        25,
+        40,
+        33,
+        46,
+        32,
+        38,
+        37,
+        42,
+        40,
+        47,
+        40,
+        38,
+        35,
+        30,
+        46,
+        38,
+        28,
+        33
       ]
     },
     {
       "player": "OLGA",
       "team": "HABOOBS",
-      "score": 762,
-      "average": 36.29,
+      "score": 802,
+      "average": 36.45,
       "weeks": [
         33,
         41,
@@ -3141,14 +3171,14 @@
         40,
         34,
         32,
-        0
+        40
       ]
     },
     {
       "player": "ROWAN",
       "team": "VLADIMIR POOLIN",
-      "score": 761,
-      "average": 36.24,
+      "score": 795,
+      "average": 36.14,
       "weeks": [
         43,
         40,
@@ -3171,104 +3201,44 @@
         41,
         50,
         20,
-        0
+        34
       ]
     },
     {
-      "player": "CARA",
-      "team": "PKTCHANGE 2.0",
-      "score": 759,
-      "average": 36.14,
+      "player": "SANDY",
+      "team": "FFFFF<sup>10</10>",
+      "score": 794,
+      "average": 36.09,
       "weeks": [
-        42,
-        33,
-        29,
-        46,
-        24,
-        46,
-        40,
-        25,
-        40,
-        47,
-        36,
-        38,
-        35,
-        41,
-        37,
-        27,
-        36,
-        36,
-        25,
-        40,
-        36,
-        0
-      ]
-    },
-    {
-      "player": "NICK",
-      "team": "RACK PACK",
-      "score": 757,
-      "average": 36.05,
-      "weeks": [
-        42,
-        30,
-        36,
+        22,
+        23,
         39,
-        40,
+        27,
         31,
-        38,
-        27,
-        39,
-        33,
-        38,
         41,
-        41,
+        40,
+        32,
+        29,
+        42,
+        29,
+        37,
+        43,
+        50,
+        50,
         33,
-        47,
+        41,
         40,
         29,
-        33,
-        25,
-        37,
-        38,
-        0
-      ]
-    },
-    {
-      "player": "TIM",
-      "team": "RACK PACK",
-      "score": 757,
-      "average": 36.05,
-      "weeks": [
-        34,
-        37,
-        34,
-        42,
-        40,
+        24,
         50,
-        34,
-        38,
-        36,
-        30,
-        35,
-        36,
-        32,
-        32,
-        36,
-        40,
-        39,
-        30,
-        32,
-        50,
-        20,
-        0
+        42
       ]
     },
     {
       "player": "DON",
       "team": "PIRATES OF THE TABLE",
-      "score": 755,
-      "average": 35.95,
+      "score": 793,
+      "average": 36.05,
       "weeks": [
         40,
         37,
@@ -3291,43 +3261,103 @@
         37,
         33,
         31,
-        0
+        38
       ]
     },
     {
-      "player": "SANDY",
-      "team": "FFFFF<sup>10</sup>",
-      "score": 752,
-      "average": 35.81,
+      "player": "NICK",
+      "team": "RACK PACK",
+      "score": 785,
+      "average": 35.68,
       "weeks": [
-        22,
+        42,
+        30,
+        36,
+        39,
+        40,
+        31,
+        38,
+        27,
+        39,
+        33,
+        38,
+        41,
+        41,
+        33,
+        47,
+        40,
+        29,
+        33,
+        25,
+        37,
+        38,
+        28
+      ]
+    },
+    {
+      "player": "CARA",
+      "team": "PKTCHANGE 2.0",
+      "score": 780,
+      "average": 35.45,
+      "weeks": [
+        42,
+        33,
+        29,
+        46,
+        24,
+        46,
+        40,
+        25,
+        40,
+        47,
+        36,
+        38,
+        35,
+        41,
+        37,
+        27,
+        36,
+        36,
+        25,
+        40,
+        36,
+        21
+      ]
+    },
+    {
+      "player": "ELI",
+      "team": "VLADIMIR POOLIN",
+      "score": 748,
+      "average": 34,
+      "weeks": [
+        27,
+        40,
+        31,
+        42,
+        44,
+        37,
+        28,
+        43,
         23,
+        42,
+        17,
+        37,
+        40,
         39,
         27,
-        31,
-        41,
-        40,
-        32,
-        29,
+        22,
         42,
-        29,
-        37,
-        43,
-        50,
-        50,
-        33,
+        34,
         41,
-        40,
-        29,
-        24,
-        50,
-        0
+        32,
+        13,
+        47
       ]
     },
     {
       "player": "MIKE R.",
       "team": "CRAZY TRAIN",
-      "score": 714,
+      "score": 748,
       "average": 34,
       "weeks": [
         28,
@@ -3351,14 +3381,14 @@
         33,
         37,
         36,
-        0
+        34
       ]
     },
     {
       "player": "D. ROSE",
       "team": "RACK PACK",
-      "score": 704,
-      "average": 33.52,
+      "score": 736,
+      "average": 33.45,
       "weeks": [
         39,
         39,
@@ -3381,44 +3411,14 @@
         33,
         44,
         39,
-        0
-      ]
-    },
-    {
-      "player": "ELI",
-      "team": "VLADIMIR POOLIN",
-      "score": 701,
-      "average": 33.38,
-      "weeks": [
-        27,
-        40,
-        31,
-        42,
-        44,
-        37,
-        28,
-        43,
-        23,
-        42,
-        17,
-        37,
-        40,
-        39,
-        27,
-        22,
-        42,
-        34,
-        41,
-        32,
-        13,
-        0
+        32
       ]
     },
     {
       "player": "BRANDY",
       "team": "PKTCHANGE 2.0",
-      "score": 699,
-      "average": 33.29,
+      "score": 730,
+      "average": 33.18,
       "weeks": [
         31,
         42,
@@ -3441,14 +3441,14 @@
         22,
         40,
         43,
-        0
+        31
       ]
     },
     {
       "player": "VICKIE",
       "team": "HABOOBS",
-      "score": 678,
-      "average": 32.29,
+      "score": 715,
+      "average": 32.5,
       "weeks": [
         37,
         31,
@@ -3471,44 +3471,14 @@
         40,
         30,
         21,
-        0
-      ]
-    },
-    {
-      "player": "JAMES",
-      "team": "VLADIMIR POOLIN",
-      "score": 659,
-      "average": 31.38,
-      "weeks": [
-        30,
-        40,
-        24,
-        17,
-        24,
-        27,
-        35,
-        31,
-        18,
-        40,
-        33,
-        29,
-        40,
-        43,
-        39,
-        23,
-        30,
-        33,
-        35,
-        31,
-        37,
-        0
+        37
       ]
     },
     {
       "player": "WC",
       "team": "PIRATES OF THE TABLE",
-      "score": 651,
-      "average": 31,
+      "score": 701,
+      "average": 31.86,
       "weeks": [
         40,
         28,
@@ -3531,14 +3501,44 @@
         24,
         31,
         27,
-        0
+        50
+      ]
+    },
+    {
+      "player": "JAMES",
+      "team": "VLADIMIR POOLIN",
+      "score": 696,
+      "average": 31.64,
+      "weeks": [
+        30,
+        40,
+        24,
+        17,
+        24,
+        27,
+        35,
+        31,
+        18,
+        40,
+        33,
+        29,
+        40,
+        43,
+        39,
+        23,
+        30,
+        33,
+        35,
+        31,
+        37,
+        37
       ]
     },
     {
       "player": "TRAYE",
       "team": "PIRATES OF THE TABLE",
-      "score": 646,
-      "average": 30.76,
+      "score": 674,
+      "average": 30.64,
       "weeks": [
         40,
         25,
@@ -3561,14 +3561,14 @@
         35,
         28,
         32,
-        0
+        28
       ]
     },
     {
       "player": "SAM",
       "team": "PIRATES OF THE TABLE",
-      "score": 514,
-      "average": 24.48,
+      "score": 532,
+      "average": 24.18,
       "weeks": [
         40,
         37,
@@ -3591,7 +3591,7 @@
         24,
         16,
         21,
-        0
+        18
       ]
     }
   ]
