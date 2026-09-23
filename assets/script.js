@@ -561,3 +561,27 @@ function newNamesSameCount() {
 function backToStart() {
     location.reload();
 }
+
+function startWinnerSlideshow(card) {
+    const slides = card.querySelectorAll(":scope > div");
+
+    if (slides.length === 0) return;
+
+    let currentSlide = 0;
+
+    slides[currentSlide].classList.add("active");
+
+    setInterval(() => {
+        slides[currentSlide].classList.remove("active");
+
+        currentSlide = (currentSlide + 1) % slides.length;
+
+        slides[currentSlide].classList.add("active");
+    }, 5000);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".winnerCard").forEach((card) => {
+        startWinnerSlideshow(card);
+    });
+});
