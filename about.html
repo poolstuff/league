@@ -19,7 +19,7 @@
             </a>
 
             <div class="h1Wrapper">
-                <h1 class="h1500">ABOUT</h1>
+                <h1 class="h1500">ABOUT & CONTACT</h1>
             </div>
 
             <nav id="siteMenuBurger" class="siteMenuBurger" aria-label="Open site navigation" tabindex="0">
@@ -43,13 +43,84 @@
                         joining our leagues, please visit Clicks' site and
                         fill out their league interest form:
                         <a class="clicksLink" href="https://www.clicks.com/tucson-leagues">CLICKS BILLIARDS TUCSON</a>.
-                        You may also use the site's
-                        <a id="contactLink" href="./contact.html">CONTACT FORM</a>
-                        to reach me with any questions.
+                        For website feature requests, bug reporting, or general
+                        inquiries, feel free to use this contact form to reach
+                        me directly.
                     </p>
                 </div>
             </div>
         </div>
+        <div id="contactInfoWrapper">
+                
+                <div id="formWrapper">
+                    <form
+                        class="contact-form"
+                        action="https://api.web3forms.com/submit"
+                        method="POST"
+                    >
+                        <input
+                            type="hidden"
+                            name="access_key"
+                            value="db86e3f0-63e0-45e0-80c8-85b31fb69494"
+                        />
+
+                        <div class="form-row">
+                            <label>
+                                <span>Name *</span>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    required
+                                    placeholder="Name *"
+                                />
+                            </label>
+
+                            <label>
+                                <span>Email *</span>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    required
+                                    placeholder="Email *"
+                                />
+                            </label>
+                        </div>
+
+                        <div class="form-row">
+                            <label>
+                                <span>Phone</span>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    placeholder="Phone"
+                                />
+                            </label>
+
+                            <label>
+                                <span>Subject</span>
+                                <input
+                                    type="text"
+                                    name="subject"
+                                    placeholder="Subject"
+                                />
+                            </label>
+                        </div>
+
+                        <label>
+                            <span>Message *</span>
+                            <textarea
+                                name="message"
+                                required
+                                placeholder="Message *"
+                            ></textarea>
+                        </label>
+
+                        <button class="button button-dark" type="submit">
+                            SEND MESSAGE <span aria-hidden="true">→</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
     </section>
     <div id="siteNavOverlay" class="siteNavOverlay"></div>
 
