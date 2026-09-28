@@ -4,7 +4,7 @@ const path = require("path");
 
 const FILES = [
     {
-        input: "./data/CCCL# 335.xlsm",
+        input: "./data/CCCL# 337.xlsm",
         output: "./assets/data/wednesday.json",
         label: "Wednesday",
     },
@@ -22,6 +22,12 @@ const TEAM_ROW_STARTS = [4, 17, 30, 43, 56, 69, 82, 95, 108, 121];
 FILES.forEach(parseWorkbook);
 
 function parseWorkbook({ input, output, label }) {
+    if (!fs.existsSync(input)) {
+        console.log(`\n${label}`);
+        console.log(`Skipped: ${input} does not exist yet.`);
+        return;
+    }
+
     const workbook = XLSX.readFile(input, { raw: true });
 
     const teams = new Map();
