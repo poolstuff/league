@@ -62,21 +62,27 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     async function fetchAllData() {
-        const entries = await Promise.all(
-            Object.entries(DATA_FILES).map(async ([name, filePath]) => {
+    const entries = await Promise.all(
+        Object.entries(DATA_FILES).map(async ([name, filePath]) => {
+            try {
                 const response = await fetch(filePath);
 
                 if (!response.ok) {
-                    throw new Error(`Failed to fetch ${filePath}`);
+                    console.warn(`Skipping unavailable data file: ${filePath}`);
+                    return [name, null];
                 }
 
                 const json = await response.json();
                 return [name, json];
-            })
-        );
+            } catch (error) {
+                console.warn(`Could not load ${filePath}:`, error);
+                return [name, null];
+            }
+        })
+    );
 
-        return Object.fromEntries(entries);
-    }
+    return Object.fromEntries(entries);
+}
 
     function renderTeamPage(config, teams) {
         const container = document.getElementById(config.containerId);
