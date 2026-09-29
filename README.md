@@ -1,6 +1,6 @@
 # <span style='color:tomato'>Get-A-Cue Leagues</span>
 
-![Get A Cue Leagues Logo](./assets/images/leagueLogoSm.png)
+![Get A Cue Leagues Logo](./assets/images/leagueLogo.png)
 
 Please visit the deployed version of this site: [<span style='color:tomato'>**GET-A-CUE LEAGUES**</span>](https://poolstuff.github.io/league/)
 
