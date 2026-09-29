@@ -1,8 +1,8 @@
 # <span style='color:tomato'>Get-A-Cue Leagues</span>
 
-![Get A Cue Leagues Logo](./assets/images/leagueLogo.png)
+![Get A Cue Leagues Logo](./assets/images/leagueLogoSm.png)
 
-Please visit the deployed version of this site: [<span style='color:tomato'>**GET-A-CUE LEAGUES**</span>](https://poolstuff.github.io/league/)
+Please visit the deployed version of this site: [<span style='color:tomato'>**GET-A-CUE LEAGUES**</span>](https://getacueleagues.com)
 
 ---
 
@@ -22,15 +22,15 @@ Please visit the deployed version of this site: [<span style='color:tomato'>**GE
 
 ## DESCRIPTION
 
-This is an informative site for an in-house, Get-A-Cue leagues at Click's Billiards in Tucson, Arizona. There are two **<span style='color:tomato'>**GAC**</span>** leagues: one on Wednesday nights and the other on Thursday nights. For both nights, this site contains a _Schedule_ page, a _Team_ page, and a _Singles_ page. See the <ins>PAGES</ins> subsection that follows.
+This is an informative site for an in-house, Get-A-Cue leagues at Click's Billiards in Tucson, Arizona. There are two **<span style='color:tomato'>**GAC**</span>** leagues: one on Wednesday nights and the other on Thursday nights. For both nights, this site contains a _Schedule_ page, a _Team_ page, and a _Singles_ page. There is also a message board page called _The Scratchpad_. See the <ins>PAGES</ins> subsection that follows. 
 
 ### PAGES
 
 **_INDEX_**  
-![Index gif](./assets/images/indexGif.gif)  
-This is the landing page for the site. The site is navigable from here by utilizing the **WEDNESDAY**, **THURSDAY**, or **MORE** text. On desktop view ports, a hover effect causes link options to appear. On mobile view ports, clicking/tapping on the text causes the link options to appear. For **WEDNESDAY** and **THURSDAY**, the links take the user to the **SCHEDULE**, **TEAM**, or **SINGLES** pages. Currently, the **MORE** text only links to the **ABOUT** page.
+![Index gif](./assets/images/index.gif)  
+This is the landing page for the site. The site is navigable from here by utilizing the **WEDNESDAY**, **THURSDAY**, or **MORE** text. On desktop view ports, a hover effect causes link options to appear. On mobile view ports, clicking/tapping on the text causes the link options to appear. For **WEDNESDAY** and **THURSDAY**, the links take the user to the **SCHEDULE**, **TEAM**, or **SINGLES** pages. The **MORE** options direct the user to either the **ABOUT & CONTACT** or **THE SCRATCHPAD** pages.  
 
-**_ABOUT_**  
+**_ABOUT & CONTACT_**  
 ![Schedule gif](./assets/images/aboutGif.gif)  
 At the top of the page is the <span style='color:tomato'>**GAC**</span> league logo, which is acts as a link to the home page. Currently, the **ABOUT** page only has a brief about description and some updates I hope to include.
 
