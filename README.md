@@ -11,9 +11,9 @@ Please visit the deployed version of this site: [<span style='color:tomato'>**GE
 ### TABLE OF CONTENTS
 
 -   [Description](#description)
+-   [Pages](#pages)
 -   [Usage](#usage)
--   [Future Development](#future-development)
--   [Change Log](#change-log)
+-   [Technologies](#technologies)
 -   [Questions and Contact](#questions-and-contact)
 
 ---
@@ -24,7 +24,7 @@ Please visit the deployed version of this site: [<span style='color:tomato'>**GE
 
 This is an informative site for an in-house, Get-A-Cue leagues at Click's Billiards in Tucson, Arizona. There are two **<span style='color:tomato'>**GAC**</span>** leagues: one on Wednesday nights and the other on Thursday nights. For both nights, this site contains a _Schedule_ page, a _Team_ page, and a _Singles_ page. There is also a message board page called _The Scratchpad_. See the <ins>PAGES</ins> subsection that follows. 
 
-### PAGES
+## PAGES
 
 **_INDEX_**  
 ![Index gif](./assets/images/index.gif)  
